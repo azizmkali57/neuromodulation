@@ -10,14 +10,14 @@ export const aboutData = {
     secondaryCtaText: "CONNECT WITH FACULTY",
     secondaryCtaHref: "/#benefits",
     heroImage:
-      "https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1600&q=85",
+      "/images/hero-neuro-team.jpg",
   },
   drBiography: {
     badge: "MEET THE EDUCATOR",
     headingHighlight: "DR. NEHA ARORA VERMA",
     headingRest: "NEUROPLASTICITY COACH & CLINICAL EDUCATOR",
     portraitImage:
-      "https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=1200&q=85",
+      "/images/dr-neha-portrait.jpg",
     portraitCaption:
       "Clinical education led by Dr. Neha Arora Verma, focused on actionable neuromodulation protocols and evidence-based neurorehabilitation.",
     introText:
@@ -82,7 +82,7 @@ export const aboutData = {
         description:
           "Modulating excitability across primary motor (M1), dorsolateral prefrontal (DLPFC), and perilesional cortical zones to accelerate motor relearning and executive recovery.",
         image:
-          "https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&w=900&q=85",
+          "/images/hero-device-calibration.jpg",
       },
       {
         title: "Peripheral & Neural Pathway Activation",
@@ -90,7 +90,7 @@ export const aboutData = {
         description:
           "Facilitating afferent feedback loops through structured peripheral neuromodulation to overcome learned non-use, spasticity, and muscle atrophy.",
         image:
-          "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=900&q=85",
+          "/images/track-paralysis-activation.jpg",
       },
       {
         title: "Network Plasticity in Chronic Recovery",
@@ -98,7 +98,7 @@ export const aboutData = {
         description:
           "Activating bilateral hemispheric balance and recruiting uninjured collateral pathways in patients who have plateaued under conventional rehabilitation.",
         image:
-          "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?auto=format&fit=crop&w=900&q=85",
+          "/images/hero-hands-on-practicum.jpg",
       },
     ],
   },
