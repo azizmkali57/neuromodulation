@@ -6,18 +6,19 @@ import Footer from "@/components/layout/Footer";
 
 export default function PrivacyPage() {
   const tableOfContents = [
-    { id: "scope", label: "1. Scope of This Policy" },
+    { id: "introduction", label: "1. Introduction" },
     { id: "information-collected", label: "2. Information We Collect" },
-    { id: "form-data", label: "3. Details Provided via Enquiry & Registration Forms" },
-    { id: "how-we-use", label: "4. How Your Information Is Used" },
-    { id: "cookies", label: "5. Cookies & Local Browser Storage" },
-    { id: "analytics", label: "6. Website Usage & Analytics" },
-    { id: "service-providers", label: "7. Communications & Third-Party Platforms" },
-    { id: "security-retention", label: "8. Data Security, Protection & Retention" },
-    { id: "user-rights", label: "9. Your Rights & Communication Choices" },
-    { id: "external-links", label: "10. External Websites & Third-Party Links" },
-    { id: "updates", label: "11. Changes to This Privacy Policy" },
-    { id: "contact-privacy", label: "12. Privacy Inquiries & Contact Details" },
+    { id: "how-we-use", label: "3. How We Use Your Information" },
+    { id: "consent", label: "4. Consent" },
+    { id: "special-protection", label: "5. Special Protection for Genetic and Health Data" },
+    { id: "sharing-information", label: "6. Sharing of Information" },
+    { id: "data-retention", label: "7. Data Retention" },
+    { id: "data-security", label: "8. Data Security" },
+    { id: "cookies", label: "9. Cookies" },
+    { id: "your-rights", label: "10. Your Rights" },
+    { id: "children-privacy", label: "11. Children’s Privacy" },
+    { id: "changes-policy", label: "12. Changes to This Policy" },
+    { id: "grievance-contact", label: "13. Grievance Officer and Contact" },
   ];
 
   return (
@@ -28,7 +29,7 @@ export default function PrivacyPage() {
       <main className="main-content pt-header w-100" id="content">
         {/* =================================================================
             HEADER / HERO
-            Compact, restrained editorial header matching Terms & Conditions
+            Editorial header matching site design tokens
         ================================================================= */}
         <section className="grid-p pt-88 pb-40 a-center text-center bg-white border-b border-[#BDDFEC]">
           <div className="m-auto" style={{ maxWidth: "960px" }}>
@@ -40,7 +41,7 @@ export default function PrivacyPage() {
                 letterSpacing: "0.05em",
               }}
             >
-              PRIVACY & DATA PROTECTION
+              SHREE NAMOH WELLNESS &bull; PRIVACY &amp; DATA PROTECTION
             </span>
 
             <h1
@@ -57,12 +58,13 @@ export default function PrivacyPage() {
 
             <div
               className="style-content m-auto text-gray-700"
-              style={{ maxWidth: "42em", fontSize: "1.05rem", lineHeight: "1.65em" }}
+              style={{ maxWidth: "44em", fontSize: "1.05rem", lineHeight: "1.65em" }}
             >
               <p>
-                This Privacy Policy explains how personal details and communications are handled
-                when you browse our website, submit academic enquiries, or register for the Advanced
-                Neuromodulation Techniques Workshop with Dr. Neha Arora Verma.
+                <strong>Shree Namoh Wellness</strong> respects your privacy. This policy explains
+                how we collect, use, store, and protect your personal, health, and genetic information
+                when you visit <strong>www.shreenamohwellness.com</strong> or use our clinical,
+                educational, and genomic services.
               </p>
             </div>
           </div>
@@ -95,19 +97,26 @@ export default function PrivacyPage() {
             {/* Document Content */}
             <div className="space-y-12 text-[#1D1A55]" style={{ lineHeight: "1.75em" }}>
               {/* Section 1 */}
-              <article id="scope" className="scroll-mt-32 border-b border-gray-100 pb-8">
+              <article id="introduction" className="scroll-mt-32 border-b border-gray-100 pb-8">
                 <h2 className="font-headings type-28 uppercase text-[#1D1A55] mb-4">
-                  1. Scope of This Policy
+                  1. Introduction
                 </h2>
                 <p className="type-15 text-gray-700 mb-4">
-                  This policy applies to personal data collected through this website, our official
-                  admissions telephone line (+91 7470529991), official WhatsApp communication channels,
-                  and direct email correspondences relating to the Advanced Neuromodulation Techniques
-                  workshop.
+                  <strong>Shree Namoh Wellness</strong> respects your privacy. This policy explains
+                  how we collect, use, store, and protect your personal information when you visit{" "}
+                  <a
+                    href="https://www.shreenamohwellness.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[#E9511C] font-semibold hover:underline"
+                  >
+                    www.shreenamohwellness.com
+                  </a>{" "}
+                  or use our services: the <strong>Neuroplasticity Course for Medical Professionals</strong>,{" "}
+                  <strong>Eye Care and Ophthalmic Surgery</strong>, and <strong>Genomic Wellness</strong>.
                 </p>
                 <p className="type-15 text-gray-700">
-                  We are committed to handling your professional and personal information with
-                  transparency, confidentiality, and respect for your communication preferences.
+                  By using our website or services, you agree to this policy.
                 </p>
               </article>
 
@@ -116,195 +125,242 @@ export default function PrivacyPage() {
                 <h2 className="font-headings type-28 uppercase text-[#1D1A55] mb-4">
                   2. Information We Collect
                 </h2>
-                <p className="type-15 text-gray-700 mb-4">
-                  We collect information strictly necessary to answer your curriculum questions,
-                  verify clinical eligibility for workshop participation, issue enrollment details,
-                  and coordinate attendance.
-                </p>
-                <p className="type-15 text-gray-700">
-                  We do not collect sensitive biometric data, financial account passwords, or patient
-                  identifiable medical records through this website.
-                </p>
+                <div className="space-y-3 type-15 text-gray-700">
+                  <p>
+                    <strong className="text-[#1D1A55]">Personal information:</strong> Name, phone
+                    number, email address, age, gender, address, etc.
+                  </p>
+                  <p>
+                    <strong className="text-[#1D1A55]">Health information (eye care patients):</strong>{" "}
+                    Medical history, symptoms, eye examination records, prescriptions, test
+                    results, surgical records, and consent forms.
+                  </p>
+                  <p>
+                    <strong className="text-[#1D1A55]">Genetic information (Genomic Wellness clients):</strong>{" "}
+                    Biological samples (such as saliva or blood), DNA data, genomic reports, family
+                    history, and lifestyle details.
+                  </p>
+                  <p>
+                    <strong className="text-[#1D1A55]">Professional information (course participants):</strong>{" "}
+                    Medical registration number, qualifications, hospital or clinic affiliation,
+                    and course progress or assessment records.
+                  </p>
+                  <p>
+                    <strong className="text-[#1D1A55]">Technical information:</strong> IP address,
+                    browser type, device details, pages visited, and cookies.
+                  </p>
+                </div>
               </article>
 
               {/* Section 3 */}
-              <article id="form-data" className="scroll-mt-32 border-b border-gray-100 pb-8">
+              <article id="how-we-use" className="scroll-mt-32 border-b border-gray-100 pb-8">
                 <h2 className="font-headings type-28 uppercase text-[#1D1A55] mb-4">
-                  3. Details Provided via Enquiry & Registration Forms
+                  3. How We Use Your Information
                 </h2>
-                <p className="type-15 text-gray-700 mb-4">
-                  When you voluntarily fill out the admissions enquiry form or contact our desk, you
-                  may be asked to provide:
-                </p>
-                <ul className="list-disc pl-6 space-y-2 type-15 text-gray-700 mb-4">
-                  <li>Full name and title (e.g., Dr., Pt., Occupational Therapist, etc.).</li>
-                  <li>Contact telephone number and WhatsApp-enabled mobile number.</li>
-                  <li>Email address for workshop syllabus and schedule transmission.</li>
-                  <li>Professional specialization, clinical department, hospital, or practice affiliation.</li>
-                  <li>City and state of practice.</li>
-                  <li>Specific clinical questions, batch date preferences, or equipment queries.</li>
+                <ul className="list-disc pl-6 space-y-2 type-15 text-gray-700">
+                  <li>To book appointments and provide eye care, surgical, and genomic services.</li>
+                  <li>To process samples and prepare personalized genomic reports.</li>
+                  <li>To enroll you in courses, verify eligibility, and issue certificates.</li>
+                  <li>To send reminders, receipts, reports, and service updates.</li>
+                  <li>To respond to enquiries and provide support.</li>
+                  <li>To improve our website, services, and user experience.</li>
+                  <li>To meet legal and regulatory requirements.</li>
+                  <li>
+                    To send promotional updates, only with your consent. You can opt out at any time.
+                  </li>
                 </ul>
-                <p className="type-15 text-gray-700">
-                  Providing this information is entirely voluntary, though certain fields are necessary
-                  if you request a callback or wish to register for a specific cohort.
-                </p>
               </article>
 
               {/* Section 4 */}
-              <article id="how-we-use" className="scroll-mt-32 border-b border-gray-100 pb-8">
+              <article id="consent" className="scroll-mt-32 border-b border-gray-100 pb-8">
                 <h2 className="font-headings type-28 uppercase text-[#1D1A55] mb-4">
-                  4. How Your Information Is Used
+                  4. Consent
                 </h2>
-                <p className="type-15 text-gray-700 mb-2">
-                  The information you provide is utilized solely for legitimate workshop coordination:
+                <p className="type-15 text-gray-700 mb-4">
+                  We collect and process your personal data only with your consent, except where the
+                  law permits otherwise. Because health and genetic data is highly sensitive, we
+                  obtain specific written or electronic consent before collecting it.
                 </p>
-                <ul className="list-disc pl-6 space-y-2 type-15 text-gray-700">
-                  <li>Direct academic communication regarding workshop seats, batch dates, and fees.</li>
-                  <li>Transmission of the workshop curriculum, pre-reading guidelines, and venue directions.</li>
-                  <li>Verification of medical/rehabilitation qualifications required for hands-on clinical practice.</li>
-                  <li>Issuing certificates of participation with accurate delegate names and designations.</li>
-                  <li>Follow-up support concerning workshop protocol reference notes.</li>
-                </ul>
+                <p className="type-15 text-gray-700">
+                  You may withdraw consent at any time by contacting us, though this may limit our
+                  ability to continue providing certain services.
+                </p>
               </article>
 
               {/* Section 5 */}
-              <article id="cookies" className="scroll-mt-32 border-b border-gray-100 pb-8">
+              <article id="special-protection" className="scroll-mt-32 border-b border-gray-100 pb-8">
                 <h2 className="font-headings type-28 uppercase text-[#1D1A55] mb-4">
-                  5. Cookies & Local Browser Storage
+                  5. Special Protection for Genetic and Health Data
                 </h2>
-                <p className="type-15 text-gray-700 mb-4">
-                  This website relies primarily on standard static and client-side web technologies.
-                  Basic technical cookies or session tokens may be used by the hosting infrastructure
-                  solely to maintain secure page delivery, ensure correct layout rendering, and support
-                  responsive features.
-                </p>
-                <p className="type-15 text-gray-700">
-                  We do not use invasive third-party cross-site behavioral tracking cookies or sell your
-                  browsing profile to third-party advertising networks.
-                </p>
+                <div className="p-5 bg-[#fdf2e9] border-l-4 border-[#00AF9C] mb-4 text-sm text-gray-800 leading-relaxed space-y-2">
+                  <p className="font-bold text-[#1D1A55] uppercase mb-1">
+                    Confidentiality &amp; Genetic Data Safeguards:
+                  </p>
+                  <ul className="list-disc pl-5 space-y-1.5 text-gray-800">
+                    <li>Genetic data is used only for the purpose you consented to.</li>
+                    <li>
+                      <strong>We do not sell your genetic or health data.</strong>
+                    </li>
+                    <li>
+                      Genetic data is not shared with insurers, employers, or any third party for
+                      discrimination or marketing.
+                    </li>
+                    <li>
+                      Samples and data may be processed by accredited partner laboratories under
+                      strict confidentiality agreements.
+                    </li>
+                    <li>
+                      Any use of de-identified data for research will happen only with your explicit
+                      consent.
+                    </li>
+                  </ul>
+                </div>
               </article>
 
               {/* Section 6 */}
-              <article id="analytics" className="scroll-mt-32 border-b border-gray-100 pb-8">
+              <article id="sharing-information" className="scroll-mt-32 border-b border-gray-100 pb-8">
                 <h2 className="font-headings type-28 uppercase text-[#1D1A55] mb-4">
-                  6. Website Usage & Analytics
+                  6. Sharing of Information
                 </h2>
-                <p className="type-15 text-gray-700">
-                  Standard web server logs automatically record general technical telemetry (such as
-                  browser type, operating system, and page request timestamps) to diagnose performance
-                  and maintain server health. This data is reviewed only in aggregate and is not linked
-                  to individual medical records or private profiles.
+                <p className="type-15 text-gray-700 mb-3">
+                  We do not sell or rent your personal information. We may share it only with:
                 </p>
+                <ul className="list-disc pl-6 space-y-2 type-15 text-gray-700">
+                  <li>Healthcare professionals and laboratories involved in your care or testing.</li>
+                  <li>
+                    Service providers such as payment gateways, IT, and communication platforms,
+                    bound by confidentiality agreements.
+                  </li>
+                  <li>
+                    Government or legal authorities when required by law, court order, or to protect
+                    rights and safety.
+                  </li>
+                </ul>
               </article>
 
               {/* Section 7 */}
-              <article id="service-providers" className="scroll-mt-32 border-b border-gray-100 pb-8">
+              <article id="data-retention" className="scroll-mt-32 border-b border-gray-100 pb-8">
                 <h2 className="font-headings type-28 uppercase text-[#1D1A55] mb-4">
-                  7. Communications & Third-Party Platforms
+                  7. Data Retention
                 </h2>
-                <p className="type-15 text-gray-700 mb-4">
-                  We do not sell, rent, or trade your contact information. Where you choose to connect
-                  with us via third-party communication tools (such as WhatsApp via Meta or your default
-                  email service), your interaction with those tools is also governed by the respective
-                  third party’s privacy terms.
-                </p>
                 <p className="type-15 text-gray-700">
-                  Information is disclosed only when required by law or to protect safety during physical
-                  clinical training sessions.
+                  We keep your information only as long as needed for the purpose it was collected or
+                  as required by law. Medical records are retained according to applicable medical
+                  and legal requirements. After that, data is securely deleted or anonymized.
                 </p>
               </article>
 
               {/* Section 8 */}
-              <article id="security-retention" className="scroll-mt-32 border-b border-gray-100 pb-8">
+              <article id="data-security" className="scroll-mt-32 border-b border-gray-100 pb-8">
                 <h2 className="font-headings type-28 uppercase text-[#1D1A55] mb-4">
-                  8. Data Security, Protection & Retention
+                  8. Data Security
                 </h2>
                 <p className="type-15 text-gray-700 mb-4">
-                  We implement administrative and technical safeguards to protect your personal details
-                  against unauthorized access, alteration, or disclosure.
+                  We use reasonable technical and organizational safeguards, including access
+                  controls, secure servers, and encryption where appropriate, to protect your data.
                 </p>
                 <p className="type-15 text-gray-700">
-                  While no Internet transmission or electronic storage method can claim 100% absolute
-                  immunity, we restrict access to enquiry records exclusively to authorized admissions
-                  and academic personnel. Participant records are retained only for the duration
-                  required to manage workshop attendance, certification verification, and administrative
-                  compliance.
+                  No online system is completely secure, so we cannot guarantee absolute security.
+                  Please protect your own login details and devices.
                 </p>
               </article>
 
               {/* Section 9 */}
-              <article id="user-rights" className="scroll-mt-32 border-b border-gray-100 pb-8">
+              <article id="cookies" className="scroll-mt-32 border-b border-gray-100 pb-8">
                 <h2 className="font-headings type-28 uppercase text-[#1D1A55] mb-4">
-                  9. Your Rights & Communication Choices
+                  9. Cookies
                 </h2>
-                <p className="type-15 text-gray-700 mb-2">
-                  As a prospective delegate or workshop participant, you have the right to:
-                </p>
-                <ul className="list-disc pl-6 space-y-2 type-15 text-gray-700 mb-4">
-                  <li>Request a copy of the contact details we have recorded for your enrollment.</li>
-                  <li>Request correction of any outdated or inaccurate professional or contact data.</li>
-                  <li>Opt out of future workshop announcements or follow-up communications at any time.</li>
-                  <li>Request deletion of your enquiry data, subject to necessary legal and tax retention rules.</li>
-                </ul>
                 <p className="type-15 text-gray-700">
-                  To exercise any of these options, simply contact our admissions desk via phone or email.
+                  Our website uses cookies to improve performance, remember preferences, and analyze
+                  traffic. You can disable cookies in your browser settings, though some features may
+                  not work properly.
                 </p>
               </article>
 
               {/* Section 10 */}
-              <article id="external-links" className="scroll-mt-32 border-b border-gray-100 pb-8">
+              <article id="your-rights" className="scroll-mt-32 border-b border-gray-100 pb-8">
                 <h2 className="font-headings type-28 uppercase text-[#1D1A55] mb-4">
-                  10. External Websites & Third-Party Links
+                  10. Your Rights
                 </h2>
+                <p className="type-15 text-gray-700 mb-3">Under applicable law, you may:</p>
+                <ul className="list-disc pl-6 space-y-2 type-15 text-gray-700 mb-4">
+                  <li>Request access to the personal data we hold about you.</li>
+                  <li>Request correction or updating of inaccurate data.</li>
+                  <li>
+                    Request deletion of your data, subject to legal and medical record requirements.
+                  </li>
+                  <li>Withdraw your consent.</li>
+                  <li>Raise a grievance regarding the handling of your data.</li>
+                </ul>
                 <p className="type-15 text-gray-700">
-                  Our website may feature links to external clinical research publications, medical
-                  journals, professional reference sites, or social media profiles. We are not
-                  responsible for the privacy practices, content, or data policies of external sites.
-                  We encourage you to review the privacy terms of any third-party websites you visit.
+                  To exercise these rights, contact us using the details below.
                 </p>
               </article>
 
               {/* Section 11 */}
-              <article id="updates" className="scroll-mt-32 border-b border-gray-100 pb-8">
+              <article id="children-privacy" className="scroll-mt-32 border-b border-gray-100 pb-8">
                 <h2 className="font-headings type-28 uppercase text-[#1D1A55] mb-4">
-                  11. Changes to This Privacy Policy
+                  11. Children’s Privacy
                 </h2>
                 <p className="type-15 text-gray-700">
-                  We may periodically update this Privacy Policy to reflect modifications in our
-                  educational workshops, communication technologies, or statutory compliance. Any
-                  updates will be published on this page with immediate effect.
+                  Our website is not intended for children under 18. Where a minor needs eye care or
+                  genomic services, we collect and process data only with the verifiable consent of a
+                  parent or legal guardian.
                 </p>
               </article>
 
               {/* Section 12 */}
-              <article id="contact-privacy" className="scroll-mt-32">
+              <article id="changes-policy" className="scroll-mt-32 border-b border-gray-100 pb-8">
                 <h2 className="font-headings type-28 uppercase text-[#1D1A55] mb-4">
-                  12. Privacy Inquiries & Contact Details
+                  12. Changes to This Policy
+                </h2>
+                <p className="type-15 text-gray-700">
+                  We may update this policy from time to time. Changes take effect when posted on
+                  this page with a revised date.
+                </p>
+              </article>
+
+              {/* Section 13 */}
+              <article id="grievance-contact" className="scroll-mt-32">
+                <h2 className="font-headings type-28 uppercase text-[#1D1A55] mb-4">
+                  13. Grievance Officer and Contact
                 </h2>
                 <p className="type-15 text-gray-700 mb-4">
-                  If you have questions, concerns, or requests regarding this Privacy Policy or how
-                  your details are handled, please contact our administrative desk:
+                  For privacy queries, data requests, or to contact our Grievance Officer:
                 </p>
-                <div className="bg-[#f5f8fc] p-6 border-l-4 border-[#00AF9C]">
-                  <div className="font-bold text-sm text-[#1D1A55] uppercase mb-1">
-                    Admissions & Academic Coordination Desk
+                <div className="bg-[#f5f8fc] p-6 sm:p-8 border-l-4 border-[#00AF9C]">
+                  <div className="font-bold text-base text-[#1D1A55] uppercase mb-1">
+                    Grievance Officer: Dr. Neha Arora Verma
+                  </div>
+                  <div className="text-sm font-semibold text-[#1D1A55] mb-2">
+                    Shree Namoh Wellness
                   </div>
                   <div className="text-sm text-gray-700 mb-1">
-                    Dr. Neha Arora Verma — Advanced Neuromodulation Techniques
+                    A-65 MIG, Behind CHL Hospital, Indore, Madhya Pradesh, India
                   </div>
                   <div className="text-sm text-gray-700 mb-1">
-                    Workshop Venue: A-65 MIG, Behind CHL Hospital, Indore, Madhya Pradesh 452001
-                  </div>
-                  <div className="text-sm text-gray-700 mb-1">
-                    Direct Phone / WhatsApp:{" "}
-                    <a href="tel:7470529991" className="font-bold text-[#E9511C] hover:underline">
-                      +91 7470529991
+                    Email:{" "}
+                    <a
+                      href="mailto:neha_arora27@yahoo.com"
+                      className="font-bold text-[#1D1A55] hover:text-[#E9511C] hover:underline"
+                    >
+                      neha_arora27@yahoo.com
                     </a>
                   </div>
                   <div className="text-sm text-gray-700">
-                    Official Email:{" "}
-                    <a href="mailto:contact@drnehaarora.com" className="font-bold text-[#1D1A55] hover:underline">
-                      contact@drnehaarora.com
+                    Phone:{" "}
+                    <a
+                      href="tel:+919827079888"
+                      className="font-bold text-[#E9511C] hover:underline"
+                    >
+                      +91-9827079888
+                    </a>
+                    {" / "}
+                    <a
+                      href="tel:+917470529991"
+                      className="font-bold text-[#E9511C] hover:underline"
+                    >
+                      +91-7470529991
                     </a>
                   </div>
                 </div>

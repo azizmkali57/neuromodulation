@@ -1,18 +1,20 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { siteData } from "@/app/siteData";
 
 export default function HeroSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const slides = siteData.heroSlides;
+  const timerRef = useRef(null);
 
-  // Auto-advance every 8 seconds as in reference data-autoplaytime="8"
   useEffect(() => {
-    const timer = setInterval(() => {
+    timerRef.current = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % slides.length);
-    }, 8000);
-    return () => clearInterval(timer);
+    }, 7000);
+    return () => {
+      if (timerRef.current) clearInterval(timerRef.current);
+    };
   }, [slides.length]);
 
   const handlePrev = (e) => {
@@ -23,6 +25,10 @@ export default function HeroSection() {
   const handleNext = (e) => {
     e.preventDefault();
     setCurrentSlide((prev) => (prev + 1) % slides.length);
+  };
+
+  const goToSlide = (idx) => {
+    setCurrentSlide(idx);
   };
 
   return (
@@ -41,14 +47,14 @@ export default function HeroSection() {
         </div>
       </header>
 
-      {/* Main hero carousel */}
+      {/* Main hero carousel - Full Width Desktop */}
       <section
         id="slider-main"
-        className="slider over overflow init-slider w-100 relative bg-[#f5f7fd]"
+        className="slider over overflow init-slider w-100 relative bg-[#0b1021]"
         style={{
-          aspectRatio: "2.1",
-          maxHeight: "calc(100dvh - var(--header-height) - 40px)",
-          minHeight: "440px",
+          width: "100%",
+          aspectRatio: "16 / 9",
+          minHeight: "clamp(220px, 35vw, 440px)",
         }}
       >
         {slides.map((slide, index) => {
@@ -60,66 +66,36 @@ export default function HeroSection() {
                 isActive ? "opacity-100 z-10 pointer-events-auto" : "opacity-0 z-0 pointer-events-none"
               }`}
             >
-              {/* Slide image */}
+              {/* Full Width Slide image */}
               <div className="fill-dimensions z-1 pe-none">
                 <picture className="fill-dimensions z-1 pe-none">
                   <img
                     src={slide.image}
-                    srcSet={slide.srcset}
                     alt={slide.title}
                     className="abs-tl z-1 pe-none fit"
-                    style={{ objectPosition: "center center" }}
+                    style={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "cover",
+                      objectPosition: "center center",
+                    }}
                   />
                 </picture>
               </div>
 
-              {/* Slide overlay titles */}
-              <header className="slider-titles over w-100 box-sizing grid-p mb-64 font-headings type-32 uppercase z-20">
-                <div className="relative width-fit" style={{ maxWidth: "28em" }}>
-                  <div className="highlight-holder mb-2">
-                    <span
-                      className="bg-highlight color-blue font-headings"
-                      style={{ "--bg": "#fff", backgroundColor: "#fff", color: "var(--c-blue)" }}
-                    >
-                      {slide.tag}
-                    </span>
-                  </div>
-                  <div className="mb-2">
-                    <span
-                      className="bg-highlight color-white font-headings"
-                      style={{
-                        "--bg": "var(--c-blue)",
-                        backgroundColor: "var(--c-blue)",
-                        color: "#fff",
-                      }}
-                    >
-                      {slide.title}
-                    </span>
-                  </div>
-                  {slide.subtitle && (
-                    <div>
-                      <span
-                        className="bg-highlight font-headings uppercase text-xs sm:text-sm tracking-wider"
-                        style={{
-                          "--bg": "var(--c-orange)",
-                          backgroundColor: "var(--c-orange)",
-                          color: "#fff",
-                          padding: "2px 8px",
-                          display: "inline-block"
-                        }}
-                      >
-                        {slide.subtitle}
-                      </span>
-                    </div>
-                  )}
-                </div>
+              {/* Accessible Hidden SEO Header */}
+              <header className="sr-only">
+                <span>{slide.tag}</span>
+                <h2>{slide.title}</h2>
+                <p>{slide.subtitle}</p>
+                <p>{slide.supportingText}</p>
               </header>
 
-              {/* Clickable full link */}
+              {/* Clickable full slide link */}
               <a
                 href={slide.href}
-                className="fill-dimensions z-10"
-                aria-label={`${slide.tag} ${slide.title}`}
+                className="fill-dimensions z-10 block"
+                aria-label={`${slide.tag}: ${slide.title}`}
               />
             </article>
           );
@@ -133,7 +109,7 @@ export default function HeroSection() {
           className="slider-nav slider-prev clickable trans abs-lc flex flex-vac color-white hover-orange border-0 bg-transparent cursor-pointer z-30"
           style={{
             position: "absolute",
-            left: "var(--side-gap)",
+            left: "clamp(10px, 2.5vw, 32px)",
             top: "50%",
             transform: "translateY(-50%)",
             color: "#fff",
@@ -145,7 +121,7 @@ export default function HeroSection() {
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 82 24"
-            style={{ width: "clamp(52px, 8vw, 80px)" }}
+            style={{ width: "clamp(36px, 5.5vw, 72px)" }}
           >
             <path
               fill="currentColor"
@@ -162,7 +138,7 @@ export default function HeroSection() {
           className="slider-nav slider-next clickable trans abs-rc flex flex-end flex-vac color-white hover-orange border-0 bg-transparent cursor-pointer z-30"
           style={{
             position: "absolute",
-            right: "var(--side-gap)",
+            right: "clamp(10px, 2.5vw, 32px)",
             top: "50%",
             transform: "translateY(-50%)",
             color: "#fff",
@@ -174,7 +150,7 @@ export default function HeroSection() {
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 82 24"
-            style={{ width: "clamp(52px, 8vw, 80px)" }}
+            style={{ width: "clamp(36px, 5.5vw, 72px)" }}
           >
             <path
               fill="currentColor"
@@ -182,6 +158,38 @@ export default function HeroSection() {
             />
           </svg>
         </button>
+
+        {/* Bottom Pagination Dots */}
+        <div
+          className="absolute z-30 flex items-center justify-center gap-3"
+          style={{
+            bottom: "clamp(16px, 3vw, 36px)",
+            left: "50%",
+            transform: "translateX(-50%)",
+          }}
+        >
+          {slides.map((_, dotIdx) => {
+            const isActive = dotIdx === currentSlide;
+            return (
+              <button
+                key={dotIdx}
+                onClick={() => goToSlide(dotIdx)}
+                type="button"
+                aria-label={`Go to slide ${dotIdx + 1}`}
+                style={{
+                  width: isActive ? "32px" : "12px",
+                  height: "12px",
+                  borderRadius: "6px",
+                  backgroundColor: isActive ? "var(--c-orange, #E9511C)" : "rgba(255, 255, 255, 0.75)",
+                  border: "none",
+                  cursor: "pointer",
+                  transition: "all 0.3s ease",
+                  boxShadow: "0 2px 8px rgba(0,0,0,0.4)",
+                }}
+              />
+            );
+          })}
+        </div>
       </section>
     </div>
   );

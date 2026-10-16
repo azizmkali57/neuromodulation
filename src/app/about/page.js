@@ -45,7 +45,7 @@ export default function AboutPage() {
         ================================================================= */}
         <section
           id="about-hero"
-          className="grid-p pt-64 pb-64 bg-white border-b border-[#BDDFEC]"
+          className="grid-p pt-8 sm:pt-10 pb-16 bg-white border-b border-[#BDDFEC]"
         >
           <div className="m-auto" style={{ maxWidth: "1280px" }}>
             {/* Top Eyebrow & Category Label */}

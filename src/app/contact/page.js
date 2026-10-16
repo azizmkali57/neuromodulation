@@ -59,7 +59,7 @@ export default function ContactPage() {
     const body = encodeURIComponent(
       `Name: ${formData.fullName}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
     );
-    window.location.href = `mailto:contact@drnehaarora.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:neha_arora27@yahoo.com?subject=${subject}&body=${body}`;
   };
 
   return (
@@ -285,13 +285,21 @@ export default function ContactPage() {
                     <div className="text-xs font-bold uppercase text-gray-500 mb-1">
                       Admissions Helpline & WhatsApp
                     </div>
-                    <a
-                      href="tel:7470529991"
-                      className="font-headings type-28 color-orange link-underlined di uppercase"
-                    >
-                      7470529991
-                    </a>
-                    <div className="text-xs text-gray-600 mt-1">
+                    <div className="flex flex-col gap-1">
+                      <a
+                        href="tel:9827079888"
+                        className="font-headings type-24 color-orange link-underlined di uppercase"
+                      >
+                        +91 9827079888
+                      </a>
+                      <a
+                        href="tel:7470529991"
+                        className="font-headings type-24 color-orange link-underlined di uppercase"
+                      >
+                        +91 7470529991
+                      </a>
+                    </div>
+                    <div className="text-xs text-gray-600 mt-2">
                       Available Monday to Saturday, 9:00 AM – 7:00 PM IST
                     </div>
                   </div>
@@ -300,19 +308,30 @@ export default function ContactPage() {
                     <div className="text-xs font-bold uppercase text-gray-500 mb-1">
                       Official Admissions Email
                     </div>
-                    <a
-                      href="mailto:contact@drnehaarora.com"
-                      className="font-headings type-20 text-[#1D1A55] link-underlined di"
-                    >
-                      contact@drnehaarora.com
-                    </a>
+                    <div className="flex flex-col gap-1">
+                      <a
+                        href="mailto:neha_arora27@yahoo.com"
+                        className="font-headings type-18 text-[#1D1A55] link-underlined di"
+                      >
+                        neha_arora27@yahoo.com
+                      </a>
+                      <a
+                        href="mailto:contact@drnehaarora.com"
+                        className="text-xs text-gray-500 hover:text-[#1D1A55]"
+                      >
+                        contact@drnehaarora.com
+                      </a>
+                    </div>
                   </div>
 
                   <div>
                     <div className="text-xs font-bold uppercase text-gray-500 mb-1">
-                      Workshop Location
+                      Clinical & Workshop Center
                     </div>
                     <div className="font-bold text-sm text-[#1D1A55]">
+                      Shree Namoh Wellness
+                    </div>
+                    <div className="text-sm text-gray-700">
                       A-65 MIG, Behind CHL Hospital
                     </div>
                     <div className="text-sm text-gray-600">

@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { siteData } from "@/app/siteData";
 
 export default function Footer() {
-  const { navLinks, tuvLogo, financialStats, locations, legalLinks, copyright, credits } =
+  const { navLinks, tuvLogo, financialStats, locations, legalLinks, copyright } =
     siteData.footer;
 
   const [email, setEmail] = useState("");
@@ -26,165 +26,174 @@ export default function Footer() {
   };
 
   return (
-    <footer className="footer pt-64 bg-dark grid-p color-white" style={{ paddingBottom: "1px" }}>
-      <section className="dg grid-footer gap-f mob-db">
-        {/* logo-donate */}
-        {/* <div className="a-center mb-40" style={{ gridArea: "logo-donate" }}>
-          <a href="#" className="logo db m-auto flex flex-center items-center justify-center" aria-label="Dr. Neha Arora Verma">
-            <img
-              src="/logo.webp"
-              alt="Dr. Neha Arora Verma"
-              className="w-100 db object-contain"
-              style={{ maxWidth: "160px", maxHeight: "100px" }}
-            />
-          </a>
-          <div className="pt-88 pb-40">
-            <a href="tel:7470529991" className="button-link relative di font-headings type-48 color-yellow">
-              <span className="over color-dark di uppercase">Register Now</span>
-            </a>
+    <footer className="footer pt-12 sm:pt-16 bg-[#0e1026] text-white border-t border-[#1D1A55]">
+      <div className="grid-p m-auto" style={{ maxWidth: "1280px" }}>
+        {/* Main 4-Column Responsive Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-10 pb-12">
+          {/* Col 1: Brand & Navigation Links */}
+          <div className="flex flex-col justify-between">
+            <div>
+              <div className="w-32 mb-6">
+                <img
+                  loading="lazy"
+                  src={tuvLogo}
+                  alt="Shree Namoh Wellness Logo"
+                  className="w-full h-auto object-contain brightness-0 invert"
+                />
+              </div>
+              <ul className="space-y-2.5 font-headings text-xs sm:text-sm uppercase tracking-wider">
+                {navLinks.map((item, idx) => (
+                  <li key={idx}>
+                    <a
+                      href={item.href}
+                      className="text-white/80 hover:text-[#FEE003] hover:underline transition-colors block py-0.5"
+                    >
+                      {item.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
-        </div> */}
 
-        {/* left-col */}
-        <section className="mb-40 mob-hide flex flex-columns flex-jcb" style={{ gridArea: "left-col" }}>
-          <ul id="menu-footermenu_el" className="menu-ul font-headings type-48 menu-simple db uppercase block-menu mb-32 w-100">
-            {navLinks.map((item, idx) => (
-              <li key={idx} className="menu-item">
-                <a href={item.href} className="menu-a menu-link">
-                  {item.label}
-                </a>
-              </li>
-            ))}
-          </ul>
-          <div className="w-100 relative db lh-1 mb-24" style={{ width: "min(100%, 140px)" }}>
-            <img loading="lazy" src={tuvLogo} alt="Official Workshop Logo" className="w-100 object-contain" />
-          </div>
-        </section>
-
-        {/* footer-statistics */}
-        <aside className="mb-40 tab-hide" style={{ gridArea: "footer-statistics" }}>
-          <header className="font-headings type-20 ls-2 uppercase mb-1">{financialStats.title}</header>
-          <div className="pt-12">
-            {financialStats.items.map((stat, sIdx) => (
-              <article key={sIdx} className="mb-12">
-                <div className="font-headings type-48">{stat.percent}</div>
-                <div className="type-14 uppercase" style={{ color: "rgba(255,255,255,0.7)" }}>
-                  {stat.label}
-                </div>
-              </article>
-            ))}
-          </div>
-        </aside>
-
-        {/* newsletter */}
-        <section className="mb-40 flex flex-columns flex-jcb" style={{ gridArea: "newsletter" }}>
+          {/* Col 2: Workshop Structure & Statistics */}
           <div>
-            <header className="font-headings type-20 ls-2 uppercase mb-12">WORKSHOP ENQUIRIES</header>
-            <p className="type-14 text-white/70 mb-4">
+            <div className="font-headings text-xs uppercase tracking-widest text-[#FEE003] mb-4">
+              {financialStats.title}
+            </div>
+            <div className="space-y-4">
+              {financialStats.items.map((stat, sIdx) => (
+                <div key={sIdx} className="border-b border-white/10 pb-2">
+                  <div className="font-headings text-xl sm:text-2xl text-[#00AF9C] leading-none mb-1">
+                    {stat.percent}
+                  </div>
+                  <div className="text-[11px] uppercase text-white/70 tracking-wider">
+                    {stat.label}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Col 3: Enquiries & Brochure Request */}
+          <div>
+            <div className="font-headings text-xs uppercase tracking-widest text-[#FEE003] mb-4">
+              CLINICAL ENQUIRIES
+            </div>
+            <p className="text-xs text-white/70 mb-4 leading-relaxed">
               Receive workshop schedules, detailed curriculum, and protocol documentation.
             </p>
-            <form onSubmit={handleNewsletterSubmit} className="pt-12">
+            <form onSubmit={handleNewsletterSubmit} className="space-y-3">
               <input
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Doctor's / Clinical Email"
-                className="w-100 bg-white/10 text-white placeholder-white/50 px-4 py-3 rounded border border-white/20 mb-3 text-sm outline-none focus:border-[#FEE003]"
+                className="w-full bg-white/10 text-white placeholder-white/50 px-3.5 py-2.5 rounded border border-white/20 text-xs outline-none focus:border-[#FEE003] transition-colors"
               />
-              <div className="flex items-start gap-2 mb-4">
+              <div className="flex items-start gap-2">
                 <input
                   type="checkbox"
                   id="agree-terms"
                   checked={agreed}
                   onChange={(e) => setAgreed(e.target.checked)}
-                  className="mt-1"
+                  className="mt-0.5"
                 />
-                <label htmlFor="agree-terms" className="text-xs text-white/70">
-                  I agree to receive neuromodulation workshop updates & schedule notifications.
+                <label htmlFor="agree-terms" className="text-[11px] text-white/70 leading-tight">
+                  I agree to receive neuromodulation workshop updates &amp; schedule notifications.
                 </label>
               </div>
               <button
                 type="submit"
-                className="w-100 font-headings uppercase py-2 bg-[#00AF9C] text-white hover:bg-[#E9511C] transition-colors rounded text-base cursor-pointer"
+                className="w-full font-headings uppercase py-2.5 px-4 bg-[#00AF9C] text-white hover:bg-[#E9511C] transition-colors rounded text-xs font-bold tracking-wider cursor-pointer"
               >
                 REQUEST BROCHURE
               </button>
               {newsletterStatus && (
-                <div className="text-xs text-[#FEE003] mt-2 font-sans">{newsletterStatus}</div>
+                <div className="text-xs text-[#FEE003] font-sans">{newsletterStatus}</div>
               )}
             </form>
-          </div>
 
-          <div className="mt-8">
-            <header className="font-headings type-14 uppercase text-white/50 mb-2">DIRECT DESK</header>
-            <a href="tel:7470529991" className="font-headings type-24 text-[#FEE003] block hover:underline">
-              CALL: 7470529991
-            </a>
-          </div>
-        </section>
-
-        {/* footer-locations */}
-        <aside className="mb-40" style={{ gridArea: "footer-locations" }}>
-          <header className="font-headings type-20 ls-2 uppercase mb-4">WORKSHOP DESK</header>
-          {locations.map((loc, lIdx) => (
-            <div key={lIdx} className="footer-location mb-6">
-              <div className="font-bold text-sm uppercase text-[#00AF9C]">{loc.city}</div>
-              {loc.address && <div className="text-xs text-white/80">{loc.address}</div>}
-              {loc.subAddress && <div className="text-xs text-white/80">{loc.subAddress}</div>}
-              {loc.phone && (
-                <div>
-                  <a href={loc.phoneHref} className="text-xs text-white hover:text-[#FEE003]">
-                    {loc.phone}
-                  </a>
-                </div>
-              )}
-              {loc.email && (
-                <div>
-                  <a href={`mailto:${loc.email}`} className="text-xs text-white/70 hover:text-white">
-                    {loc.email}
-                  </a>
-                </div>
-              )}
-              {loc.lines &&
-                loc.lines.map((line, lineIdx) => (
-                  <div key={lineIdx} className="mt-1">
-                    <div className="text-xs text-white/80">{line.address}</div>
-                    <a href={line.phoneHref} className="text-xs text-white hover:text-[#FEE003]">
-                      {line.phone}
-                    </a>
-                  </div>
-                ))}
+            <div className="mt-6 pt-4 border-t border-white/10">
+              <div className="font-headings text-[11px] uppercase text-white/50 mb-1">
+                DIRECT PATIENT HELPLINE
+              </div>
+              <a
+                href="tel:7470529991"
+                className="font-headings text-lg text-[#FEE003] hover:underline block"
+              >
+                CALL: +91 7470529991
+              </a>
             </div>
-          ))}
-        </aside>
+          </div>
 
-        {/* social-terms */}
-        <div className="mb-20 flex flex-wrap gap-4 items-center" style={{ gridArea: "social-terms" }}>
-          {siteData.footer.socialLinks.map((s, idx) => (
-            <a
-              key={idx}
-              href={s.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xs uppercase text-white/70 hover:text-[#00AF9C] mr-2"
-            >
-              {s.name}
-            </a>
-          ))}
+          {/* Col 4: Locations & Clinical Desks */}
+          <div>
+            <div className="font-headings text-xs uppercase tracking-widest text-[#FEE003] mb-4">
+              WORKSHOP &amp; CLINIC VENUE
+            </div>
+            <div className="space-y-4">
+              {locations.map((loc, lIdx) => (
+                <div key={lIdx} className="text-xs">
+                  <div className="font-bold uppercase text-[#00AF9C] mb-1">{loc.city}</div>
+                  {loc.address && <div className="text-white/80">{loc.address}</div>}
+                  {loc.subAddress && <div className="text-white/80">{loc.subAddress}</div>}
+                  {loc.phone && (
+                    <div className="mt-1">
+                      <a href={loc.phoneHref} className="text-white hover:text-[#FEE003]">
+                        {loc.phone}
+                      </a>
+                    </div>
+                  )}
+                  {loc.email && (
+                    <div>
+                      <a href={`mailto:${loc.email}`} className="text-white/70 hover:text-white">
+                        {loc.email}
+                      </a>
+                    </div>
+                  )}
+                  {loc.lines &&
+                    loc.lines.map((line, lineIdx) => (
+                      <div key={lineIdx} className="mt-1">
+                        <div className="text-white/80">{line.address}</div>
+                        <a href={line.phoneHref} className="text-white hover:text-[#FEE003]">
+                          {line.phone}
+                        </a>
+                      </div>
+                    ))}
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
 
-        {/* footer-copyrights */}
-        <div className="mb-20 text-xs text-white/50" style={{ gridArea: "footer-copyrights" }}>
+        {/* Bottom Bar: Copyright, Legal Links & Socials */}
+        <div className="pt-6 pb-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/60">
           <div>{copyright}</div>
-          <div className="mt-1 flex gap-3">
+
+          <div className="flex flex-wrap items-center gap-4">
             {legalLinks.map((leg, idx) => (
               <a key={idx} href={leg.href} className="hover:text-white underline">
                 {leg.label}
               </a>
             ))}
           </div>
+
+          <div className="flex items-center gap-3">
+            {siteData.footer.socialLinks.map((s, idx) => (
+              <a
+                key={idx}
+                href={s.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white/70 hover:text-[#00AF9C] transition-colors"
+              >
+                {s.name}
+              </a>
+            ))}
+          </div>
         </div>
-      </section>
+      </div>
     </footer>
   );
 }

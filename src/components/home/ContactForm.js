@@ -7,8 +7,7 @@ export default function ContactForm() {
     fullName: "",
     email: "",
     phone: "",
-    profession: "Physiotherapist / Neurotherapist",
-    clinicHospital: "",
+    serviceNeeded: "Specialized Paralysis Care",
     city: "",
     message: "",
   });
@@ -25,18 +24,17 @@ export default function ContactForm() {
     e.preventDefault();
     setSubmitting(true);
 
-    // Simulate submission / whatsapp trigger or notification
     setTimeout(() => {
       setSubmitting(false);
       setSubmitted(true);
-    }, 800);
+    }, 600);
   };
 
   const openWhatsAppDirect = () => {
     const text = encodeURIComponent(
-      `Hello Dr. Neha Arora Verma / Admissions Desk,\n\nI want to enquire about the Advanced Neuromodulation Workshop.\n\nName: ${formData.fullName || "Interested Participant"}\nPhone: ${formData.phone || "Not provided"}\nEmail: ${formData.email || "Not provided"}\nDesignation: ${formData.profession}\nCity: ${formData.city || "Not provided"}\nQuery: ${formData.message || "Please share details regarding seats & curriculum."}`
+      `Hello Shree Namoh Wellness Team,\n\nI would like to enquire about your healthcare services.\n\nName: ${formData.fullName || "Patient / Family"}\nPhone: ${formData.phone || "Not provided"}\nEmail: ${formData.email || "Not provided"}\nService Interested In: ${formData.serviceNeeded}\nCity: ${formData.city || "Not provided"}\nMessage: ${formData.message || "Please share appointment availability and consultation details."}`
     );
-    window.open(`https://wa.me/917470529991?text=${text}`, "_blank");
+    window.open(`https://wa.me/919827079888?text=${text}`, "_blank");
   };
 
   return (
@@ -57,13 +55,13 @@ export default function ContactForm() {
           className="inline-block px-3 py-1 mb-2 text-xs font-headings uppercase rounded tracking-wider"
           style={{ backgroundColor: "var(--c-orange, #E9511C)" }}
         >
-          Direct Admissions & Faculty Connect
+          Shree Namoh Wellness Clinical Desk
         </span>
         <h3 className="font-headings type-28 text-white uppercase m-0">
-          Enquire & Speak With Admissions
+          Book a Consultation or Inquiry
         </h3>
         <p className="text-sm opacity-90 m-0 mt-2" style={{ color: "#BDDFEC" }}>
-          Fill in your details below. Our academic desk or Dr. Neha Arora Verma will get in touch directly.
+          Specialized Paralysis Care • Genetic Counseling • Advanced Eye Care • Doctor Training
         </p>
       </div>
 
@@ -78,10 +76,10 @@ export default function ContactForm() {
             </svg>
           </div>
           <h4 className="font-headings type-28 uppercase color-darkest-blue mb-2">
-            Thank You, Dr. / Clinician!
+            Thank You!
           </h4>
           <p className="type-18 text-gray-700 max-w-md mx-auto mb-6">
-            Your enquiry has been received. Our team will contact you shortly on <b>{formData.phone || formData.email}</b>.
+            Your consultation request has been received. Our clinical coordinator will contact you shortly on <b>{formData.phone || formData.email}</b>.
           </p>
 
           <div className="flex flex-wrap flex-center gap-4">
@@ -100,14 +98,14 @@ export default function ContactForm() {
               <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
                 <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.203.043.072.043.419-.101.824z" />
               </svg>
-              <span>Chat Instantly on WhatsApp</span>
+              <span>Chat on WhatsApp</span>
             </button>
             <button
               type="button"
               onClick={() => setSubmitted(false)}
               className="font-bold text-sm text-gray-600 underline cursor-pointer bg-transparent border-0"
             >
-              Submit Another Response
+              Submit Another Request
             </button>
           </div>
         </div>
@@ -125,7 +123,7 @@ export default function ContactForm() {
                 required
                 value={formData.fullName}
                 onChange={handleChange}
-                placeholder="Dr. / Pt. First & Last Name"
+                placeholder="Patient / Attendee Name"
                 className="w-full px-4 py-3 rounded-lg border border-gray-300 text-sm focus:outline-none focus:border-[#E9511C] transition-colors"
                 style={{ fontFamily: "inherit" }}
               />
@@ -141,14 +139,14 @@ export default function ContactForm() {
                 required
                 value={formData.email}
                 onChange={handleChange}
-                placeholder="doctor@example.com"
+                placeholder="name@example.com"
                 className="w-full px-4 py-3 rounded-lg border border-gray-300 text-sm focus:outline-none focus:border-[#E9511C] transition-colors"
                 style={{ fontFamily: "inherit" }}
               />
             </div>
           </div>
 
-          {/* Row 2: Phone Number & Profession / Role */}
+          {/* Row 2: Phone & Specialty Selection */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             <div>
               <label className="block text-xs font-bold uppercase tracking-wide text-[#1D1A55] mb-2">
@@ -160,7 +158,7 @@ export default function ContactForm() {
                 required
                 value={formData.phone}
                 onChange={handleChange}
-                placeholder="+91 98765 43210"
+                placeholder="+91 98270 79888"
                 className="w-full px-4 py-3 rounded-lg border border-gray-300 text-sm focus:outline-none focus:border-[#E9511C] transition-colors"
                 style={{ fontFamily: "inherit" }}
               />
@@ -168,76 +166,57 @@ export default function ContactForm() {
 
             <div>
               <label className="block text-xs font-bold uppercase tracking-wide text-[#1D1A55] mb-2">
-                Specialty / Designation <span style={{ color: "var(--c-orange, #E9511C)" }}>*</span>
+                Service Required <span style={{ color: "var(--c-orange, #E9511C)" }}>*</span>
               </label>
               <select
-                name="profession"
-                value={formData.profession}
+                name="serviceNeeded"
+                value={formData.serviceNeeded}
                 onChange={handleChange}
                 className="w-full px-4 py-3 rounded-lg border border-gray-300 text-sm bg-white focus:outline-none focus:border-[#E9511C] transition-colors"
                 style={{ fontFamily: "inherit" }}
               >
-                <option value="Physiotherapist / Neurotherapist">Physiotherapist / Neurotherapist</option>
-                <option value="Neurologist / Physician">Neurologist / Physician</option>
-                <option value="Occupational Therapist">Occupational Therapist</option>
-                <option value="Rehabilitation Specialist">Rehabilitation Specialist</option>
-                <option value="Postgraduate / Clinical Scholar">Postgraduate / Clinical Scholar</option>
-                <option value="Clinic / Hospital Director">Clinic / Hospital Director</option>
-                <option value="Other">Other Medical Professional</option>
+                <option value="Specialized Paralysis Care">Specialized Paralysis Care</option>
+                <option value="Genomic Counseling & Wellness">Genomic Counseling &amp; Wellness</option>
+                <option value="Advanced Eye Care & Surgery">Advanced Eye Care &amp; Ophthalmic Surgery</option>
+                <option value="Neuroplasticity Training Course">Neuroplasticity Training Course for Doctors</option>
+                <option value="General Health Consultation">General Health Consultation</option>
               </select>
             </div>
           </div>
 
-          {/* Row 3: Clinic / Hospital & City */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
-            <div>
-              <label className="block text-xs font-bold uppercase tracking-wide text-[#1D1A55] mb-2">
-                Clinic / Hospital / Institution
-              </label>
-              <input
-                type="text"
-                name="clinicHospital"
-                value={formData.clinicHospital}
-                onChange={handleChange}
-                placeholder="e.g. Apollo Neuro / Private Clinic"
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 text-sm focus:outline-none focus:border-[#E9511C] transition-colors"
-                style={{ fontFamily: "inherit" }}
-              />
-            </div>
-
-            <div>
-              <label className="block text-xs font-bold uppercase tracking-wide text-[#1D1A55] mb-2">
-                City / Location
-              </label>
-              <input
-                type="text"
-                name="city"
-                value={formData.city}
-                onChange={handleChange}
-                placeholder="e.g. Mumbai, Delhi, Bengaluru"
-                className="w-full px-4 py-3 rounded-lg border border-gray-300 text-sm focus:outline-none focus:border-[#E9511C] transition-colors"
-                style={{ fontFamily: "inherit" }}
-              />
-            </div>
-          </div>
-
-          {/* Message / Specific Questions */}
+          {/* Row 3: City */}
           <div>
             <label className="block text-xs font-bold uppercase tracking-wide text-[#1D1A55] mb-2">
-              Any Questions, Dates Preference or Clinical Interests?
+              City / State
+            </label>
+            <input
+              type="text"
+              name="city"
+              value={formData.city}
+              onChange={handleChange}
+              placeholder="e.g. Indore, Bhopal, Mumbai, Delhi"
+              className="w-full px-4 py-3 rounded-lg border border-gray-300 text-sm focus:outline-none focus:border-[#E9511C] transition-colors"
+              style={{ fontFamily: "inherit" }}
+            />
+          </div>
+
+          {/* Message / Symptoms / Clinical Context */}
+          <div>
+            <label className="block text-xs font-bold uppercase tracking-wide text-[#1D1A55] mb-2">
+              Describe Condition, Questions or Appointment Preference
             </label>
             <textarea
               name="message"
               rows={3}
               value={formData.message}
               onChange={handleChange}
-              placeholder="Ask anything about curriculum, equipment access, eligibility, batch timings, or certification..."
+              placeholder="Please briefly describe your medical background, symptoms, or inquiry details..."
               className="w-full px-4 py-3 rounded-lg border border-gray-300 text-sm focus:outline-none focus:border-[#E9511C] transition-colors"
               style={{ fontFamily: "inherit", resize: "vertical" }}
             />
           </div>
 
-          {/* Submit Action Buttons */}
+          {/* Action Buttons */}
           <div className="pt-2 flex flex-col sm:flex-row items-center justify-between gap-4">
             <button
               type="submit"
@@ -249,7 +228,7 @@ export default function ContactForm() {
                 minWidth: "220px",
               }}
             >
-              {submitting ? "Submitting..." : "Submit Enquiry"}
+              {submitting ? "Submitting..." : "Submit Inquiry"}
             </button>
 
             <button
@@ -264,7 +243,7 @@ export default function ContactForm() {
               <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
                 <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.203.043.072.043.419-.101.824z" />
               </svg>
-              <span>Direct WhatsApp Desk</span>
+              <span>WhatsApp Helpline</span>
             </button>
           </div>
 
@@ -272,7 +251,7 @@ export default function ContactForm() {
             <svg className="w-3.5 h-3.5 fill-current text-gray-400" viewBox="0 0 20 20">
               <path fillRule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clipRule="evenodd" />
             </svg>
-            <span>Your personal details are strictly kept confidential for workshop coordination.</span>
+            <span>Your personal details are handled strictly under our Privacy Policy.</span>
           </div>
         </form>
       )}

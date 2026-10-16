@@ -59,6 +59,8 @@ export default function NewsSection() {
       className="pt-header pb-40 ps dg grid-home-news gap-f lap-ps-gap mobsm-db relative"
       id="diseases"
     >
+      <div id="training" className="anchored" style={{ position: "absolute", top: 0, left: 0 }} />
+      <div id="post-stroke" className="anchored" style={{ position: "absolute", top: 0, left: 0 }} />
       {/* Middle Column with Scroll Pinning & Heading */}
       <header
         ref={stickyHeaderRef}
@@ -162,7 +164,7 @@ export default function NewsSection() {
       </div>
 
       {/* Right Column of Articles */}
-      <div className="flex flex-columns flex-vab rg mobsm-hide" style={{ gridArea: "right-col" }}>
+      <div className="flex flex-columns flex-vab rg" style={{ gridArea: "right-col" }}>
         {rightColumn.map((item) => (
           <article
             key={item.id}

@@ -13,24 +13,24 @@ export default function Header() {
 
   return (
     <>
-      <header className="header w-100 grid-p box-sizing fixed bg-white flex flex-vac gap-40 color-brand z-[600]" id="header">
+      <header className="header w-100 grid-p box-sizing fixed bg-white flex flex-vac gap-3 sm:gap-6 md:gap-8 color-brand z-[600]" id="header">
         <a
           href={siteData.header.logoHref}
           className="logo flex__0 over flex items-center"
           aria-label={siteData.header.logoAlt}
-          style={{ width: "130px", height: "auto" }}
+          style={{ width: "clamp(85px, 13vw, 130px)", height: "auto" }}
         >
           <img
             src={siteData.header.logoSrc}
             alt={siteData.header.logoAlt}
             className="w-100 h-auto db object-contain"
-            style={{ maxHeight: "75px" }}
+            style={{ maxHeight: "clamp(48px, 7vw, 75px)" }}
           />
         </a>
 
         {/* Desktop primary links */}
         <nav className="font type-14 uppercase over tabv-hide">
-          <ul id="menu-topmenu_el" className="menu-ul flex gap-sm" style={{ gap: "28px" }}>
+          <ul id="menu-topmenu_el" className="menu-ul flex gap-sm" style={{ gap: "22px" }}>
             {siteData.header.navLinks.map((link, idx) => (
               <li key={idx} className="menu-item relative group">
                 <a
@@ -50,13 +50,13 @@ export default function Header() {
 
                 {/* Dropdown if link has children */}
                 {link.children && (
-                  <div className="absolute left-0 top-full pt-2 hidden group-hover:block z-[700] min-w-[200px]">
-                    <div className="bg-[#1D1A55] text-white shadow-xl py-2 px-1 border-t-2 border-[#E9511C]">
+                  <div className="absolute left-0 top-full pt-2 hidden group-hover:block z-[700] min-w-[250px] shadow-2xl">
+                    <div className="bg-[#1D1A55] text-white shadow-xl py-2 px-1 border-t-2 border-[#E9511C] rounded-b-sm">
                       {link.children.map((sub, sIdx) => (
                         <a
                           key={sIdx}
                           href={sub.href.startsWith("#") ? `/${sub.href}` : sub.href}
-                          className="block px-4 py-2 text-xs font-headings uppercase hover:bg-[#E9511C] hover:text-white transition-colors"
+                          className="block px-4 py-2.5 text-xs font-headings uppercase hover:bg-[#E9511C] hover:text-white transition-colors tracking-wide whitespace-nowrap"
                         >
                           {sub.title}
                         </a>
@@ -70,19 +70,20 @@ export default function Header() {
         </nav>
 
         {/* Right side actions: Lang + Registration Button + MENU toggle */}
-        <nav className="flex flex-end flex-vac gap-sm ml-auto over uppercase">
+        <nav className="flex flex-end flex-vac gap-2 sm:gap-3 ml-auto over uppercase">
           <a
             href={siteData.header.langLink.href}
-            className="font-bold type-24 lh-1 relative hover-underline mobsm-hide"
+            className="font-bold text-sm sm:text-base lh-1 relative hover-underline mobsm-hide"
             data-label="Language"
-            style={{ marginRight: "12px" }}
+            style={{ marginRight: "6px" }}
           >
             {siteData.header.langLink.label}
           </a>
 
           <a
             href={siteData.header.donateBtn.href}
-            className="button-link relative font-headings type-48 color-orange"
+            className="button-link relative font-headings color-orange text-xs sm:text-sm md:text-base"
+            style={{ padding: "8px 14px", borderRadius: "8px" }}
           >
             <span className="over color-white uppercase no-wrap">
               {siteData.header.donateBtn.label}
@@ -92,9 +93,10 @@ export default function Header() {
           <button
             onClick={toggleMenu}
             type="button"
-            className="burger flex button-link relative trans clickable font-headings type-48 color-blue no-wrap border-0 bg-transparent text-left cursor-pointer"
+            className="burger flex button-link relative trans clickable font-headings color-blue text-xs sm:text-sm md:text-base no-wrap border-0 bg-transparent text-left cursor-pointer"
             id="burger"
             aria-label="Toggle navigation menu"
+            style={{ padding: "8px 14px", borderRadius: "8px" }}
           >
             {!menuOpen ? (
               <span className="burger__label over color-white uppercase trans overflow">
@@ -102,7 +104,9 @@ export default function Header() {
               </span>
             ) : (
               <span className="burger__label over color-white uppercase trans overflow flex flex-vac flex-center" style={{ width: "1.4em", height: "1em" }}>
-                ✕
+                <svg className="w-4 h-4 fill-none stroke-current" strokeWidth="2.5" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
               </span>
             )}
           </button>
@@ -118,9 +122,9 @@ export default function Header() {
           <div className="grid-p py-12 flex justify-between items-center mobsm-db">
             <a
               href="#"
-              className="text-[#0099DF] font-headings text-2xl uppercase hover:text-white"
+              className="text-[#BDDFEC] font-headings text-2xl uppercase hover:text-white"
             >
-              EN
+              {siteData.header.langLink.label || "IN"}
             </a>
           </div>
 
@@ -152,7 +156,7 @@ export default function Header() {
 
                   {/* Submenu Dropdown */}
                   {item.children && activeSubmenu === idx && (
-                    <ul className="pl-6 pt-4 pb-2 space-y-2 font-headings text-2xl lowercase font-normal opacity-90 border-l border-white/20 mt-2">
+                    <ul className="pl-6 pt-4 pb-2 space-y-2 font-headings text-xl font-normal opacity-90 border-l border-white/20 mt-2">
                       {item.children.map((sub, sIdx) => (
                         <li key={sIdx}>
                           <a

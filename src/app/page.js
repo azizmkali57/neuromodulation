@@ -7,8 +7,8 @@ import MissionSection from "@/components/home/MissionSection";
 import NewsSection from "@/components/home/NewsSection";
 import TransparencySection from "@/components/home/TransparencySection";
 import DonationSection from "@/components/home/DonationSection";
-import ActionsSection from "@/components/home/ActionsSection";
 import SupportSection from "@/components/home/SupportSection";
+import TestimonialSection from "@/components/home/TestimonialSection";
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
 
       {/* 2. Main Page Content */}
       <main className="main-content pt-header w-100" id="content">
-        {/* A. Hero Carousel & Marquee */}
+        {/* A. Hero Carousel & Marquee - Full Width Desktop */}
         <HeroSection />
 
         {/* B. Organization Introduction */}
@@ -27,20 +27,20 @@ export default function Home() {
         {/* C. Mission Statement */}
         <MissionSection />
 
-        {/* D. News & Events Area */}
+        {/* D. Clinical Disciplines & Healthcare Specialties */}
         <NewsSection />
 
-        {/* E. Financial Transparency Banner */}
+        {/* E. Vision & Clinical Standards */}
         <TransparencySection />
 
-        {/* F. Donation Section */}
+        {/* F. Consultation & Appointment Desk */}
         <DonationSection />
 
-        {/* G. Actions of MDM & Network Maps */}
-        <ActionsSection />
-
-        {/* H. Support Call To Action & Partner Logos Carousel */}
+        {/* G. Healthcare Commitments & Contact Desk */}
         <SupportSection />
+
+        {/* H. Verified Patient & Clinician Testimonials */}
+        <TestimonialSection />
       </main>
 
       {/* 3. Footer */}
