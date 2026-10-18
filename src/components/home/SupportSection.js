@@ -75,11 +75,6 @@ export default function SupportSection() {
           </table>
         </div>
       )}
-
-      {/* Contact Form Desk */}
-      <div className="mt-8 mb-8">
-        <ContactForm />
-      </div>
     </section>
   );
 }

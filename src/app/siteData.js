@@ -5,8 +5,8 @@ export const siteData = {
     logoAlt: "Dr. Neha Arora Verma - Neuroplasticity Coach",
     navLinks: [
       {
-        title: "About Us",
-        href: "/about"
+        title: "Home",
+        href: "/"
       },
       {
         title: "Meet Our Directors",
@@ -30,12 +30,12 @@ export const siteData = {
         title: "Genomic",
         children: [
           {
-            title: "Workshop Overview",
+            title: "Genetic Counselling",
             href: "/genomic/workshop"
           },
           {
-            title: "Coach Richha Arrora",
-            href: "/directors/coach-richha-arrora"
+            title: "Genetic Health Solutions",
+            href: "/genomic/solutions"
           },
         ]
       },
@@ -43,12 +43,12 @@ export const siteData = {
         title: "Neuroplasticity",
         children: [
           {
-            title: "Workshop Overview",
+            title: "Neuromodulation Workshop",
             href: "/neuroplasticity/workshop"
           },
           {
-            title: "Dr. Neha Arora Verma",
-            href: "/directors/dr-neha-arora-verma"
+            title: "Neuroplasticity Training",
+            href: "/neuroplasticity/training"
           },
         ]
       },
@@ -74,10 +74,6 @@ export const siteData = {
         active: true
       },
       {
-        title: "About Us",
-        href: "/about"
-      },
-      {
         title: "Meet Our Directors",
         href: "/directors",
         children: [
@@ -99,12 +95,12 @@ export const siteData = {
         title: "Genomic",
         children: [
           {
-            title: "Workshop Overview",
+            title: "Genetic Counselling",
             href: "/genomic/workshop"
           },
           {
-            title: "Coach Richha Arrora",
-            href: "/directors/coach-richha-arrora"
+            title: "Genetic Health Solutions",
+            href: "/genomic/solutions"
           },
         ]
       },
@@ -112,12 +108,12 @@ export const siteData = {
         title: "Neuroplasticity",
         children: [
           {
-            title: "Workshop Overview",
+            title: "Neuromodulation Workshop",
             href: "/neuroplasticity/workshop"
           },
           {
-            title: "Dr. Neha Arora Verma",
-            href: "/directors/dr-neha-arora-verma"
+            title: "Neuroplasticity Training",
+            href: "/neuroplasticity/training"
           },
         ]
       },
@@ -184,7 +180,7 @@ export const siteData = {
     subDescription: "We are committed to combining modern medical advancements, personalized care, and scientific expertise to support neurological recovery, provide meaningful genetic health guidance, and promote better vision and eye health. Through a holistic and individualized approach, we strive to empower patients and their families with knowledge, confidence, and access to appropriate healthcare solutions.",
     goal: "Our goal is to enhance quality of life, encourage informed health decisions, and make advanced healthcare more accessible, reliable, and focused on every patient's unique needs.",
     buttonText: "LEARN MORE ABOUT US",
-    buttonHref: "/about",
+    buttonHref: "/directors",
     image: "/images/mission-device-demo.jpg",
     srcset: "/images/mission-device-demo.jpg 1x, /images/mission-device-demo.jpg 2x"
   },
@@ -248,7 +244,7 @@ export const siteData = {
         date: "CLINICAL PILLAR 01",
         title: "Advanced Paralysis Care & Neuro-Rehabilitation",
         excerpt: "Supporting rehabilitation, functional recovery, and improved independence through individualized neuroplasticity protocols and movement retraining.",
-        image: "/images/track-paralysis-activation.jpg",
+        image: "/images/track-paralysis-care-home.jpg",
         href: "/directors/dr-neha-arora-verma"
       },
       {
@@ -257,20 +253,20 @@ export const siteData = {
         date: "CLINICAL PILLAR 02",
         title: "Genomic Wellness & Genetic Counseling",
         excerpt: "Helping individuals and families understand genetic predispositions, actionable nutrition insights, and personalized lifestyle disease prevention.",
-        image: "/images/track-stroke-rehab.jpg",
+        image: "/images/track-genomic-nutrition.jpg",
         href: "/directors/coach-richha-arrora"
-      },
+      }
+    ],
+    rightColumn: [
       {
         id: "post-parkinsons",
         category: "OPHTHALMIC EXCELLENCE",
         date: "CLINICAL PILLAR 03",
         title: "Advanced Eye Care & Ophthalmic Surgery",
         excerpt: "Promoting lifelong vision health through modern diagnostic assessment, surgical precision, and comprehensive preventive eye care by Dr. S. S. Verma.",
-        image: "/images/track-parkinsons-protocol.jpg",
+        image: "/images/ophthalmic-retina-exam.jpg",
         href: "/directors/dr-ss-verma"
-      }
-    ],
-    rightColumn: [
+      },
       {
         id: "post-neuroplasticity-course",
         category: "PROFESSIONAL TRAINING",
@@ -279,24 +275,6 @@ export const siteData = {
         excerpt: "A specialised course for healthcare practitioners, built on the latest research in brain adaptability, neural network re-wiring, and recovery protocols.",
         image: "/images/track-dementia-cognitive.jpg",
         href: "/directors/dr-neha-arora-verma"
-      },
-      {
-        id: "post-patient-centered",
-        category: "COMPASSIONATE CARE",
-        date: "CLINICAL PILLAR 05",
-        title: "Patient-Centered Approach & Dignified Healthcare",
-        excerpt: "Treating every patient and family with dignity, empathy, transparency, and respect through holistic and individualized treatment solutions.",
-        image: "/images/hero-neuro-rehab.jpg",
-        href: "/about"
-      },
-      {
-        id: "post-innovation",
-        category: "CLINICAL QUALITY",
-        date: "CLINICAL PILLAR 06",
-        title: "Innovation, Scientific Rigor & Excellence",
-        excerpt: "Continuously embracing evidence-based practices, advanced diagnostic precision, and therapeutic advancements in modern medicine.",
-        image: "/images/hero-device-calibration.jpg",
-        href: "/about"
       }
     ]
   },
@@ -341,15 +319,11 @@ export const siteData = {
     tabs: [
       {
         id: "map-0",
-        label: "SPECIALIZED PARALYSIS & NEUROLOGICAL CARE",
-        image: "/images/hero-hands-on-practicum.jpg",
-        srcset: "/images/hero-hands-on-practicum.jpg 1x, /images/hero-hands-on-practicum.jpg 2x"
+        label: "SPECIALIZED PARALYSIS & NEUROLOGICAL CARE"
       },
       {
         id: "map-1",
-        label: "GENOMIC COUNSELING & ADVANCED EYE CARE",
-        image: "/images/mission-device-demo.jpg",
-        srcset: "/images/mission-device-demo.jpg 1x, /images/mission-device-demo.jpg 2x"
+        label: "GENOMIC COUNSELING & ADVANCED EYE CARE"
       }
     ],
     highlights: [
@@ -637,29 +611,6 @@ export const siteData = {
         phone: "+91 9827079888 / 7470529991",
         phoneHref: "tel:7470529991",
         email: "neha_arora27@yahoo.com"
-      },
-      {
-        city: "REGISTRATION HELPLINE",
-        lines: [
-          {
-            address: "Admissions & Participant Desk",
-            phone: "+91 7470529991 / 9827079888",
-            phoneHref: "tel:7470529991"
-          },
-          {
-            address: "WhatsApp Support Desk",
-            phone: "+91 7470529991",
-            phoneHref: "https://wa.me/917470529991"
-          }
-        ],
-        email: "neha_arora27@yahoo.com"
-      },
-      {
-        city: "FACULTY OFFICE",
-        address: "Dr. Neha Arora Verma Clinic",
-        phone: "+91 9827079888 / 7470529991",
-        phoneHref: "tel:7470529991",
-        email: "neha_arora27@yahoo.com"
       }
     ],
     socialLinks: [
@@ -674,10 +625,6 @@ export const siteData = {
       {
         name: "YouTube",
         href: "https://www.youtube.com/"
-      },
-      {
-        name: "LinkedIn",
-        href: "https://www.linkedin.com/"
       }
     ],
     legalLinks: [

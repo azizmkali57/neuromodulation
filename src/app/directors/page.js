@@ -204,61 +204,11 @@ export default function DirectorsIndexPage() {
                           View Full Single Page →
                         </span>
                       </a>
-                      <a
-                        href={director.contactInfo.phoneHref}
-                        className="button-link di relative font-headings type-24 ls lh-1 uppercase"
-                        style={{
-                          backgroundColor: "var(--c-darkest-blue, #1D1A55)",
-                          color: "#ffffff"
-                        }}
-                      >
-                        <span className="over di color-white">
-                          Call: {director.contactInfo.phone}
-                        </span>
-                      </a>
                     </div>
                   </div>
                 </div>
               </article>
             ))}
-          </div>
-        </section>
-
-        {/* =================================================================
-            JOINT CALL TO ACTION
-        ================================================================= */}
-        <section className="bg-yellow py-20 grid-p a-center text-center">
-          <div className="m-auto" style={{ maxWidth: "800px" }}>
-            <span className="font-headings type-20 uppercase color-dark mb-4 di">
-              CLINICAL ADMISSIONS & CONSULTATIONS
-            </span>
-            <h2 className="font-headings type-48 uppercase text-[#1D1A55] mb-6 leading-tight">
-              CONNECT WITH OUR LEADERSHIP TEAM
-            </h2>
-            <p className="type-18 leading-relaxed color-dark mb-8 font-medium">
-              Have questions regarding our 3-Day Hands-On Neuromodulation Workshop,
-              patient admissions, or personalized genomic health programs? Reach out directly.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <a
-                href="tel:7470529991"
-                className="button-link di relative font-headings type-28 ls lh-1 color-orange uppercase"
-              >
-                <span className="over di color-white">Call Helpline: 7470529991</span>
-              </a>
-              <a
-                href="https://wa.me/917470529991"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="button-link di relative font-headings type-28 ls lh-1 uppercase"
-                style={{
-                  backgroundColor: "var(--c-darkest-blue, #1D1A55)",
-                  color: "#ffffff"
-                }}
-              >
-                <span className="over di color-white">WhatsApp Desk</span>
-              </a>
-            </div>
           </div>
         </section>
       </main>

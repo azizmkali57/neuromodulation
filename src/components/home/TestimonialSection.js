@@ -253,16 +253,39 @@ export default function TestimonialSection() {
                     </div>
                   </div>
 
-                  {/* Author & Director Attribution */}
-                  <div className="pt-3 border-t border-gray-100 flex items-center justify-between mt-auto">
-                    <div>
-                      <div className="font-headings type-18 text-[#1D1A55] uppercase leading-tight">
-                        {item.name}
+                  {/* Author & Director Attribution with Clean Initial Avatar (No Repeated Stock Photos) */}
+                  <div className="pt-3 border-t border-gray-100 flex items-center justify-between gap-3 mt-auto">
+                    <div className="flex items-center gap-3">
+                      <div
+                        className="w-11 h-11 rounded-full flex items-center justify-center font-headings text-sm font-bold text-white shadow-sm flex-shrink-0"
+                        style={{
+                          backgroundColor:
+                            item.category === "neuro"
+                              ? "#1D1A55"
+                              : item.category === "genomic"
+                                ? "#00AF9C"
+                                : item.category === "eye"
+                                  ? "#0065BD"
+                                  : "#E9511C"
+                        }}
+                        aria-hidden="true"
+                      >
+                        {item.name
+                          .split(" ")
+                          .map((n) => n[0])
+                          .filter(Boolean)
+                          .slice(0, 2)
+                          .join("")}
                       </div>
-                      <div className="text-xs text-gray-500">{item.ageLocation}</div>
+                      <div>
+                        <div className="font-headings type-18 text-[#1D1A55] uppercase leading-tight">
+                          {item.name}
+                        </div>
+                        <div className="text-xs text-gray-500">{item.ageLocation}</div>
+                      </div>
                     </div>
 
-                    <div className="text-right">
+                    <div className="text-right flex-shrink-0">
                       <span className="text-[10px] text-gray-400 uppercase block">Under Care of</span>
                       <span className="text-xs font-bold text-[#E9511C]">
                         {item.doctorName.replace("Dr. ", "").replace("Coach ", "")}
@@ -325,16 +348,16 @@ export default function TestimonialSection() {
 
           <div className="flex flex-wrap items-center gap-3">
             <a
-              href="#contact-form-card"
+              href="tel:9827079888"
               className="font-headings text-xs uppercase px-5 py-3 bg-[#E9511C] hover:bg-[#d44312] text-white rounded font-bold transition-colors"
             >
-              Fill Contact Form ↑
+              Call: +91 9827079888
             </a>
             <a
-              href="tel:9827079888"
+              href="tel:7470529991"
               className="font-headings text-xs uppercase px-5 py-3 bg-white/10 hover:bg-white/20 text-white rounded font-bold transition-colors"
             >
-              Call: +91 9827079888
+              Call: +91 7470529991
             </a>
           </div>
         </div>

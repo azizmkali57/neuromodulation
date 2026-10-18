@@ -6,18 +6,22 @@ import Footer from "@/components/layout/Footer";
 import { siteData } from "@/app/siteData";
 import { neuroplasticityData } from "../neuroplasticityData";
 
+const TARGET_ADMISSIONS_EMAIL = "neha_arora27@yahoo.com";
+const WHATSAPP_NUMBER = "7470529991";
+
 export default function NeuroplasticityWorkshopPage() {
   const { hero, tableOfContents, modules, workshopTracks } = neuroplasticityData;
 
   const [formData, setFormData] = useState({
     fullName: "",
-    profession: "Physiotherapist / Neuro-Rehab Clinician",
+    profession: "Physiotherapists, Neurotherapists & Rehabilitation Specialists",
     email: "",
     phone: "",
     institution: "",
-    trackInterest: "Comprehensive Clinical Fellowship Masterclass",
+    trackInterest: "Medical & Neuro-Rehabilitation Track",
     message: ""
   });
+  const [targetEmail, setTargetEmail] = useState(TARGET_ADMISSIONS_EMAIL);
   const [formStatus, setFormStatus] = useState({ state: "idle", message: "" });
 
   const handleChange = (e) => {
@@ -25,35 +29,69 @@ export default function NeuroplasticityWorkshopPage() {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
+  const buildEmailSubject = () => {
+    return `Neuromodulation Workshop Application - ${formData.fullName || "Applicant"}`;
+  };
+
+  const buildEmailBody = () => {
+    return (
+      `Dear Dr. Neha & Admissions Team,\n\n` +
+      `Here are the registration details submitted for the Neuromodulation Workshop:\n\n` +
+      `• Full Name: ${formData.fullName}\n` +
+      `• Professional Background: ${formData.profession}\n` +
+      `• Mobile Number: ${formData.phone}\n` +
+      `• Email Address: ${formData.email || "Not provided"}\n` +
+      `• Clinic / Hospital / Institution & City: ${formData.institution || "Not specified"}\n` +
+      `• Workshop Track of Interest: ${formData.trackInterest}\n` +
+      `• Inquiries / Clinical Objectives: ${formData.message || "Please share upcoming batch dates, hands-on syllabus, and admission details."}\n\n` +
+      `Submitted via Neuromodulation Workshop Portal`
+    );
+  };
+
   const handleFormSubmit = (e) => {
     e.preventDefault();
     if (!formData.fullName.trim() || !formData.phone.trim()) {
-      setFormStatus({ state: "error", message: "Please provide your full name and phone number." });
+      setFormStatus({ state: "error", message: "Please provide your full name and mobile number." });
       return;
     }
     setFormStatus({ state: "submitting", message: "" });
+
+    // Open user's email client directly targeted to the specified admissions email
+    const subject = encodeURIComponent(buildEmailSubject());
+    const body = encodeURIComponent(buildEmailBody());
+    const mailtoUrl = `mailto:${encodeURIComponent(targetEmail)}?subject=${subject}&body=${body}`;
+
     setTimeout(() => {
       setFormStatus({
         state: "success",
-        message:
-          "Thank you! Your workshop registration request has been submitted. Our clinical coordinator will contact you with batch dates, seat availability, and curriculum materials."
+        message: `Your registration details have been prepared for dispatch to ${targetEmail}. Click below to confirm sending via your email app or WhatsApp.`
       });
-    }, 500);
+      // Trigger mail client
+      if (typeof window !== "undefined") {
+        window.location.href = mailtoUrl;
+      }
+    }, 400);
+  };
+
+  const handleSendViaEmail = () => {
+    const subject = encodeURIComponent(buildEmailSubject());
+    const body = encodeURIComponent(buildEmailBody());
+    window.location.href = `mailto:${encodeURIComponent(targetEmail)}?subject=${subject}&body=${body}`;
   };
 
   const handleWhatsAppDirect = () => {
     const text = encodeURIComponent(
-      `Hello Dr. Neha Arora Verma & Shree Namoh Wellness Team,\n\nI would like to inquire about the Clinical Neuroplasticity & Neuromodulation Workshop.\n\nName: ${
-        formData.fullName || "Doctor / Clinician"
+      `Hello Dr. Neha & Admissions Team,\n\nI would like to inquire about the Neuromodulation Workshop.\n\nName: ${
+        formData.fullName || "Practitioner / Clinician"
       }\nProfession: ${formData.profession}\nPhone: ${formData.phone || "Not provided"}\nEmail: ${
         formData.email || "Not provided"
-      }\nTrack of Interest: ${formData.trackInterest}\nHospital/City: ${
+      }\nTrack of Interest: ${formData.trackInterest}\nInstitution/City: ${
         formData.institution || "Not provided"
       }\nMessage: ${
-        formData.message || "Please share upcoming batch dates, hands-on syllabus, and admission details."
+        formData.message || "Please share upcoming batch dates, hands-on demonstration details, and registration procedures."
       }`
     );
-    window.open(`https://wa.me/919827079888?text=${text}`, "_blank");
+    window.open(`https://wa.me/91${WHATSAPP_NUMBER}?text=${text}`, "_blank");
   };
 
   return (
@@ -77,7 +115,7 @@ export default function NeuroplasticityWorkshopPage() {
         </header>
 
         {/* =================================================================
-            HERO SECTION: CLINICAL NEUROPLASTICITY & NEUROMODULATION
+            HERO SECTION: CLINICAL & PRACTITIONER TRAINING - NEUROMODULATION WORKSHOP
         ================================================================= */}
         <section className="grid-p pt-8 sm:pt-10 pb-16 bg-white border-b border-[#BDDFEC]">
           <div className="m-auto" style={{ maxWidth: "1280px" }}>
@@ -92,7 +130,7 @@ export default function NeuroplasticityWorkshopPage() {
               <span>/</span>
               <span className="text-gray-400">Neuroplasticity</span>
               <span>/</span>
-              <span className="text-[#1D1A55] font-bold">Workshop Overview &amp; Masterclass</span>
+              <span className="text-[#1D1A55] font-bold">Neuromodulation Workshop</span>
             </nav>
 
             {/* Top Eyebrow Badges */}
@@ -108,16 +146,16 @@ export default function NeuroplasticityWorkshopPage() {
                 {hero.badge}
               </span>
               <span className="font-headings type-18 uppercase color-orange">
-                HANDS-ON CLINICAL FELLOWSHIP &amp; PROTOCOLS
+                LIVE &amp; PRACTICAL FORMAT • CPD-ALIGNED CURRICULUM
               </span>
             </div>
 
             {/* Main Broadsheet Heading */}
             <h1
-              className="font-headings type-108 uppercase mb-8 highlight-bolds overflow"
+              className="font-headings type-108 uppercase mb-4 highlight-bolds overflow"
               style={{
                 lineHeight: "0.96em",
-                maxWidth: "15em",
+                maxWidth: "16em",
                 "--bg": "var(--c-yellow, #FEE003)"
               }}
             >
@@ -126,18 +164,32 @@ export default function NeuroplasticityWorkshopPage() {
               {hero.headingRest}
             </h1>
 
-            {/* Lead Narrative & Key Metrics Split */}
+            {/* Sub-Tagline from PDF */}
+            <p className="font-headings type-24 uppercase color-orange mb-8 tracking-wide">
+              {hero.tagline}
+            </p>
+
+            {/* Lead Narrative & Key Specifications Split */}
             <div className="dg grid-auto gap-large g-vat mb-12">
               <div>
                 <p className="type-20 leading-relaxed font-semibold text-[#1D1A55] mb-6" style={{ maxWidth: "38em" }}>
                   {hero.lead}
                 </p>
-                <p className="type-16 text-gray-700 leading-relaxed mb-8" style={{ maxWidth: "38em" }}>
-                  Bridge the gap between theoretical neuroscience and bedside functional recovery. Learn how to
-                  administer non-invasive brain stimulation (tDCS, tACS), motor evoked potentials, and targeted
-                  electroceuticals directly from Dr. Neha Arora Verma—founder of the Lakwa Mukt Bharat movement and
-                  recognized as India&apos;s First Neuroplasticity Coach.
-                </p>
+
+                {/* Designed For Checklist Box (From Page 1 of PDF) */}
+                <div className="bg-[#f0f4f9] p-6 border-l-4 border-[#E9511C] mb-8" style={{ maxWidth: "38em" }}>
+                  <div className="font-headings type-18 uppercase text-[#1D1A55] mb-3">
+                    DESIGNED FOR:
+                  </div>
+                  <ul className="space-y-2">
+                    {hero.designedFor.map((item, dIdx) => (
+                      <li key={dIdx} className="flex items-start gap-2.5 text-sm font-semibold text-[#1D1A55]">
+                        <span className="inline-block w-2 h-2 rounded-full bg-[#E9511C] mt-1.5 flex-shrink-0" />
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
 
                 {/* Primary CTA Buttons */}
                 <div className="flex flex-wrap gap-4 items-center">
@@ -161,30 +213,39 @@ export default function NeuroplasticityWorkshopPage() {
                       <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
                         <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.203.043.072.043.419-.101.824z" />
                       </svg>
-                      Inquire on WhatsApp
+                      WhatsApp: {WHATSAPP_NUMBER}
                     </span>
                   </button>
                 </div>
               </div>
 
-              {/* Right Column: Key Scientific Metrics Box */}
+              {/* Right Column: Key Workshop Specifications Table (From Page 2 of PDF) */}
               <div className="bg-[#f5f8fc] p-8 border-l-4 border-[#00AF9C] flex flex-col justify-between">
                 <div>
-                  <div className="font-headings type-20 uppercase color-darkest-blue mb-2">
-                    CLINICAL IMPACT &amp; SCOPE
+                  <div className="font-headings type-20 uppercase color-darkest-blue mb-4">
+                    WORKSHOP SPECIFICATIONS
                   </div>
-                  <p className="text-xs text-gray-600 mb-6 leading-relaxed">
-                    Proven outcomes across hemiplegia, paraplegia, Parkinsonian syndromes, and spinal recovery.
-                  </p>
+                  <div className="space-y-4 mb-6">
+                    {hero.keySpecs.map((spec, sIdx) => (
+                      <div key={sIdx} className="bg-white p-3.5 border border-[#BDDFEC]">
+                        <div className="text-[11px] font-bold uppercase tracking-wider text-[#E9511C] mb-1">
+                          {spec.label}
+                        </div>
+                        <div className="text-sm font-semibold text-[#1D1A55]">
+                          {spec.value}
+                        </div>
+                      </div>
+                    ))}
+                  </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-4">
+                <div className="grid grid-cols-2 gap-3 pt-4 border-t border-[#BDDFEC]">
                   {hero.metrics.map((m, mIdx) => (
-                    <div key={mIdx} className="bg-white p-4 border border-[#BDDFEC]">
-                      <div className="font-headings type-36 color-orange leading-none mb-1">
+                    <div key={mIdx} className="bg-white p-3 border border-[#BDDFEC]">
+                      <div className="font-headings type-28 color-orange leading-none mb-1">
                         {m.value}
                       </div>
-                      <div className="text-[11px] font-bold uppercase text-gray-600 leading-tight">
+                      <div className="text-[10px] font-bold uppercase text-gray-600 leading-tight">
                         {m.label}
                       </div>
                     </div>
@@ -199,17 +260,17 @@ export default function NeuroplasticityWorkshopPage() {
                 <div className="w-16 h-16 rounded-full overflow-hidden flex-shrink-0 border-2 border-[#FEE003]">
                   <img
                     src={hero.director.image}
-                    alt={hero.director.name}
+                    alt={hero.director.fullName}
                     className="w-full h-full object-cover"
                     style={{ objectPosition: "center 15%" }}
                   />
                 </div>
                 <div>
                   <span className="text-xs uppercase font-headings text-[#FEE003] tracking-widest block">
-                    PROGRAM DIRECTOR &amp; LEAD FACULTY
+                    {hero.director.title.toUpperCase()}
                   </span>
                   <div className="font-headings type-24 text-white uppercase leading-tight">
-                    {hero.director.name}
+                    {hero.director.fullName}
                   </div>
                   <div className="text-xs text-[#BDDFEC] mt-0.5">
                     {hero.director.role}
@@ -225,11 +286,66 @@ export default function NeuroplasticityWorkshopPage() {
                   View Director Profile →
                 </a>
                 <a
-                  href="tel:9827079888"
-                  className="font-headings text-xs uppercase px-4 py-2.5 bg-[#E9511C] hover:bg-[#d44312] text-white rounded transition-colors"
+                  href={`https://wa.me/91${WHATSAPP_NUMBER}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-headings text-xs uppercase px-4 py-2.5 bg-[#25D366] hover:bg-[#20ba59] text-white rounded transition-colors flex items-center gap-1.5"
                 >
-                  Call: 9827079888
+                  WhatsApp: {WHATSAPP_NUMBER}
                 </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* =================================================================
+            SECTION: WHO SHOULD ATTEND & LEARNING OBJECTIVES (PDF Page 2)
+        ================================================================= */}
+        <section className="grid-p py-16 bg-[#f8fafc] border-b border-[#BDDFEC]" id="workshop-overview">
+          <div className="m-auto" style={{ maxWidth: "1280px" }}>
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
+              {/* Left Column: Who Should Attend 5 Roles */}
+              <div className="lg:col-span-6">
+                <span className="font-headings text-xs uppercase text-[#E9511C] font-bold tracking-wider block mb-2">
+                  TARGET PARTICIPANTS
+                </span>
+                <h2 className="font-headings type-36 uppercase text-[#1D1A55] mb-6">
+                  WHO SHOULD ATTEND
+                </h2>
+                <div className="space-y-3">
+                  {hero.whoShouldAttend.map((item, wIdx) => (
+                    <div key={wIdx} className="bg-white p-4 border-l-4 border-[#00AF9C] shadow-sm">
+                      <div className="font-headings type-18 uppercase text-[#1D1A55] mb-1">
+                        {item.role}
+                      </div>
+                      <div className="text-xs text-gray-600">
+                        {item.desc}
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Right Column: 5 Core Learning Objectives */}
+              <div className="lg:col-span-6">
+                <span className="font-headings text-xs uppercase text-[#E9511C] font-bold tracking-wider block mb-2">
+                  CLINICAL COMPETENCY GOALS
+                </span>
+                <h2 className="font-headings type-36 uppercase text-[#1D1A55] mb-6">
+                  LEARNING OBJECTIVES
+                </h2>
+                <div className="space-y-3">
+                  {hero.learningObjectives.map((obj, oIdx) => (
+                    <div key={oIdx} className="bg-white p-4 border border-[#BDDFEC] flex items-start gap-3 shadow-sm">
+                      <span className="w-6 h-6 rounded-full bg-[#1D1A55] text-[#FEE003] font-headings text-xs flex items-center justify-center flex-shrink-0 mt-0.5">
+                        0{oIdx + 1}
+                      </span>
+                      <p className="text-sm text-gray-800 m-0 leading-relaxed font-medium">
+                        {obj}
+                      </p>
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -238,20 +354,20 @@ export default function NeuroplasticityWorkshopPage() {
         {/* =================================================================
             TABLE OF CONTENTS NAVIGATION DRAWER
         ================================================================= */}
-        <section className="grid-p py-8 bg-[#f8fafc] border-b border-[#BDDFEC]">
+        <section className="grid-p py-8 bg-white border-b border-[#BDDFEC]">
           <div className="m-auto" style={{ maxWidth: "1280px" }}>
             <div className="flex items-center gap-3 mb-4">
               <span className="font-headings text-xs uppercase text-[#E9511C] font-bold tracking-wider">
-                CURRICULUM SYLLABUS ROADMAP
+                WORKSHOP MODULES ROADMAP
               </span>
               <div className="h-px bg-gray-300 flex-1"></div>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-2">
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-2">
               {tableOfContents.map((toc, idx) => (
                 <a
                   key={idx}
                   href={`#${toc.id}`}
-                  className="text-xs font-semibold text-[#1D1A55] hover:text-[#E9511C] p-2 bg-white border border-gray-200 hover:border-[#E9511C] transition-colors rounded text-center block"
+                  className="text-xs font-semibold text-[#1D1A55] hover:text-[#E9511C] p-2 bg-[#f8fafc] border border-gray-200 hover:border-[#E9511C] transition-colors rounded text-center block"
                 >
                   {toc.label}
                 </a>
@@ -261,7 +377,7 @@ export default function NeuroplasticityWorkshopPage() {
         </section>
 
         {/* =================================================================
-            DETAILED EDUCATIONAL MODULES (01 TO 06)
+            DETAILED EDUCATIONAL MODULES (MODULE 01 TO 06) FROM OFFICIAL PDF
         ================================================================= */}
         <div className="divide-y divide-[#BDDFEC]">
           {modules.map((mod) => (
@@ -291,14 +407,47 @@ export default function NeuroplasticityWorkshopPage() {
                   {mod.subtitle}
                 </p>
 
-                {/* Split layout: Text vs Clinical Photo Widget */}
+                {/* Split layout: Detailed Topics List vs Clinical Image */}
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start mb-8">
                   <div className={mod.image ? "lg:col-span-7" : "lg:col-span-12"}>
-                    <div className="space-y-4 text-gray-800 type-16 leading-relaxed">
-                      {mod.paragraphs.map((p, pIdx) => (
-                        <p key={pIdx}>{p}</p>
+                    <div className="space-y-4">
+                      {mod.topics.map((top, tIdx) => (
+                        <div key={tIdx} className="bg-[#f8fafc] p-4 border-l-4 border-[#1D1A55]">
+                          <div className="font-headings type-18 uppercase text-[#1D1A55] mb-1">
+                            {top.title}
+                          </div>
+                          <p className="text-sm text-gray-700 m-0 leading-relaxed">
+                            {top.text}
+                          </p>
+                        </div>
                       ))}
                     </div>
+
+                    {/* Toolkit Box if present (Module 6) */}
+                    {mod.toolkit && (
+                      <div className="mt-8 p-6 bg-[#f0f4f9] border border-[#BDDFEC]">
+                        <div className="font-headings type-20 uppercase text-[#E9511C] mb-4">
+                          TAKE-HOME PRACTITIONER TOOLKIT
+                        </div>
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                          {mod.toolkit.map((item, tkIdx) => (
+                            <div key={tkIdx} className="bg-white p-3.5 border border-gray-200">
+                              <div className="font-headings text-xs uppercase text-[#1D1A55] mb-1">
+                                {item.title}
+                              </div>
+                              <p className="text-xs text-gray-600 m-0 leading-normal">
+                                {item.desc}
+                              </p>
+                            </div>
+                          ))}
+                        </div>
+                        {mod.disclaimer && (
+                          <div className="mt-4 pt-3 border-t border-gray-200 text-xs italic text-gray-500">
+                            {mod.disclaimer}
+                          </div>
+                        )}
+                      </div>
+                    )}
                   </div>
 
                   {mod.image && (
@@ -318,37 +467,11 @@ export default function NeuroplasticityWorkshopPage() {
                   )}
                 </div>
 
-                {/* Secondary Image & Narrative (if present, e.g. in Module 1) */}
-                {mod.secondaryImage && (
-                  <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center mb-8 pt-6 border-t border-gray-100">
-                    <div className="lg:col-span-5 order-2 lg:order-1 bg-[#f5f8fc] p-3 border border-[#BDDFEC]">
-                      <div className="overflow-hidden bg-white mb-2">
-                        <img
-                          src={mod.secondaryImage}
-                          alt={mod.title}
-                          className="w-full h-auto object-cover mx-auto"
-                          style={{ maxHeight: "380px" }}
-                        />
-                      </div>
-                      <p className="text-xs text-gray-600 italic text-center m-0 px-2 py-1">
-                        {mod.secondaryCaption}
-                      </p>
-                    </div>
-
-                    <div className="lg:col-span-7 order-1 lg:order-2 space-y-4 text-gray-800 type-16 leading-relaxed">
-                      {mod.secondaryParagraphs &&
-                        mod.secondaryParagraphs.map((sp, spIdx) => (
-                          <p key={spIdx}>{sp}</p>
-                        ))}
-                    </div>
-                  </div>
-                )}
-
                 {/* Key Takeaways Callout Box */}
                 {mod.keyTakeaways && (
                   <div className="mt-8 p-6 bg-[#f8fafc] border-l-4 border-[#E9511C] shadow-sm">
                     <h3 className="font-headings type-18 uppercase text-[#1D1A55] mb-3">
-                      Key Clinical Takeaways
+                      Module Learning Outcomes
                     </h3>
                     <ul className="space-y-2">
                       {mod.keyTakeaways.map((point, kIdx) => (
@@ -366,20 +489,19 @@ export default function NeuroplasticityWorkshopPage() {
         </div>
 
         {/* =================================================================
-            WORKSHOP TRACKS & FELLOWSHIP MODULES GRID
+            WORKSHOP TRACKS & ADAPTED PROFESSIONAL FOCUS
         ================================================================= */}
         <section className="grid-p pt-88 pb-88 bg-[#f5f8fc] border-b border-[#BDDFEC]">
           <div className="m-auto" style={{ maxWidth: "1280px" }}>
             <div className="text-center max-w-2xl mx-auto mb-14">
               <span className="font-headings type-18 color-orange uppercase mb-2 block">
-                SPECIALIZED CLINICAL PATHWAYS
+                SPECIALIZED PROFESSIONAL TRACKS
               </span>
               <h2 className="font-headings type-48 uppercase text-[#1D1A55] leading-tight">
-                WORKSHOP TRAINING TRACKS
+                ADAPTED WORKSHOP TRACKS
               </h2>
               <p className="type-16 text-gray-600 mt-2">
-                Designed for Physiotherapists, Neurologists, Rehabilitation Therapists, and Clinical Teams seeking
-                evidence-based mastery in non-invasive neuromodulation.
+                Curriculum tracks tailored specifically to medical doctors, physiotherapists, energy healers, and performance coaches.
               </p>
             </div>
 
@@ -393,9 +515,12 @@ export default function NeuroplasticityWorkshopPage() {
                     <span className="text-xs font-headings uppercase text-[#E9511C] tracking-wider block mb-1">
                       TRACK 0{idx + 1}
                     </span>
-                    <h3 className="font-headings type-24 uppercase text-[#1D1A55] mb-3">
+                    <h3 className="font-headings type-24 uppercase text-[#1D1A55] mb-1">
                       {track.title}
                     </h3>
+                    <p className="text-xs font-bold text-[#0065BD] uppercase mb-4">
+                      {track.audience}
+                    </p>
                     <p className="type-15 text-gray-700 leading-relaxed mb-6">
                       {track.focus}
                     </p>
@@ -405,7 +530,7 @@ export default function NeuroplasticityWorkshopPage() {
                       href="#admissions-booking"
                       className="inline-flex items-center gap-1 text-xs font-headings uppercase text-[#0065BD] hover:text-[#E9511C] font-bold"
                     >
-                      Enroll in This Track →
+                      Select This Track in Form →
                     </a>
                   </div>
                 </div>
@@ -416,6 +541,7 @@ export default function NeuroplasticityWorkshopPage() {
 
         {/* =================================================================
             INTERACTIVE WORKSHOP REGISTRATION & ADMISSIONS FORM
+            Direct Email Transmission to designated Email + WhatsApp Chat (7470529991)
         ================================================================= */}
         <section className="grid-p pt-88 pb-88 bg-white" id="admissions-booking">
           <div className="m-auto" style={{ maxWidth: "960px" }}>
@@ -433,8 +559,8 @@ export default function NeuroplasticityWorkshopPage() {
                 RESERVE YOUR WORKSHOP SEAT
               </h2>
               <p className="type-16 text-gray-600 max-w-xl mx-auto mt-2">
-                Hands-on immersion batches are strictly limited to ensure personal supervision at the bedside. Register
-                below or connect directly with our admissions coordinator.
+                Hands-on practical demonstration batches are strictly limited. Submit your details below to register
+                via email directly to our admissions desk or connect instantly via WhatsApp.
               </p>
             </div>
 
@@ -447,29 +573,40 @@ export default function NeuroplasticityWorkshopPage() {
                     </svg>
                   </div>
                   <h3 className="font-headings type-28 uppercase text-[#1D1A55] mb-2">
-                    Application Received!
+                    Application Details Ready!
                   </h3>
-                  <p className="text-gray-700 max-w-md mx-auto mb-6">
+                  <p className="text-gray-700 max-w-lg mx-auto mb-6">
                     {formStatus.message}
                   </p>
-                  <button
-                    type="button"
-                    onClick={() => {
-                      setFormStatus({ state: "idle", message: "" });
-                      setFormData({
-                        fullName: "",
-                        profession: "Physiotherapist / Neuro-Rehab Clinician",
-                        email: "",
-                        phone: "",
-                        institution: "",
-                        trackInterest: "Comprehensive Clinical Fellowship Masterclass",
-                        message: ""
-                      });
-                    }}
-                    className="font-headings text-xs uppercase px-6 py-3 bg-[#1D1A55] text-white rounded hover:bg-[#00AF9C] transition-colors"
-                  >
-                    Register Another Participant
-                  </button>
+
+                  <div className="flex flex-wrap gap-4 justify-center items-center">
+                    <button
+                      type="button"
+                      onClick={handleSendViaEmail}
+                      className="font-headings text-xs uppercase px-6 py-3.5 bg-[#E9511C] hover:bg-[#d44312] text-white rounded font-bold transition-colors"
+                    >
+                      Open Email App (To: {targetEmail})
+                    </button>
+                    <button
+                      type="button"
+                      onClick={handleWhatsAppDirect}
+                      className="font-headings text-xs uppercase px-6 py-3.5 bg-[#25D366] hover:bg-[#20ba59] text-white rounded font-bold transition-colors flex items-center gap-2"
+                    >
+                      <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.203.043.072.043.419-.101.824z" />
+                      </svg>
+                      Confirm via WhatsApp ({WHATSAPP_NUMBER})
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setFormStatus({ state: "idle", message: "" });
+                      }}
+                      className="font-headings text-xs uppercase px-4 py-3 bg-gray-200 hover:bg-gray-300 text-gray-800 rounded transition-colors"
+                    >
+                      Edit Form Details
+                    </button>
+                  </div>
                 </div>
               ) : (
                 <form onSubmit={handleFormSubmit} className="space-y-6">
@@ -478,6 +615,30 @@ export default function NeuroplasticityWorkshopPage() {
                       {formStatus.message}
                     </div>
                   )}
+
+                  {/* Target Email Selection Banner */}
+                  <div className="p-4 bg-white border border-[#BDDFEC] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+                    <div>
+                      <span className="text-[11px] font-bold uppercase tracking-wider text-gray-500 block">
+                        Submissions Dispatched To Particular Email:
+                      </span>
+                      <span className="font-headings type-18 text-[#E9511C]">
+                        {targetEmail}
+                      </span>
+                    </div>
+                    <div className="flex items-center gap-2">
+                      <label className="text-xs font-semibold text-gray-600">Send To:</label>
+                      <select
+                        value={targetEmail}
+                        onChange={(e) => setTargetEmail(e.target.value)}
+                        className="px-2.5 py-1.5 text-xs bg-[#f8fafc] border border-gray-300 rounded font-semibold text-[#1D1A55] focus:outline-none focus:border-[#E9511C]"
+                      >
+                        <option value="neha_arora27@yahoo.com">neha_arora27@yahoo.com (Dr. Neha Admissions)</option>
+                        <option value="eyecare@drnehaarora.com">eyecare@drnehaarora.com (Clinical Desk)</option>
+                        <option value="genomics@drnehaarora.com">genomics@drnehaarora.com (Genomics Desk)</option>
+                      </select>
+                    </div>
+                  </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
@@ -497,7 +658,7 @@ export default function NeuroplasticityWorkshopPage() {
 
                     <div>
                       <label className="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-2">
-                        Professional Background *
+                        Professional Category *
                       </label>
                       <select
                         name="profession"
@@ -505,12 +666,21 @@ export default function NeuroplasticityWorkshopPage() {
                         onChange={handleChange}
                         className="w-full px-4 py-3 bg-white border border-gray-300 focus:border-[#E9511C] focus:outline-none text-sm"
                       >
-                        <option value="Physiotherapist / BPT / MPT">Physiotherapist (BPT / MPT)</option>
-                        <option value="Neurologist / Medical Doctor">Neurologist / Medical Doctor</option>
-                        <option value="Occupational Therapist">Occupational Therapist</option>
-                        <option value="Rehabilitation Specialist">Rehabilitation Specialist</option>
-                        <option value="Neuroscience Researcher / Student">Neuroscience Researcher / Student</option>
-                        <option value="Patient / Family Caregiver">Patient / Family Caregiver</option>
+                        <option value="Medical Professionals (Doctors, Psychiatrists)">
+                          Medical Professionals (Doctors, Psychiatrists)
+                        </option>
+                        <option value="Physiotherapists, Neurotherapists & Rehabilitation Specialists">
+                          Physiotherapists, Neurotherapists &amp; Rehabilitation Specialists
+                        </option>
+                        <option value="Energy & Holistic Healers">
+                          Energy &amp; Holistic Healers
+                        </option>
+                        <option value="Wellness, Mindset & Performance Coaches">
+                          Wellness, Mindset &amp; Performance Coaches
+                        </option>
+                        <option value="Other Clinical / Allied Healthcare Professional">
+                          Other Clinical / Allied Healthcare Professional
+                        </option>
                       </select>
                     </div>
                   </div>
@@ -533,14 +703,14 @@ export default function NeuroplasticityWorkshopPage() {
 
                     <div>
                       <label className="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-2">
-                        Email Address
+                        Your Email Address
                       </label>
                       <input
                         type="email"
                         name="email"
                         value={formData.email}
                         onChange={handleChange}
-                        placeholder="doctor@hospital.com"
+                        placeholder="practitioner@clinic.com"
                         className="w-full px-4 py-3 bg-white border border-gray-300 focus:border-[#E9511C] focus:outline-none text-sm"
                       />
                     </div>
@@ -549,14 +719,14 @@ export default function NeuroplasticityWorkshopPage() {
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
                       <label className="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-2">
-                        Clinic / Hospital / Institution &amp; City
+                        Clinic / Hospital / Practice &amp; City
                       </label>
                       <input
                         type="text"
                         name="institution"
                         value={formData.institution}
                         onChange={handleChange}
-                        placeholder="e.g., Apollo Hospital, Indore"
+                        placeholder="e.g., Wellness Clinic, Mumbai"
                         className="w-full px-4 py-3 bg-white border border-gray-300 focus:border-[#E9511C] focus:outline-none text-sm"
                       />
                     </div>
@@ -571,17 +741,17 @@ export default function NeuroplasticityWorkshopPage() {
                         onChange={handleChange}
                         className="w-full px-4 py-3 bg-white border border-gray-300 focus:border-[#E9511C] focus:outline-none text-sm"
                       >
-                        <option value="Comprehensive Clinical Fellowship Masterclass">
-                          Comprehensive Clinical Fellowship Masterclass (3 Days)
+                        <option value="Medical & Neuro-Rehabilitation Track">
+                          Medical &amp; Neuro-Rehabilitation Track (Doctors, Psychiatrists)
                         </option>
-                        <option value="Post-Stroke Motor Relearning & Hemiplegia Track">
-                          Post-Stroke Motor Relearning &amp; Hemiplegia Track
+                        <option value="Physiotherapy & Movement Specialists Track">
+                          Physiotherapy &amp; Movement Specialists Track (Physios, Neurotherapists)
                         </option>
-                        <option value="Paralysis & Spinal Neuromodulation Track">
-                          Paralysis &amp; Spinal Neuromodulation Track
+                        <option value="Healers, Somatic & Energy Workers Track">
+                          Healers, Somatic &amp; Energy Workers Track (Energy, Somatic, Biofield)
                         </option>
-                        <option value="Parkinson's & Movement Disorders Track">
-                          Parkinson&apos;s &amp; Movement Disorders Track
+                        <option value="Wellness, Mindset & Performance Coaches Track">
+                          Wellness, Mindset &amp; Performance Coaches Track (Mindset, Coaches)
                         </option>
                       </select>
                     </div>
@@ -589,14 +759,14 @@ export default function NeuroplasticityWorkshopPage() {
 
                   <div>
                     <label className="block text-xs font-bold uppercase tracking-wider text-gray-700 mb-2">
-                      Clinical Objectives or Inquiries
+                      Clinical Objectives, Patient Populations or Inquiries
                     </label>
                     <textarea
                       name="message"
                       rows={3}
                       value={formData.message}
                       onChange={handleChange}
-                      placeholder="Share your current clinical practice focus or any specific questions regarding workshop dates, equipment hands-on, or certification..."
+                      placeholder="Share your current clinical or coaching focus, patient conditions of interest (e.g., stroke, Parkinson's, pain, sleep), or questions regarding upcoming batch dates..."
                       className="w-full px-4 py-3 bg-white border border-gray-300 focus:border-[#E9511C] focus:outline-none text-sm"
                     ></textarea>
                   </div>
@@ -607,7 +777,7 @@ export default function NeuroplasticityWorkshopPage() {
                       disabled={formStatus.state === "submitting"}
                       className="w-full sm:w-auto font-headings text-sm uppercase px-8 py-4 bg-[#E9511C] hover:bg-[#d44312] text-white font-bold tracking-wider rounded transition-colors cursor-pointer"
                     >
-                      {formStatus.state === "submitting" ? "Submitting..." : "Submit Registration Request →"}
+                      {formStatus.state === "submitting" ? "Submitting..." : `Submit via Email (${targetEmail}) →`}
                     </button>
 
                     <button
@@ -618,7 +788,7 @@ export default function NeuroplasticityWorkshopPage() {
                       <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
                         <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.203.043.072.043.419-.101.824z" />
                       </svg>
-                      Instant WhatsApp Chat
+                      Instant WhatsApp Chat ({WHATSAPP_NUMBER})
                     </button>
                   </div>
                 </form>
@@ -637,25 +807,30 @@ export default function NeuroplasticityWorkshopPage() {
                 SHREE NAMOH WELLNESS INSTITUTE • INDORE, MP
               </span>
               <h3 className="font-headings type-28 uppercase text-white leading-tight">
-                HAVE CLINICAL QUESTIONS OR PATIENT REFERRALS?
+                HAVE CLINICAL QUESTIONS OR BATCH INQUIRIES?
               </h3>
               <p className="text-sm text-[#BDDFEC] mt-1">
-                Direct consults with Dr. Neha Arora Verma for paralysis, stroke rehab &amp; physician fellowship inquiries.
+                Connect directly with Dr. Neha Arora Verma &amp; our clinical team via WhatsApp or Email.
               </p>
             </div>
 
             <div className="flex flex-wrap items-center gap-4">
               <a
-                href="tel:9827079888"
-                className="font-headings text-xs uppercase px-5 py-3 bg-[#E9511C] hover:bg-[#d44312] text-white rounded font-bold transition-colors"
+                href={`https://wa.me/91${WHATSAPP_NUMBER}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-headings text-xs uppercase px-5 py-3 bg-[#25D366] hover:bg-[#20ba59] text-white rounded font-bold transition-colors flex items-center gap-2"
               >
-                Call: +91 9827079888
+                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                  <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086.159.058 1.011.477 1.184.564.173.087.289.13.332.203.043.072.043.419-.101.824z" />
+                </svg>
+                WhatsApp: {WHATSAPP_NUMBER}
               </a>
               <a
-                href="mailto:neha_arora27@yahoo.com"
-                className="font-headings text-xs uppercase px-5 py-3 bg-white/10 hover:bg-white/20 text-white rounded font-bold transition-colors"
+                href={`mailto:${targetEmail}`}
+                className="font-headings text-xs uppercase px-5 py-3 bg-[#E9511C] hover:bg-[#d44312] text-white rounded font-bold transition-colors"
               >
-                neha_arora27@yahoo.com
+                Email: {targetEmail}
               </a>
             </div>
           </div>

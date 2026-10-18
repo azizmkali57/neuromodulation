@@ -3,10 +3,8 @@ import Footer from "@/components/layout/Footer";
 
 import HeroSection from "@/components/home/HeroSection";
 import IntroductionSection from "@/components/home/IntroductionSection";
-import MissionSection from "@/components/home/MissionSection";
 import NewsSection from "@/components/home/NewsSection";
 import TransparencySection from "@/components/home/TransparencySection";
-import DonationSection from "@/components/home/DonationSection";
 import SupportSection from "@/components/home/SupportSection";
 import TestimonialSection from "@/components/home/TestimonialSection";
 
@@ -24,22 +22,16 @@ export default function Home() {
         {/* B. Organization Introduction */}
         <IntroductionSection />
 
-        {/* C. Mission Statement */}
-        <MissionSection />
-
-        {/* D. Clinical Disciplines & Healthcare Specialties */}
+        {/* C. Clinical Disciplines & Healthcare Specialties */}
         <NewsSection />
 
-        {/* E. Vision & Clinical Standards */}
+        {/* D. Our Mission & Vision & Clinical Commitments (Directly Below Healthcare Specialties) */}
         <TransparencySection />
 
-        {/* F. Consultation & Appointment Desk */}
-        <DonationSection />
-
-        {/* G. Healthcare Commitments & Contact Desk */}
+        {/* E. Healthcare Commitments & Contact Desk */}
         <SupportSection />
 
-        {/* H. Verified Patient & Clinician Testimonials */}
+        {/* F. Verified Patient & Clinician Testimonials */}
         <TestimonialSection />
       </main>
 

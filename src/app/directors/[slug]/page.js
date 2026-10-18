@@ -161,10 +161,10 @@ export default function DirectorSinglePage({ params }) {
                 {/* Main Headline from official document */}
                 {director.mainHeadline && (
                   <div
-                    className="font-headings type-28 uppercase mb-4 text-[#E9511C] highlight-bolds leading-tight"
-                    style={{ maxWidth: "26em" }}
+                    className="font-headings type-24 sm:type-28 uppercase mb-5 text-[#E9511C] border-l-4 border-[#E9511C] pl-4 py-1 leading-snug"
+                    style={{ maxWidth: "28em" }}
                   >
-                    <b>{director.mainHeadline}</b>
+                    {director.mainHeadline}
                   </div>
                 )}
 
@@ -205,32 +205,6 @@ export default function DirectorSinglePage({ params }) {
                 <p className="type-18 leading-relaxed text-[#1D1A55] font-normal mb-8">
                   {director.intro}
                 </p>
-
-                {/* Action Buttons */}
-                <div className="flex flex-wrap gap-4 items-center mb-10">
-                  <a
-                    href={director.contactInfo.phoneHref}
-                    className="button-link di relative font-headings type-24 ls lh-1 color-orange uppercase"
-                    id="director-call-btn"
-                  >
-                    <span className="over di color-white">
-                      Call: {director.contactInfo.phone}
-                    </span>
-                  </a>
-                  <a
-                    href={director.contactInfo.whatsapp}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="button-link di relative font-headings type-24 ls lh-1 uppercase"
-                    style={{
-                      backgroundColor: "var(--c-darkest-blue, #1D1A55)",
-                      color: "#ffffff"
-                    }}
-                    id="director-whatsapp-btn"
-                  >
-                    <span className="over di color-white">WhatsApp Inquiry</span>
-                  </a>
-                </div>
 
                 {/* 4 Stats Grid in Crisp Broadsheet Cards */}
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-6 border-t border-[#BDDFEC]">
@@ -447,33 +421,6 @@ export default function DirectorSinglePage({ params }) {
                   </blockquote>
                   <div className="border-t border-white/20 pt-4 text-xs font-headings uppercase text-white/80">
                     — {director.name}, <span className="text-[#BDDFEC]">{director.badge}</span>
-                  </div>
-                </div>
-
-                {/* Direct Action Card */}
-                <div className="p-6 bg-white border border-[#BDDFEC] shadow-sm">
-                  <div className="font-headings type-20 uppercase text-[#1D1A55] mb-2">
-                    Schedule a Consultation
-                  </div>
-                  <p className="text-xs text-gray-600 mb-4 leading-normal">
-                    Connect directly with the clinical and administrative team to schedule
-                    inquiries, workshop seat bookings, or patient appointments.
-                  </p>
-                  <div className="space-y-2">
-                    <a
-                      href={director.contactInfo.phoneHref}
-                      className="block text-center py-2.5 px-4 font-headings type-18 uppercase bg-[#E9511C] text-white hover:bg-[#d44312] transition-colors"
-                    >
-                      Call Helpline: {director.contactInfo.phone}
-                    </a>
-                    <a
-                      href={director.contactInfo.whatsapp}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="block text-center py-2.5 px-4 font-headings type-18 uppercase bg-[#25D366] text-white hover:bg-[#1ebc59] transition-colors"
-                    >
-                      WhatsApp Direct Desk
-                    </a>
                   </div>
                 </div>
               </div>

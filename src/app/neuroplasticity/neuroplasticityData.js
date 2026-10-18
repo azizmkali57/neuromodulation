@@ -1,183 +1,336 @@
 export const neuroplasticityData = {
   hero: {
-    badge: "SHREE NAMOH WELLNESS • ADVANCED CLINICAL NEUROMODULATION",
-    headingHighlight: "REWIRE THE BRAIN",
-    headingRest: "RESTORE FUNCTION, INDEPENDENCE & HOPE",
+    badge: "CLINICAL & PRACTITIONER TRAINING",
+    headingHighlight: "NEUROMODULATION",
+    headingRest: "WORKSHOP",
+    tagline: "Evidence-informed brain-based tools for regulation, performance & recovery",
     lead:
-      "Targeted non-invasive brain and peripheral neuromodulation masterclass. Discover how synaptic plasticity, cortical remapping, and electroceutical protocols restore motor control and accelerate recovery in paralysis, stroke, Parkinson's, and neurological disorders.",
+      "This intensive, hands-on workshop introduces clinically relevant neuromodulation principles and techniques for professionals who work directly with the nervous system — whether through medicine, movement, touch, energy work, or coaching conversations. Participants leave with a working knowledge of how the nervous system can be safely and effectively modulated using both device-assisted and device-free methods, along with protocols they can begin using with clients or patients immediately.",
+    keySpecs: [
+      { label: "Format", value: "Live, in-person / instructor-led online, with hands-on demonstration" },
+      { label: "Duration", value: "3 Days" },
+      { label: "Level", value: "Foundational to Intermediate — no prior neuromodulation experience required" },
+      { label: "Outcome", value: "Certificate of Completion + Protocol Toolkit + Client Intake Templates" }
+    ],
+    designedFor: [
+      "Medical Professionals (Doctors, Psychiatrists)",
+      "Physiotherapists, Neurotherapists & Rehabilitation Specialists",
+      "Energy & Holistic Healers",
+      "Wellness, Mindset & Performance Coaches"
+    ],
+    whoShouldAttend: [
+      { role: "Medical Doctors", desc: "Neurologists, physiatrists, psychiatrists, and general practitioners" },
+      { role: "Physiotherapists", desc: "Neuro-rehab specialists, physical therapists, and movement clinicians" },
+      { role: "Neurotherapists", desc: "Biofeedback and neurofeedback clinicians and technicians" },
+      { role: "Healers & Energy Workers", desc: "Somatic, cranial, and complementary biofield practitioners" },
+      { role: "Coaches & Therapists", desc: "Wellness, mindset, executive performance, and trauma-informed coaches" }
+    ],
+    learningObjectives: [
+      "Understand the neurophysiological basis of neuromodulation across central and peripheral pathways",
+      "Differentiate neuromodulation, neurostimulation, and neuroplasticity — and where each fits in a care plan",
+      "Safely apply brain stimulation on chronic disease like Stroke, CVA, Alzheimer's, Parkinson etc",
+      "Recognise contraindications, red flags, and when to refer to a medical specialist",
+      "Build a basic client/patient assessment and protocol-design workflow"
+    ],
     metrics: [
-      { value: "17 Years", label: "Frontline Neurological Rehabilitation" },
-      { value: "1st", label: "Recognized Neuroplasticity Coach in India" },
-      { value: "Movement", label: "Founder, Lakwa Mukt Bharat" },
-      { value: "3-Day", label: "Hands-On Clinical Immersion Masterclass" }
+      { value: "3 Days", label: "Live & Practical Format" },
+      { value: "6 Modules", label: "Foundations to Practical Lab" },
+      { value: "CPD", label: "Aligned Professional Curriculum" },
+      { value: "Certified", label: "Certificate of Completion" }
     ],
     director: {
-      name: "Dr. Neha Arora Verma",
-      role: "Director | Founder, Lakwa Mukt Bharat | India's First Neuroplasticity Coach",
+      name: "Dr. Neha",
+      fullName: "Dr. Neha Arora Verma",
+      title: "Led by Dr. Neha",
+      role: "India's First Neuroplasticity Coach | Neuroplasticity & Neuromodulation Coaching",
       link: "/directors/dr-neha-arora-verma",
       image: "/images/dr-neha-portrait.jpg"
     }
   },
 
   tableOfContents: [
-    { id: "foundations-plasticity", label: "1. Foundations of Neuroplasticity" },
-    { id: "nibs-modalities", label: "2. Non-Invasive Brain Stimulation (NIBS)" },
-    { id: "mep-pathway-priming", label: "3. Motor Evoked Potentials & Corticospinal Priming" },
-    { id: "clinical-protocols", label: "4. Clinical Disease Protocols (Stroke, Paralysis, Parkinson's)" },
-    { id: "immersion-syllabus", label: "5. 3-Day Hands-on Immersion Syllabus" },
-    { id: "lakwa-mukt-mission", label: "6. Lakwa Mukt Bharat & Bedside Action Plan" },
-    { id: "admissions-booking", label: "7. Register for Workshop" }
+    { id: "workshop-overview", label: "1. Overview & Objectives" },
+    { id: "module-1", label: "2. Foundations" },
+    { id: "module-2", label: "3. Non-Invasive Techniques" },
+    { id: "module-3", label: "4. Brain States & Biomarkers" },
+    { id: "module-4", label: "5. Clinical Protocols" },
+    { id: "module-5", label: "6. Practical Demonstration Lab" },
+    { id: "module-6", label: "7. Integration & Toolkit" },
+    { id: "admissions-booking", label: "8. Register / Apply" }
   ],
 
   modules: [
     {
-      id: "foundations-plasticity",
-      number: "01",
-      badge: "NEURAL ARCHITECTURE",
-      title: "Foundations of Neuroplasticity: The Adaptable Brain",
-      subtitle: "How Synaptic Rewiring and Cortical Reorganization Reclaim Lost Motor Function",
+      id: "module-1",
+      number: "MODULE 01",
+      badge: "CORE PRINCIPLES",
+      title: "Foundations of Neuromodulation",
+      subtitle: "Mechanisms, Pathways, Scope of Practice & Safety Baseline",
+      image: "/images/hero-device-calibration.jpg",
+      imageCaption: "Mapping central vs. peripheral modulation pathways and establishing safe clinical boundaries.",
+      topics: [
+        {
+          title: "Definitions & Core Distinctions",
+          text: "Neuromodulation vs. neurostimulation vs. neuroplasticity: clear functional definitions, biophysical mechanisms, and how each concept informs therapy design."
+        },
+        {
+          title: "Central vs. Peripheral Modulation Pathways",
+          text: "Central nervous system (CNS) vs peripheral/autonomic modulation pathways and how electrical and sensory inputs alter neural firing thresholds."
+        },
+        {
+          title: "The Modulation Landscape",
+          text: "Comprehensive overview of the modulation landscape: invasive (clinical) vs. non-invasive (practitioner-applicable) technologies and tools."
+        },
+        {
+          title: "Regulatory & Ethical Framework",
+          text: "Scope of practice mapped across professional categories (medical doctors, physiotherapists, neurotherapists, healers, and coaches)."
+        },
+        {
+          title: "Informed Consent & Safety Baseline",
+          text: "Informed consent, clinical documentation protocols, and establishing a robust pre-session safety baseline for every practitioner."
+        }
+      ],
+      keyTakeaways: [
+        "Clear demarcation between neuromodulation, neurostimulation, and neuroplasticity in clinical practice.",
+        "Systematic mapping of CNS and autonomic/peripheral pathways for targeted intervention.",
+        "Full regulatory and ethical compliance frameworks tailored to your specific professional licensure."
+      ]
+    },
+
+    {
+      id: "module-2",
+      number: "MODULE 02",
+      badge: "TECHNIQUES & MODALITIES",
+      title: "Non-Invasive Neuromodulation Techniques",
+      subtitle: "tDCS, TMS, Vagus Nerve Stimulation, Neurofeedback & Polyvagal Tools",
       image: "/images/track-paralysis-activation.jpg",
-      imageCaption: "Cortical Stimulation: Activating dormant neural pathways and inducing synaptic long-term potentiation (LTP).",
-      paragraphs: [
-        "For decades, conventional neuroscience taught that the adult human brain was a static, hard-wired organ incapable of meaningful cellular repair following traumatic injury or vascular infarction. Modern neurobiology has completely dismantled this dogma. Neuroplasticity—the brain's intrinsic capacity to dynamically reorganize its structure, neural connections, and functional maps in response to learning, environmental stimuli, and targeted electro-stimulation—persists throughout the entire human lifespan.",
-        "When an ischemic stroke, spinal injury, or neurodegenerative condition strikes, healthy neuronal networks surrounding the lesioned area (the peri-infarct zone) remain biochemically intact but functionally suppressed. Through the principle of Hebbian plasticity—'neurons that fire together, wire together'—systematic repetitive activation induces Long-Term Potentiation (LTP), strengthening synaptic efficacy, stimulating dendritic arborization, and unmasking dormant corticospinal pathways.",
-        "Clinical neuromodulation acts as an exogenous biological catalyst. By applying micro-calibrated electrical and magnetic currents across target cortical regions, we lower the threshold required for neuronal depolarization. This primes hyperexcitable motor circuits, enabling physical neuro-rehabilitation and motor relearning exercises to take hold with dramatically accelerated efficacy."
-      ],
-      secondaryImage: "/images/hero-device-calibration.jpg",
-      secondaryCaption: "Precise montage placement and current density calibration according to the International 10-20 EEG system.",
-      secondaryParagraphs: [
-        "Cortical mapping is dynamic. In individuals with hemiplegia or paralysis, the cortical representation of the paretic limb shrinks due to learned non-use and transcallosal inhibition from the unaffected hemisphere.",
-        "By applying targeted anodal stimulation to the affected motor cortex (M1) and paired peripheral electrical stimulation to the distal limb, we systematically expand the cortical representation, re-establishing sensorimotor feedback loops essential for voluntary mobility."
+      imageCaption: "Device-assisted and device-free non-invasive neuromodulation modalities in active application.",
+      topics: [
+        {
+          title: "tDCS (transcranial Direct Current Stimulation)",
+          text: "Mechanism of action, protocol parameters (anodal vs cathodal), electrode montages, current density calibration, and evidence base."
+        },
+        {
+          title: "TMS (Transcranial Magnetic Stimulation)",
+          text: "Clinical applications, electromagnetic pulse mechanisms, and where allied healthcare professionals fit in the overarching care pathway."
+        },
+        {
+          title: "Vagus Nerve Stimulation (VNS)",
+          text: "Auricular (tVNS) and manual/non-invasive vagus nerve activation methods to restore autonomic balance and down-regulate systemic inflammation."
+        },
+        {
+          title: "Neurofeedback & Biofeedback Fundamentals",
+          text: "EEG basics, sensor placement, real-time feedback loops, and operant conditioning of neural circuits."
+        },
+        {
+          title: "Audio-Visual Entrainment (AVE)",
+          text: "Binaural beats, isochronic tones, and light-based photic stimulation protocols to guide brainwave state transitions."
+        },
+        {
+          title: "Breath-Based & Polyvagal-Informed Regulation",
+          text: "Physiological sigh, extended exhale breathing, and somatic autonomic regulation techniques that require zero devices."
+        }
       ],
       keyTakeaways: [
-        "Adult brains retain lifelong neuroplasticity; peri-infarct neural networks can be re-educated after injury.",
-        "Hebbian plasticity and Long-Term Potentiation (LTP) drive synaptic strengthening and axonal sprouting.",
-        "Transcranial stimulation primes cortical motor circuits, dramatically enhancing response to physical rehabilitation."
+        "Mastery of tDCS montage physics, parameter programming, and clinical electrode placement.",
+        "Non-invasive auricular and manual Vagus Nerve Stimulation (VNS) protocols.",
+        "Integration of device-assisted (tDCS, AVE, EEG) and device-free (polyvagal, breath) modalities."
       ]
     },
 
     {
-      id: "nibs-modalities",
-      number: "02",
-      badge: "ELECTROCEUTICAL MODALITIES",
-      title: "Non-Invasive Brain Stimulation (NIBS) Modalities",
-      subtitle: "tDCS, tACS, TMS, and Targeted Peripheral Nerve Stimulation (PNS)",
-      paragraphs: [
-        "Non-Invasive Brain Stimulation (NIBS) encompasses a spectrum of safe, non-surgical electroceutical technologies designed to modulate neuronal membrane potentials without inducing tissue trauma or requiring sedation. In this comprehensive masterclass, clinicians master the biophysical mechanisms, electrode physics, and clinical application of all major modalities.",
-        "Transcranial Direct Current Stimulation (tDCS) delivers a subthreshold microcurrent (typically 1 to 2 mA) between surface electrodes. Anodal stimulation depolarizes neuronal resting membrane potentials, elevating spontaneous firing rates and facilitating neuroplastic acquisition. Conversely, cathodal stimulation hyperpolarizes membranes, effectively down-regulating pathological hyperexcitability, spasticity, or interhemispheric overinhibition.",
-        "Transcranial Alternating Current Stimulation (tACS) delivers sinusoidal waveforms at specific biological frequencies (alpha, theta, gamma) to entrain endogenous neural oscillations, synchronizing frontoparietal cognitive and motor networks. When paired with Peripheral Nerve Stimulation (PNS) to the paretic limb, this creates a bidirectional 'brain-to-muscle' and 'muscle-to-brain' loop that accelerates functional motor recovery far beyond isolated physical therapy."
-      ],
-      keyTakeaways: [
-        "tDCS modulates resting membrane potential: anodal increases cortical excitability; cathodal dampens spasticity.",
-        "tACS entrains intrinsic neural oscillations at specific target frequencies to optimize network synchronization.",
-        "Bidirectional pairing of central (transcranial) and peripheral (nerve) stimulation drives motor re-education."
-      ]
-    },
-
-    {
-      id: "mep-pathway-priming",
-      number: "03",
-      badge: "ELECTROPHYSIOLOGY",
-      title: "Motor Evoked Potentials & Corticospinal Priming",
-      subtitle: "Measuring Neural Excitability and Re-establishing Hemispheric Equilibrium",
+      id: "module-3",
+      number: "MODULE 03",
+      badge: "BIOMARKERS & PHYSIOLOGY",
+      title: "Brain States, Autonomic Regulation & Biomarkers",
+      subtitle: "Autonomic Balance, Brainwaves, HRV & Real-Time Nervous System Assessment",
       image: "/images/track-stroke-rehab.jpg",
-      imageCaption: "Post-Stroke Motor Rehabilitation: Restoring interhemispheric balance and corticospinal tract excitability.",
-      paragraphs: [
-        "A foundational milestone in clinical neurorehabilitation is mastering the electrophysiology of Motor Evoked Potentials (MEPs). By assessing MEP latency, peak-to-peak amplitude, and central motor conduction time (CMCT), clinicians gain objective quantitative metrics of corticospinal tract integrity, eliminating reliance on subjective observation alone.",
-        "Following an ischemic stroke or unilateral brain injury, the delicate balance between the two cerebral hemispheres is severely disrupted. Under normal conditions, both hemispheres maintain symmetrical mutual inhibition via the corpus callosum. In stroke, the unaffected hemisphere becomes disinhibited, exerting excessive pathological inhibition over the already compromised, injured hemisphere.",
-        "Through bi-hemispheric neuromodulation protocols, clinicians learn to simultaneously facilitate the lesioned hemisphere with anodal stimulation while down-regulating the hyperactive contralesional hemisphere with cathodal stimulation. This re-establishes interhemispheric equilibrium, dramatically reducing spastic posturing, mitigating learned non-use, and unlocking voluntary motor activation in the upper and lower extremities."
+      imageCaption: "Evaluating autonomic tone, brainwave synchronization, and HRV markers during session workflow.",
+      topics: [
+        {
+          title: "Sympathetic vs. Parasympathetic Balance",
+          text: "Clinical signs of autonomic dysregulation, hyperarousal vs hypoarousal, and restorative homeostasis mechanisms."
+        },
+        {
+          title: "Brainwave States & Functional Correlates",
+          text: "Delta, Theta, Alpha, Beta, and Gamma oscillations: what each state signifies in rest, focus, trauma, and recovery."
+        },
+        {
+          title: "Heart Rate Variability (HRV) as an Objective Marker",
+          text: "Using HRV metrics (RMSSD, SDNN, LF/HF ratio) as a live modulation gauge, baseline assessor, and longitudinal progress tracker."
+        },
+        {
+          title: "Allostatic Load & Trauma-Informed Considerations",
+          text: "Chronic stress physiology, neuro-endocrine allostatic exhaustion, and trauma-informed precautions when stimulating sensitive nervous systems."
+        },
+        {
+          title: "Reading Nervous-System States in Real Time",
+          text: "Observing polyvagal social engagement cues, postural shifts, micro-expressions, pupillary cues, and respiratory cadence."
+        }
       ],
       keyTakeaways: [
-        "MEPs provide an objective, real-time diagnostic window into corticospinal tract pathway conduction.",
-        "Interhemispheric imbalance is a primary barrier to stroke recovery; disinhibited intact hemispheres suppress damaged zones.",
-        "Dual-hemispheric montages restore physiological equilibrium, unlocking dormant motor command pathways."
+        "Objective measurement of client readiness using Heart Rate Variability (HRV).",
+        "Deep understanding of Delta-to-Gamma brainwave profiles and their behavioral signatures.",
+        "Real-time observation of polyvagal markers to titrate stimulation intensity safely."
       ]
     },
 
     {
-      id: "clinical-protocols",
-      number: "04",
-      badge: "CLINICAL PROTOCOLS",
-      title: "Clinical Disease Protocols & Case Interventions",
-      subtitle: "Evidence-Based Algorithms for Paralysis, Stroke, Parkinson's Disease, and Spine",
+      id: "module-4",
+      number: "MODULE 04",
+      badge: "CLINICAL APPLICATIONS",
+      title: "Applied Clinical Protocols",
+      subtitle: "Stroke, CVA, Alzheimer's, Parkinson's, Pain, Sleep & Cognitive Performance",
       image: "/images/track-parkinsons-protocol.jpg",
-      imageCaption: "Basal Ganglia Circuitry Neuromodulation: Managing bradykinesia, tremor, and gait freezing.",
-      paragraphs: [
-        "Theoretical knowledge transforms into clinical healing only when structured into rigorous, standardized protocols. Dr. Neha Arora Verma has distilled 17 years of frontline rehabilitation expertise into precise clinical algorithms for the most challenging neurological conditions encountered in Indian clinical practice.",
-        "In Post-Stroke Hemiplegia, the protocol integrates 20-minute anodal tDCS over the ipsilesional hand knob area of M1 immediately preceding 45 minutes of task-oriented motor relearning and constraint-induced movement therapy. This sequence capitalizes on the neuroplastic 'window of opportunity' when cortical synapses are at peak receptivity.",
-        "In Parkinson's Disease and movement disorders, stimulation is directed toward the Supplementary Motor Area (SMA) and the Dorsolateral Prefrontal Cortex (DLPFC). This targeted modulation optimizes dopaminergic basal ganglia-thalamocortical loops, demonstrating clinically significant reductions in resting tremor, bradykinesia, and debilitating gait freezing episodes.",
-        "In Complex Spine and Chronic Neuropathic Pain syndromes, non-surgical mechanical decompression is synchronized with sensory-level spinal neuromodulation to interrupt nociceptive pain pathways, reduce radicular spasm, and promote restorative neuromuscular recruitment."
+      imageCaption: "Targeted cortical stimulation algorithms for chronic neurological conditions and cognitive enhancement.",
+      topics: [
+        {
+          title: "Advance Brain Stimulation in Chronic Diseases",
+          text: "Learn how to use Advance Brain Stimulation in chronic disease like Stroke, CVA, Alzheimer's, Parkinson and other Neurological problems."
+        },
+        {
+          title: "Anxiety, Stress Dysregulation & Sleep Disturbance",
+          text: "Targeted calming protocols combining cranial stimulation with parasympathetic entrainment to restore restorative slow-wave sleep cycles."
+        },
+        {
+          title: "Cognitive Performance, Focus & Attention Regulation",
+          text: "Prefrontal cortex stimulation montages designed to optimize working memory, executive function, and sustained attention."
+        },
+        {
+          title: "Mood Regulation & Emotional Resilience Building",
+          text: "Left DLPFC activation algorithms to support positive affect, overcome anhedonia, and bolster mental tenacity."
+        },
+        {
+          title: "Adjunctive Pain Modulation Approaches",
+          text: "Supportive, non-diagnostic protocols for chronic neuropathic pain, fibromyalgia, and migraine symptom reduction."
+        },
+        {
+          title: "Protocol Design Workshop & Documentation Templates",
+          text: "Matching specific techniques to presenting client concerns while remaining within professional scope; standardized session outcome tracking."
+        }
       ],
       keyTakeaways: [
-        "Standardized time-sequenced protocols prime cortical networks immediately before targeted motor training.",
-        "Parkinson's protocols targeting SMA and DLPFC improve gait initiation, stride cadence, and tremor control.",
-        "Integrated spinal decompression with neuromuscular modulation addresses root causes of chronic discogenic pain."
+        "Proven clinical algorithms for Stroke, CVA, Alzheimer's, Parkinson's, and chronic neurological conditions.",
+        "Validated interventions for anxiety, insomnia, chronic pain, and attention-regulation.",
+        "Step-by-step workflow for customizing protocols to each client's neurological profile."
       ]
     },
 
     {
-      id: "immersion-syllabus",
-      number: "05",
-      badge: "HANDS-ON MASTERCLASS",
-      title: "3-Day Practical Immersion Syllabus",
-      subtitle: "Intensive Clinical Masterclass with Supervised Patient Practicum",
+      id: "module-5",
+      number: "MODULE 05",
+      badge: "PRACTICAL LAB",
+      title: "Live Practical & Demonstration Lab",
+      subtitle: "Hands-On Technique Demonstrations, Supervised Practicum & Case Walkthroughs",
       image: "/images/hero-hands-on-practicum.jpg",
-      imageCaption: "Supervised Clinical Practicum: Hands-on electrode placement, parameter programming, and patient safety monitoring.",
-      paragraphs: [
-        "As Dr. Neha Arora Verma emphasizes: 'True clinical mastery does not come from memorizing waveforms on paper. It comes from having the probe in your hand, calibrating the amplitude, and witnessing the patient's neural circuits respond in real time.' The Shree Namoh Wellness Neuromodulation Workshop is built from the ground up as an intensive 3-day clinical immersion.",
-        "Day 1: Neuroanatomy, Biophysics & Safety Governance. Participants master the International 10-20 EEG system for precise scalp landmarking, current density equations, impedance thresholds, and absolute vs. relative contraindications (e.g., cardiac pacemakers, cochlear implants, cranial metal hardware).",
-        "Day 2: Device Engineering, Parameter Programming & Montage Selection. Delegates handle professional medical-grade stimulation devices, calibrate wave frequencies, program current ramp-up and ramp-down curves, formulate specialized saline solutions, and master sponge hydration to prevent skin irritation.",
-        "Day 3: Supervised Bedside Patient Practicum & Clinical Case Rounds. Under the personal supervision of Dr. Neha and our multidisciplinary medical team, participants evaluate actual patients, formulate individualized treatment plans, apply live stimulation, and document functional motor improvements."
+      imageCaption: "Live hands-on practicum supervised personally by Dr. Neha: electrode placement, impedance testing & case rounds.",
+      topics: [
+        {
+          title: "Live Demonstrations by Dr. Neha",
+          text: "Step-by-step live demonstration of 2–3 core neuromodulation techniques conducted directly by Dr. Neha."
+        },
+        {
+          title: "Supervised Hands-On Practice",
+          text: "Participants pair up for supervised practicum with actual stimulation devices, calibrating parameters, testing skin impedance, and applying protocols."
+        },
+        {
+          title: "Multi-Context Case Walkthroughs",
+          text: "Real-world case studies spanning medical consultations, physiotherapy motor rehab, and coaching/peak-performance environments."
+        },
+        {
+          title: "Troubleshooting & Edge Cases Q&A",
+          text: "Structured interactive session addressing atypical client responses, habituation, paradoxical reactions, and equipment adjustments."
+        },
+        {
+          title: "Adapted Professional Tracks",
+          text: "Clinical participants focus on integration with existing treatment plans; coaches and healers focus on holistic session-flow integration."
+        }
       ],
       keyTakeaways: [
-        "Comprehensive 3-day curriculum covering biophysics, montage mathematics, and clinical governance.",
-        "Direct hands-on device calibration using the International 10-20 EEG landmarking system.",
-        "Live supervised patient treatment sessions delivering real-world bedside confidence."
+        "Direct physical experience operating neuromodulation devices under expert supervision.",
+        "Confidence in troubleshooting real-time patient sensations and technical edge cases.",
+        "Track-specific breakout practice adapted for medical, rehab, and coaching disciplines."
       ]
     },
 
     {
-      id: "lakwa-mukt-mission",
-      number: "06",
-      badge: "NATIONAL MOVEMENT",
-      title: "Translational Action Plan: Building a Lakwa Mukt Bharat",
-      subtitle: "From Advanced Clinical Science to Community-Wide Paralysis Independence",
+      id: "module-6",
+      number: "MODULE 06",
+      badge: "PRACTICE INTEGRATION",
+      title: "Practice Integration, Certification & Take-Home Toolkit",
+      subtitle: "Clinical Screening, Contraindications, Certification Issuance & Practitioner Toolkit",
       image: "/images/hero-cert-protocol.jpg",
-      imageCaption: "Clinical Certification & Standardized Protocol Delivery for Healthcare Practitioners.",
-      paragraphs: [
-        "Paralysis does not merely affect a physical limb—it alters family dynamics, impacts economic stability, and diminishes individual autonomy. Dr. Neha Arora Verma founded the Lakwa Mukt Bharat movement to ensure that advanced, life-altering neurorehabilitation is not confined to elite metropolitan hospitals, but becomes accessible across every district in India.",
-        "Graduates of this masterclass join an elite national fellowship of certified neuroplasticity practitioners. Participants receive the official Shree Namoh Wellness Clinical Certification, full rights to utilize standardized institutional protocols, informed consent documentation, safety checklists, and access to ongoing monthly clinical case grand rounds.",
-        "Furthermore, our team provides lifetime clinical mentorship. When you encounter complex, atypical neurological cases in your own hospital, clinic, or private practice, Dr. Neha and her senior clinical team remain available for telemedicine case discussions, protocol optimization, and guidance.",
-        "Together, we are transforming paralysis care across Central India and beyond—replacing helplessness with scientifically grounded hope, and building a truly Lakwa Mukt Bharat."
+      imageCaption: "Professional certification of completion and turnkey clinical toolkit for immediate practice launch.",
+      topics: [
+        {
+          title: "Practice Integration Roadmap",
+          text: "How to smoothly integrate neuromodulation into an existing medical clinic, physiotherapy center, or private coaching practice."
+        },
+        {
+          title: "Client/Patient Intake & Screening Process",
+          text: "Standardized intake questionnaires, baseline physiological assessments, and goal-setting frameworks."
+        },
+        {
+          title: "Contraindications Checklist & Referral Pathways",
+          text: "Exclusion criteria (implants, epilepsy risk, cranial defects), red flags, and establishing collaborative referral channels with medical specialists."
+        },
+        {
+          title: "Certificate of Completion",
+          text: "Official verification of attendance, criteria assessment, and issuance of the accredited workshop certificate."
+        }
       ],
+      toolkit: [
+        {
+          title: "Neuromodulation Protocol Reference Sheet",
+          desc: "Complete matrix matching clinical indications to precise technique, dosage, frequency, and duration."
+        },
+        {
+          title: "Client / Patient Intake & Contraindications Screening Form",
+          desc: "Print-ready and digital screening checklist ensuring rigorous safety and informed consent."
+        },
+        {
+          title: "Session Planning & Outcome-Tracking Template",
+          desc: "Standardized clinical charting sheet to track subjective improvements, objective biomarkers, and session progression."
+        },
+        {
+          title: "Curated Resource & Evidence Library",
+          desc: "Comprehensive bibliography of peer-reviewed clinical studies, neuroanatomy guides, and ongoing learning sources."
+        }
+      ],
+      disclaimer:
+        "This workshop is designed as a practitioner-facing educational program and does not replace formal clinical training, diagnosis, or treatment. Participants are expected to apply techniques within the boundaries of their own professional licensure and scope of practice.",
       keyTakeaways: [
-        "Official institutional certification recognizing advanced competency in clinical neuromodulation.",
-        "Turnkey clinical protocol manuals, safety intake forms, and patient progress tracking sheets.",
-        "Ongoing clinical mentorship and case guidance from Dr. Neha Arora Verma and senior faculty."
+        "Official Certificate of Completion awarded upon successful demonstration of core competencies.",
+        "Ready-to-use Take-Home Toolkit enabling safe, professional implementation from Day 1.",
+        "Clear contraindication guidelines and specialist medical referral triggers."
       ]
     }
   ],
 
   workshopTracks: [
     {
-      title: "Post-Stroke Motor Relearning & Hemiplegia Track",
+      title: "Medical & Neuro-Rehabilitation Track",
+      audience: "Medical Doctors, Neurologists, Physiatrists & Neurotherapists",
       focus:
-        "Bilateral cortical montages (anodal M1 + cathodal contralesional M1), motor relearning therapy, spasticity management, and upper extremity functional recovery."
+        "Deep clinical dive into stroke recovery, CVA, Alzheimer's, Parkinson's disease, brain stimulation montages, motor evoked potentials, and integration with hospital/rehabilitation protocols."
     },
     {
-      title: "Paralysis & Spinal Neuromodulation Track",
+      title: "Physiotherapy & Movement Specialists Track",
+      audience: "Physiotherapists (BPT / MPT) & Rehabilitation Specialists",
       focus:
-        "Complete and incomplete spinal cord injury protocols, functional electrical stimulation (FES), core stabilizer activation, and locomotor gait rehabilitation."
+        "Combining non-invasive central stimulation (tDCS) with peripheral neuro-rehabilitation, spasticity management, motor relearning, and musculoskeletal gait recovery."
     },
     {
-      title: "Parkinson's & Movement Disorders Track",
+      title: "Healers, Somatic & Energy Workers Track",
+      audience: "Energy Healers, Craniosacral & Holistic Bodyworkers",
       focus:
-        "SMA and DLPFC transcranial protocols, basal ganglia network modulation, tremor suppression, bradykinesia management, and freezing-of-gait interventions."
+        "Vagus nerve stimulation, autonomic nervous system regulation, biofield awareness, polyvagal-informed somatic balancing, and device-free regulation methods."
     },
     {
-      title: "Comprehensive Clinical Fellowship Masterclass",
+      title: "Wellness, Mindset & Performance Coaches Track",
+      audience: "Executive, Mindset, Trauma-Informed & Performance Coaches",
       focus:
-        "Complete 3-day clinical immersion covering all modules, hands-on device calibration, supervised patient rounds, institutional certification, and lifetime mentorship."
+        "Audio-visual entrainment, alpha/theta brainwave optimization, Heart Rate Variability (HRV) tracking, stress reduction, and peak cognitive performance workflows."
     }
   ]
 };

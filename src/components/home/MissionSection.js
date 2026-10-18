@@ -28,7 +28,7 @@ export default function MissionSection() {
         </div>
         <div>
           <a
-            href={buttonHref || "/about"}
+            href={buttonHref || "/directors"}
             className="button-link relative di font-headings type-24 ls lh-1 color-orange uppercase"
             style={{ textDecoration: "none" }}
           >

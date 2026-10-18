@@ -164,7 +164,7 @@ export default function NewsSection() {
       </div>
 
       {/* Right Column of Articles */}
-      <div className="flex flex-columns flex-vab rg" style={{ gridArea: "right-col" }}>
+      <div className="flex flex-columns rg" style={{ gridArea: "right-col" }}>
         {rightColumn.map((item) => (
           <article
             key={item.id}

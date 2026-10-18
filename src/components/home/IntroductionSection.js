@@ -56,25 +56,14 @@ export default function IntroductionSection() {
           style={{ maxWidth: "44em", fontSize: "1.05rem", lineHeight: "1.7em" }}
         >
           <p className="mb-4">
-            At Shree Namoh Wellness, our mission is to deliver advanced, compassionate, and patient-centered healthcare through innovative treatment solutions in paralysis care, genetic counseling, and advanced eye care.
+            Shree Namoh Wellness is a pioneering multidisciplinary healthcare institution committed to delivering advanced, compassionate, and patient-centered healthcare through innovative treatment solutions in specialized paralysis care, genetic counseling, and comprehensive ophthalmic care.
           </p>
           <p className="mb-4">
-            We are committed to combining modern medical advancements, personalized care, and scientific expertise to support neurological recovery, provide meaningful genetic health guidance, and promote better vision and eye health. Through a holistic and individualized approach, we strive to empower patients and their families with knowledge, confidence, and access to appropriate healthcare solutions.
+            By integrating state-of-the-art non-invasive neuromodulation, translational nutrigenomics, and precision microsurgical ophthalmology under distinguished directors, we empower patients and families with clear guidance, evidence-based recovery protocols, and lasting wellness.
           </p>
           <p>
-            Our goal is to enhance quality of life, encourage informed health decisions, and make advanced healthcare more accessible, reliable, and focused on every patient&apos;s unique needs.
+            Our dedicated clinical focus enhances quality of life, supports informed healthcare decisions, and ensures that specialized, world-class treatments remain accessible, dignified, and responsive to every individual&apos;s unique health journey.
           </p>
-        </div>
-
-        {/* Link matching template design */}
-        <div>
-          <a
-            href={linkHref || "/directors"}
-            className="link-underlined font-headings type-24 uppercase hover-orange"
-            style={{ color: "var(--c-darkest-blue, #1D1A55)" }}
-          >
-            {linkText || "MEET OUR DIRECTORS"}
-          </a>
         </div>
       </div>
     </section>
