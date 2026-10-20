@@ -1,39 +1,193 @@
 export const geneticSolutionsData = {
   hero: {
     badge: "PRECISION GENOMIC WELLNESS • TRANSLATIONAL NUTRIGENETICS",
-    title: "Genetic Health Solutions",
-    subtitle:
-      "Unlock your unique DNA blueprint to reverse chronic metabolic risks, optimize vitality, and create targeted, gene-guided nutrition and lifestyle solutions led by Certified Genomic Wellness Consultant Coach Richha Arrora.",
+    title: "Crack Your Genetic Code",
+    subtitle: "Welocity Genetics Advanced DNA Testing Program",
+    tagline: "Know Your DNA • Discover Yourself",
+    description: [
+      "Welocity Genetics Advanced DNA Testing Program is a once-in-a-lifetime, holistic genetic screening designed to uncover the root causes of existing health conditions, if any, and assess future health risks from a genetic perspective.",
+      "This advanced package offers 16 targeted panels covering 220+ phenotypes, providing valuable insights into various modern-day health concerns.",
+      "Take advantage of this advanced gene-based wellness program and safeguard your health with the right precautions at the right time."
+    ],
     director: "Coach Richha Arrora",
-    credentials: "Certified Genomic Wellness Consultant | Translational Nutrigenetics Expert | 8+ Yrs Tech Analytics",
+    credentials: "Certified Genomic Wellness Consultant | Translational Nutrigenetics Expert",
+    familyImage: "/images/genomics/family-hero.jpg",
     stats: [
-      { value: "100%", label: "Personalized to Your Unique DNA Profile" },
-      { value: "400+", label: "Genomic Markers & Metabolic Pathways Analyzed" },
-      { value: "0", label: "Guesswork in Diet, Supplements & Longevity" },
-      { value: "1-on-1", label: "Direct Clinical Consultation & Lifetime Action Plan" }
+      { value: "220+", label: "Phenotypes Decoded" },
+      { value: "19", label: "Vital Health Categories" },
+      { value: "16", label: "Targeted Health Panels" },
+      { value: "100%", label: "Personalized to Your DNA" }
     ]
   },
 
-  keyHighlights: [
+  howItWorks: [
     {
-      title: "Translational Nutrigenetics",
-      desc: "Moving beyond generic diet charts by aligning micro and macro-nutrients precisely with your enzymatic and genetic absorption capabilities."
+      id: "step-kit",
+      title: "Premium DNA Saliva Sample Collection Kit",
+      subTitle: "(Made in India)",
+      description: "Receive an easy-to-use saliva collection kit designed for accurate genetic testing. Proudly made in India.",
+      icon: "/images/genomics/process/kit.png",
+      badgeColor: "#BDDFEC",
+      borderColor: "#7CC0D8",
+      accentColor: "#0065BD",
+      gradient: "from-blue-50/80 to-indigo-50/40"
     },
     {
-      title: "Metabolic Risk Interception",
-      desc: "Detect early genetic predispositions for insulin resistance, dyslipidemia, cardiovascular strain, and systemic inflammation before symptoms manifest."
+      id: "step-delivery",
+      title: "Quick Delivery of DNA Kit across India",
+      subTitle: "(4-7 Days, by Courier)",
+      description: "Your DNA kit will be swiftly delivered to your doorstep anywhere in India within 4-7 working days via trusted courier partners.",
+      icon: "/images/genomics/process/delivery.png",
+      badgeColor: "#FCE7F3",
+      borderColor: "#F472B6",
+      accentColor: "#E9511C",
+      gradient: "from-pink-50/80 to-rose-50/40"
     },
     {
-      title: "Data-Driven Lifestyle Blueprint",
-      desc: "Leveraging 8+ years of technical data analysis with molecular biology to craft actionable, easy-to-follow lifestyle regimens."
+      id: "step-report",
+      title: "Advanced DNA Testing Program Report PDF",
+      subTitle: "(28 Working Days from the batch date)",
+      description: "Once we receive your samples, our labs analyze your DNA and deliver an exhaustive report (PDF) within 28 working days from the batch processing date.",
+      icon: "/images/genomics/process/report.png",
+      badgeColor: "#FEF3C7",
+      borderColor: "#FBBF24",
+      accentColor: "#D97706",
+      gradient: "from-amber-50/80 to-yellow-50/40"
     },
     {
-      title: "Cellular Detox & Longevity",
-      desc: "Optimize methylation pathways, glutathione synthesis, circadian rhythm alignment, and anti-aging cellular repair."
+      id: "step-counselling",
+      title: "60 min Genetic Counselling from Welocity Genetic Counselors",
+      subTitle: "",
+      description: "Our certified genetic counselors guide you through your DNA report in a 60-minute one-on-one session, helping you understand your unique genetic profile.",
+      icon: "/images/genomics/process/counselling.png",
+      badgeColor: "#FEF9C3",
+      borderColor: "#FACC15",
+      accentColor: "#CA8A04",
+      gradient: "from-yellow-50/80 to-orange-50/40"
+    },
+    {
+      id: "step-action-plan",
+      title: "Personalized Action Plan (PDF) Based on Your Genetic Report",
+      subTitle: "(7 Working Days)",
+      description: "Within a week after your counseling, receive a customized action plan (PDF) tailored to your genetics, lifestyle, and health goals.",
+      icon: "/images/genomics/process/action-plan.png",
+      badgeColor: "#E0F2FE",
+      borderColor: "#38BDF8",
+      accentColor: "#00AF9C",
+      gradient: "from-cyan-50/80 to-teal-50/40"
+    },
+    {
+      id: "step-helpdesk",
+      title: "12-Months Wellness Helpdesk Assistance",
+      subTitle: "",
+      description: "Enjoy continuous support with a full year of access to our wellness helpdesk for ongoing guidance and queries.",
+      icon: "/images/genomics/process/helpdesk.png",
+      badgeColor: "#DCFCE7",
+      borderColor: "#4ADE80",
+      accentColor: "#16A34A",
+      gradient: "from-emerald-50/80 to-green-50/40"
     }
   ],
 
-  solutionPillars: [
+  phenotypeCategories: [
+    {
+      id: "dietary-response",
+      title: "Your Dietary Response",
+      image: "/images/genomics/categories/dietary-response.png"
+    },
+    {
+      id: "nutrient-metabolism",
+      title: "Your Nutrient Metabolism",
+      image: "/images/genomics/categories/nutrient-metabolism.png"
+    },
+    {
+      id: "fitness-profile",
+      title: "Your Fitness Profile",
+      image: "/images/genomics/categories/fitness-profile.png"
+    },
+    {
+      id: "lifestyle-disorders",
+      title: "Your Lifestyle Disorders",
+      image: "/images/genomics/categories/lifestyle-disorders.png"
+    },
+    {
+      id: "metabolic-response",
+      title: "Your Metabolic Response",
+      image: "/images/genomics/categories/metabolic-response.png"
+    },
+    {
+      id: "digestive-health",
+      title: "Your Digestive Health",
+      image: "/images/genomics/categories/digestive-health.png"
+    },
+    {
+      id: "addiction-risks",
+      title: "Your Addiction Risks",
+      image: "/images/genomics/categories/addiction-risks.png"
+    },
+    {
+      id: "sleep-pattern",
+      title: "Your Sleep Pattern",
+      image: "/images/genomics/categories/sleep-pattern.png"
+    },
+    {
+      id: "allergies",
+      title: "Your Allergies",
+      image: "/images/genomics/categories/allergies.png"
+    },
+    {
+      id: "personality-profile",
+      title: "Your Personality Profile",
+      image: "/images/genomics/categories/personality-profile.png"
+    },
+    {
+      id: "neurological-profile",
+      title: "Your Neurological Profile",
+      image: "/images/genomics/categories/neurological-profile.png"
+    },
+    {
+      id: "organ-health",
+      title: "Your Organ Health",
+      image: "/images/genomics/categories/organ-health.png"
+    },
+    {
+      id: "personal-genomics",
+      title: "Personal & Professional Genomics",
+      image: "/images/genomics/categories/personal-genomics.png"
+    },
+    {
+      id: "metabolic-strength",
+      title: "Your Metabolic Strength",
+      image: "/images/genomics/categories/metabolic-strength.png"
+    },
+    {
+      id: "metabolic-weaknesses",
+      title: "Your Metabolic Weaknesses",
+      image: "/images/genomics/categories/metabolic-weaknesses.png"
+    },
+    {
+      id: "nutrigenomics-summary",
+      title: "Your Nutrigenomics Summary",
+      image: "/images/genomics/categories/nutrigenomics-summary.png"
+    },
+    {
+      id: "exercise-summary",
+      title: "Your Exercise Genomic Summary",
+      image: "/images/genomics/categories/exercise-summary.png"
+    },
+    {
+      id: "preventive-health",
+      title: "Your Preventive Health Summary",
+      image: "/images/genomics/categories/preventive-health.png"
+    },
+    {
+      id: "genes-family",
+      title: "Your Genes & Impact on Your Family",
+      image: "/images/genomics/categories/genes-family.png"
+    }
+  ],
+
+  clinicalPillars: [
     {
       id: "pillar-nutrigenomics",
       number: "01",
@@ -100,53 +254,6 @@ export const geneticSolutionsData = {
     }
   ],
 
-  transformationProcess: [
-    {
-      step: "01",
-      title: "Non-Invasive DNA Sample Collection",
-      desc: "A painless, medical-grade buccal (cheek) swab kit is completed at home or at our Indore wellness center and processed in an accredited genomic laboratory."
-    },
-    {
-      step: "02",
-      title: "High-Throughput Genomic Sequencing",
-      desc: "Advanced microarray platforms sequence over 400+ targeted SNPs impacting metabolic health, nutrition uptake, toxin clearance, and organ resiliency."
-    },
-    {
-      step: "03",
-      title: "Data Analytics & Bio-Decoding",
-      desc: "Coach Richha Arrora combines computational bioinformatics with clinical translational nutrigenetics to decode complex raw variants into actionable health intelligence."
-    },
-    {
-      step: "04",
-      title: "1-on-1 Comprehensive Consultation",
-      desc: "A 90-minute detailed video or in-person consultation reviewing your genomic profile, answering every question, and removing health ambiguities."
-    },
-    {
-      step: "05",
-      title: "Customized Living Health Protocol",
-      desc: "Receive your definitive Genetic Health Blueprint: exact grocery lists, micronutrient regimens, exercise schedules, and 90-day progress check-ins."
-    }
-  ],
-
-  targetAudiences: [
-    {
-      title: "Individuals with Family History of Chronic Ailments",
-      desc: "Take proactive control if diabetes, cardiac issues, obesity, or hypertension run in your bloodline."
-    },
-    {
-      title: "Struggling with Stubborn Weight & Metabolic Stagnation",
-      desc: "Break through fat-loss plateaus by understanding your exact carbohydrate vs. fat oxidation rates."
-    },
-    {
-      title: "Executives & High Performers Seeking Peak Energy",
-      desc: "Eliminate brain fog, irregular sleep cycles, and midday energy crashes through circadian gene alignment."
-    },
-    {
-      title: "Proactive Health Seekers & Longevity Enthusiasts",
-      desc: "Leverage preventative medicine to delay biological aging, protect telomeres, and optimize cellular repair."
-    }
-  ],
-
   packages: [
     {
       name: "Metabolic & Nutrition Genomic Solution",
@@ -170,13 +277,13 @@ export const geneticSolutionsData = {
       description:
         "The all-inclusive gold-standard blueprint covering diet, metabolic disease interception, cardiac safety, fitness, and cellular longevity.",
       features: [
-        "Full 400+ SNP Multi-System Genomic Analysis",
+        "Full 220+ Phenotype Multi-System Genomic Analysis across 19 Vital Categories",
         "Metabolic & Cardiovascular Risk Stratification",
         "Complete Nutrigenetics & Micronutrient Bio-Availability",
         "Toxin Detoxification, Methylation & Anti-Aging Markers",
         "Genomic Fitness, Exercise Type & Recovery Profile",
-        "Two Detailed 1-on-1 Consultations with Coach Richha Arrora",
-        "90-Day Step-by-Step Personalized Implementation Mentorship",
+        "Detailed 1-on-1 Consultation with Coach Richha Arrora",
+        "Personalized Action Plan (PDF) & 12-Month Wellness Helpdesk Support",
         "Direct Priority WhatsApp Helpline"
       ],
       recommendedFor: "Those desiring total preventive health mastery & long-term longevity."
@@ -209,7 +316,7 @@ export const geneticSolutionsData = {
     },
     {
       q: "How is the sample collected?",
-      a: "Sample collection is completely painless and non-invasive. It uses a sterile buccal cheek swab that gently collects epithelial cells from the inside of your cheek. There are no needles or blood draws required."
+      a: "Sample collection is completely painless and non-invasive. It uses a sterile buccal cheek swab or saliva collection kit that gently collects epithelial cells. There are no needles or blood draws required."
     },
     {
       q: "Can this help if I have already tried multiple diets without success?",

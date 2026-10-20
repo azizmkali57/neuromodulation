@@ -16,15 +16,15 @@ export default function Header() {
       <header className="header w-100 grid-p box-sizing fixed bg-white flex flex-vac gap-3 sm:gap-6 md:gap-8 color-brand z-[600]" id="header">
         <a
           href={siteData.header.logoHref}
-          className="logo flex__0 over flex items-center"
+          className="logo flex__0 over flex items-center py-1"
           aria-label={siteData.header.logoAlt}
-          style={{ width: "clamp(85px, 13vw, 130px)", height: "auto" }}
+          style={{ width: "clamp(120px, 14vw, 175px)", height: "auto" }}
         >
           <img
             src={siteData.header.logoSrc}
             alt={siteData.header.logoAlt}
             className="w-100 h-auto db object-contain"
-            style={{ maxHeight: "clamp(48px, 7vw, 75px)" }}
+            style={{ maxHeight: "clamp(65px, 9vw, 95px)" }}
           />
         </a>
 

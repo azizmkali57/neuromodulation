@@ -131,6 +131,17 @@ export const siteData = {
   heroSlides: [
     {
       id: 0,
+      tag: "SPECIALIZED PARALYSIS CARE",
+      title: "NEUROPLASTICITY TRAINING FOR MEDICAL PROFESSIONALS",
+      subtitle: "Brain Adaptability, Evidence-Based Protocols & Better Patient Outcomes",
+      supportingText: "A specialised course for medical professionals, built on the latest research in brain adaptability and recovery. Learn practical, evidence-based approaches you can apply in clinical practice to improve patient outcomes.",
+      href: "/directors/dr-neha-arora-verma",
+      ctaLabel: "Explore Training",
+      image: "/images/slider-neuroplasticity.jpg",
+      srcset: "/images/slider-neuroplasticity.jpg 1x, /images/slider-neuroplasticity.jpg 2x"
+    },
+    {
+      id: 1,
       tag: "GENOMIC WELLNESS",
       title: "KNOW YOUR GENES. SHAPE YOUR HEALTH.",
       subtitle: "Personalized Genomic Insights, Nutrition & Preventive Health",
@@ -141,7 +152,7 @@ export const siteData = {
       srcset: "/images/slider-genomic.png 1x, /images/slider-genomic.png 2x"
     },
     {
-      id: 1,
+      id: 2,
       tag: "ADVANCED EYE CARE",
       title: "ADVANCED EYE CARE YOU CAN TRUST.",
       subtitle: "Safe, Precise & Compassionate Specialist Care",
@@ -150,17 +161,6 @@ export const siteData = {
       ctaLabel: "Consult Specialist",
       image: "/images/slider-eyecare.png",
       srcset: "/images/slider-eyecare.png 1x, /images/slider-eyecare.png 2x"
-    },
-    {
-      id: 2,
-      tag: "SPECIALIZED PARALYSIS CARE",
-      title: "NEUROPLASTICITY TRAINING FOR MEDICAL PROFESSIONALS",
-      subtitle: "Brain Adaptability, Evidence-Based Protocols & Better Patient Outcomes",
-      supportingText: "A specialised course for medical professionals, built on the latest research in brain adaptability and recovery. Learn practical, evidence-based approaches you can apply in clinical practice to improve patient outcomes.",
-      href: "/directors/dr-neha-arora-verma",
-      ctaLabel: "Explore Training",
-      image: "/images/slider-neuroplasticity.jpg",
-      srcset: "/images/slider-neuroplasticity.jpg 1x, /images/slider-neuroplasticity.jpg 2x"
     }
   ],
   introduction: {

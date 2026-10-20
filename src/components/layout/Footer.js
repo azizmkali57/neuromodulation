@@ -33,12 +33,13 @@ export default function Footer() {
           {/* Col 1: Brand & Navigation Links */}
           <div className="flex flex-col justify-between">
             <div>
-              <div className="w-32 mb-6">
+              <div className="w-44 mb-6">
                 <img
                   loading="lazy"
-                  src={tuvLogo}
+                  src="/logo-white.webp"
                   alt="Shree Namoh Wellness Logo"
-                  className="w-full h-auto object-contain brightness-0 invert"
+                  className="w-full h-auto object-contain"
+                  style={{ maxHeight: "110px" }}
                 />
               </div>
               <ul className="space-y-2.5 font-headings text-xs sm:text-sm uppercase tracking-wider">
