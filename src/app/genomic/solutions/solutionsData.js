@@ -2,10 +2,10 @@ export const geneticSolutionsData = {
   hero: {
     badge: "PRECISION GENOMIC WELLNESS • TRANSLATIONAL NUTRIGENETICS",
     title: "Crack Your Genetic Code",
-    subtitle: "Welocity Genetics Advanced DNA Testing Program",
+    subtitle: "Shree Namoh Wellness Genetics Advanced DNA Testing Program",
     tagline: "Know Your DNA • Discover Yourself",
     description: [
-      "Welocity Genetics Advanced DNA Testing Program is a once-in-a-lifetime, holistic genetic screening designed to uncover the root causes of existing health conditions, if any, and assess future health risks from a genetic perspective.",
+      "Shree Namoh Wellness Genetics Advanced DNA Testing Program is a once-in-a-lifetime, holistic genetic screening designed to uncover the root causes of existing health conditions, if any, and assess future health risks from a genetic perspective.",
       "This advanced package offers 16 targeted panels covering 220+ phenotypes, providing valuable insights into various modern-day health concerns.",
       "Take advantage of this advanced gene-based wellness program and safeguard your health with the right precautions at the right time."
     ],
@@ -56,7 +56,7 @@ export const geneticSolutionsData = {
     },
     {
       id: "step-counselling",
-      title: "60 min Genetic Counselling from Welocity Genetic Counselors",
+      title: "60 min Genetic Counselling from Shree Namoh Wellness Genetic Counselors",
       subTitle: "",
       description: "Our certified genetic counselors guide you through your DNA report in a 60-minute one-on-one session, helping you understand your unique genetic profile.",
       icon: "/images/genomics/process/counselling.png",
