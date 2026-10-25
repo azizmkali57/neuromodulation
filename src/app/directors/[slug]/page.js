@@ -3,6 +3,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { siteData } from "@/app/siteData";
 import { directorsData, directorsList } from "@/app/directorsData";
+import { SocialIcon } from "@/components/common/SocialIcons";
 
 export function generateStaticParams() {
   return [
@@ -226,10 +227,10 @@ export default function DirectorSinglePage({ params }) {
                 <div className="relative lg:sticky lg:top-28 bg-[#f5f8fc] p-3 border-2 border-[#BDDFEC] shadow-xl">
                   {/* Photo Frame */}
                   <div
-                    className="relative overflow-hidden w-full"
+                    className="relative overflow-hidden w-full bg-white"
                     style={{
                       aspectRatio: "1/1.05",
-                      backgroundColor: "#1D1A55"
+                      backgroundColor: "#ffffff"
                     }}
                   >
                     <img
@@ -286,6 +287,38 @@ export default function DirectorSinglePage({ params }) {
                         </div>
                       </div>
                     </div>
+
+                    {/* Official Social Media Channels */}
+                    {director.socialLinks && director.socialLinks.length > 0 && (
+                      <div className="pt-3 border-t border-gray-100 mt-3">
+                        <div className="text-[11px] font-bold uppercase tracking-wider text-gray-500 mb-2">
+                          Official Channels &amp; Profiles
+                        </div>
+                        <div className="flex flex-col gap-2">
+                          {director.socialLinks.map((soc, sIdx) => (
+                            <a
+                              key={sIdx}
+                              href={soc.href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="inline-flex items-center gap-2 p-2 rounded bg-[#f0f4f9] hover:bg-[#BDDFEC] text-[#1D1A55] text-xs font-semibold transition-colors group"
+                            >
+                              <span className="p-1.5 rounded-full bg-white text-[#1D1A55] group-hover:text-[#E9511C] shadow-sm">
+                                <SocialIcon name={soc.name} className="w-3.5 h-3.5 fill-current" />
+                              </span>
+                              <div className="flex flex-col">
+                                <span className="font-bold leading-tight">{soc.name}</span>
+                                {soc.handle && (
+                                  <span className="text-[10px] text-gray-600 font-normal leading-tight">
+                                    {soc.handle}
+                                  </span>
+                                )}
+                              </div>
+                            </a>
+                          ))}
+                        </div>
+                      </div>
+                    )}
                   </div>
                 </div>
               </div>
@@ -631,7 +664,7 @@ export default function DirectorSinglePage({ params }) {
       </main>
 
       {/* 7. Global Footer */}
-      <Footer />
+      <Footer socialLinks={director.socialLinks} />
     </div>
   );
 }

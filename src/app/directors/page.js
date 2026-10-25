@@ -3,6 +3,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { siteData } from "@/app/siteData";
 import { directorsList } from "@/app/directorsData";
+import { SocialIcon } from "@/components/common/SocialIcons";
 
 export const metadata = {
   title: "Meet Our Directors | Dr Neha Arora Verma, Dr. S. S. Verma & Coach Richha Arrora",
@@ -121,7 +122,7 @@ export default function DirectorsIndexPage() {
               >
                 <div className="grid grid-cols-1 lg:grid-cols-12 items-stretch">
                   {/* Director Photo Frame (Left 5 cols) */}
-                  <div className="lg:col-span-5 relative bg-[#1D1A55] min-h-[360px] flex items-center justify-center overflow-hidden">
+                  <div className="lg:col-span-5 relative bg-white min-h-[360px] flex items-center justify-center overflow-hidden">
                     <img
                       src={director.image}
                       alt={director.name}
@@ -194,8 +195,8 @@ export default function DirectorsIndexPage() {
                       </div>
                     </div>
 
-                    {/* Action Links */}
-                    <div className="flex flex-wrap items-center gap-4 pt-4 border-t border-gray-100">
+                    {/* Action Links & Social Badges */}
+                    <div className="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-gray-100">
                       <a
                         href={`/directors/${director.slug}`}
                         className="button-link di relative font-headings type-24 ls lh-1 color-orange uppercase"
@@ -204,6 +205,27 @@ export default function DirectorsIndexPage() {
                           View Full Single Page →
                         </span>
                       </a>
+
+                      {director.socialLinks && director.socialLinks.length > 0 && (
+                        <div className="flex flex-wrap items-center gap-2">
+                          <span className="text-xs text-gray-500 font-semibold uppercase tracking-wider hidden sm:inline">
+                            Follow:
+                          </span>
+                          {director.socialLinks.map((soc, sIdx) => (
+                            <a
+                              key={sIdx}
+                              href={soc.href}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              aria-label={`${director.name} on ${soc.name}`}
+                              className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded bg-[#f0f4f9] hover:bg-[#00AF9C] text-[#1D1A55] hover:text-white text-xs font-bold transition-all shadow-sm"
+                            >
+                              <SocialIcon name={soc.name} className="w-3.5 h-3.5 fill-current" />
+                              <span>{soc.name}</span>
+                            </a>
+                          ))}
+                        </div>
+                      )}
                     </div>
                   </div>
                 </div>

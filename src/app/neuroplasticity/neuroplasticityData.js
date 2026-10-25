@@ -26,9 +26,9 @@ export const neuroplasticityData = {
       { role: "Coaches & Therapists", desc: "Wellness, mindset, executive performance, and trauma-informed coaches" }
     ],
     learningObjectives: [
-      "Understand the neurophysiological basis of neuromodulation across central and peripheral pathways",
-      "Differentiate neuromodulation, neurostimulation, and neuroplasticity — and where each fits in a care plan",
-      "Safely apply brain stimulation on chronic disease like Stroke, CVA, Alzheimer's, Parkinson etc",
+      "Understand the neurophysiological basis of Neuromodulation across central and peripheral pathways",
+      "Differentiate Neuromodulation, Neurostimulation, and Neuroplasticity — and where each fits in a care plan",
+      "Safely apply Brain Stimulation on chronic conditions like Stroke, CVA, Alzheimer's, Parkinson's, and Paralysis",
       "Recognise contraindications, red flags, and when to refer to a medical specialist",
       "Build a basic client/patient assessment and protocol-design workflow"
     ],
@@ -44,9 +44,38 @@ export const neuroplasticityData = {
       title: "Led by Dr. Neha",
       role: "India's First Neuroplasticity Coach | Neuroplasticity & Neuromodulation Coaching",
       link: "/directors/dr-neha-arora-verma",
-      image: "/images/dr-neha-portrait.jpg"
+      image: "/images/dr-neha-portrait.jpg",
+      socialLinks: [
+        {
+          name: "Instagram",
+          href: "https://www.instagram.com/neurplasticitycoachprogram/",
+          handle: "@neurplasticitycoachprogram",
+          label: "Neuroplasticity Coach Program"
+        },
+        {
+          name: "Facebook",
+          href: "https://www.facebook.com/DrNehaAroravermaNeuroPlasticityCoach/",
+          handle: "@DrNehaAroravermaNeuroPlasticityCoach",
+          label: "Dr. Neha Neuroplasticity Coach"
+        }
+      ]
     }
   },
+
+  socialLinks: [
+    {
+      name: "Instagram",
+      href: "https://www.instagram.com/neurplasticitycoachprogram/",
+      handle: "@neurplasticitycoachprogram",
+      label: "Neuroplasticity Coach Program"
+    },
+    {
+      name: "Facebook",
+      href: "https://www.facebook.com/DrNehaAroravermaNeuroPlasticityCoach/",
+      handle: "@DrNehaAroravermaNeuroPlasticityCoach",
+      label: "Dr. Neha Neuroplasticity Coach"
+    }
+  ],
 
   tableOfContents: [
     { id: "workshop-overview", label: "1. Overview & Objectives" },

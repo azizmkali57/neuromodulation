@@ -1,207 +1,410 @@
 export const neuroplasticityTrainingData = {
   hero: {
-    badge: "CLINICAL NEUROPLASTICITY • PARALYSIS REHABILITATION • LAKWA MUKT BHARAT",
-    title: "Neuroplasticity Training",
+    badge: "NEUROPLASTICITY COACH PROGRAM • LEARN • APPLY • TRANSFORM",
+    title: "Neuroplasticity Coach Program",
+    tagline: "Understand the Brain. Transform Your Practice.",
     subtitle:
-      "Rewire injured neural pathways, accelerate stroke and paralysis recovery, and regain voluntary functional mobility through India's pioneering clinical neuroplasticity coaching led by Dr. Neha Arora Verma.",
+      "An intensive professional program designed to help healthcare and wellness professionals understand neuroplasticity and its practical application in patient recovery.",
     director: "Dr. Neha Arora Verma",
-    credentials: "Director, Shree Namoh Wellness | Founder, Lakwa Mukt Bharat | India's First Neuroplasticity Coach | 17+ Years Neurological Rehabilitation",
+    credentials:
+      "M.S. (Neurological Rehabilitation, UK) • Neuromodulation Expert • Expert in Neuro Acupuncture • India's First Neuroplasticity Coach (Awarded by UN Book of World Records) • Founder, Paralysis Free India (Lakva Mukt Bharat)",
+    contactNumbers: [
+      { raw: "9827079888", display: "+91 98270-79888" },
+      { raw: "7470529991", display: "+91 74705-29991" }
+    ],
     stats: [
-      { value: "17+", label: "Years Specialized Experience in Neurological Rehabilitation" },
-      { value: "1st", label: "Recognized Neuroplasticity Coach in India" },
-      { value: "1000+", label: "Stroke & Paralysis Recovery Journeys Guided" },
-      { value: "Lakwa Mukt", label: "Pan-India Mission for Functional Independence" }
-    ]
-  },
-
-  corePhilosophy: {
-    heading: "The Brain Has the Power to Rewire Itself",
-    lead:
-      "Paralysis is not a permanent sentence. Through intense, repetitive, task-specific activation and non-invasive neuromodulatory facilitation, healthy brain circuits can adopt functions previously performed by damaged areas.",
-    pillars: [
       {
-        number: "01",
-        title: "Activity-Dependent Plasticity",
-        desc: "Neurons that fire together wire together. Targeted motor relearning exercises stimulate synaptogenesis and rebuild dormant neuromuscular pathways."
+        value: "1 Lakh+",
+        label: "Patients Assisted Toward Recovery, Mobility & Quality of Life"
       },
       {
-        number: "02",
-        title: "Sensory-Motor Integration",
-        desc: "Re-educating afferent proprioceptive inputs through tactile feedback, mirror visual therapy, and functional electric stimulation."
+        value: "1st",
+        label: "Neuroplasticity Coach in India (UN Book of World Records)"
       },
       {
-        number: "03",
-        title: "Neuromodulation Synergy",
-        desc: "Combining tDCS, vagus nerve stimulation, and peripheral neuro-activation to prime the cortex for rapid neuroplastic adaptation."
+        value: "M.S. (UK)",
+        label: "Specialized in Neurological Rehabilitation & Neuromodulation"
       },
       {
-        number: "04",
-        title: "Family & Caregiver Empowerment",
-        desc: "Training family members in structured bedside and home protocols so neuroplastic stimulation continues 24/7 beyond clinic walls."
+        value: "Lakva Mukt",
+        label: "Founder of Paralysis Free India National Initiative"
+      }
+    ],
+    socialLinks: [
+      {
+        name: "Instagram",
+        href: "https://www.instagram.com/neurplasticitycoachprogram/",
+        handle: "@neurplasticitycoachprogram",
+        label: "Neuroplasticity Coach Program"
+      },
+      {
+        name: "Facebook",
+        href: "https://www.facebook.com/DrNehaAroravermaNeuroPlasticityCoach/",
+        handle: "@DrNehaAroravermaNeuroPlasticityCoach",
+        label: "Dr. Neha Neuroplasticity Coach"
       }
     ]
   },
 
-  trainingTracks: [
+  socialLinks: [
     {
-      id: "track-stroke",
+      name: "Instagram",
+      href: "https://www.instagram.com/neurplasticitycoachprogram/",
+      handle: "@neurplasticitycoachprogram",
+      label: "Neuroplasticity Coach Program"
+    },
+    {
+      name: "Facebook",
+      href: "https://www.facebook.com/DrNehaAroravermaNeuroPlasticityCoach/",
+      handle: "@DrNehaAroravermaNeuroPlasticityCoach",
+      label: "Dr. Neha Neuroplasticity Coach"
+    }
+  ],
+
+  meetDirector: {
+    heading: "Meet Dr. Neha Arora Verma",
+    subtitle:
+      "M.S. (Neurological Rehabilitation, UK) • Neuromodulation Expert • Neuro-Acupuncture Specialist • Neuroplasticity Coach",
+    bio: [
+      "Dr. Neha Arora Verma, M.S. (Neurological Rehabilitation, UK) is a renowned Neuromodulation Expert, Neuro-Acupuncture Specialist, and Neuroplasticity Coach dedicated to transforming lives through advanced neurological rehabilitation.",
+      "She is recognized as India’s First Neuroplasticity Coach, awarded by the UN Book of World Records, and is the Founder of Paralysis Free India (Lakva Mukt Bharat).",
+      "With her expertise in neuroplasticity, neuromodulation, and neurological rehabilitation, Dr. Neha has successfully helped 1 Lakh+ patients on their journey toward improved recovery, mobility, and quality of life.",
+      "Her mission: Harness the power of neuroplasticity to make neurological recovery possible for millions."
+    ],
+    quote: "Harness the power of neuroplasticity to make neurological recovery possible for millions."
+  },
+
+  lookBeyondSymptoms: {
+    heading: "What If You Could Look Beyond the Symptoms?",
+    lead:
+      "A patient may present with muscle weakness, difficulty walking, speech problems, poor coordination, or reduced cognitive function. But behind every movement, every sensation, and every behaviour is a brain that is constantly learning and adapting.",
+    goalHighlight: "THE GOAL? NOT JUST TO TREAT THE SYMPTOM. UNDERSTAND THE BRAIN BEHIND THE SYMPTOM.",
+    symptoms: [
+      {
+        title: "Muscle Weakness",
+        desc: "Decreased voluntary motor unit recruitment and cortical representation loss."
+      },
+      {
+        title: "Difficulty Walking",
+        desc: "Disrupted reciprocal stepping circuits, balance pathways, and sensory feedback."
+      },
+      {
+        title: "Speech Problems",
+        desc: "Impairments in Broca's/Wernicke's linguistic networks or motor speech coordination."
+      },
+      {
+        title: "Poor Coordination",
+        desc: "Cerebellar and basal ganglia signaling disconnects affecting fluidity of motion."
+      },
+      {
+        title: "Reduced Cognitive Function",
+        desc: "Altered working memory, attentional bandwidth, and executive sequencing."
+      }
+    ],
+    coreTruth: "Behind every symptom is a brain that is constantly learning and adapting."
+  },
+
+  whatIsTheProgram: {
+    heading: "A Practical Approach to Applied Neuroplasticity",
+    lead:
+      "This program takes neuroscience beyond theory and focuses on practical clinical application. The focus is on helping you think differently about recovery.",
+    objectives: [
+      "Understand the fundamentals of neuroplasticity",
+      "Identify adaptive and maladaptive patterns",
+      "Understand how the brain learns new movements and behaviours",
+      "Use repetition and task-specific training more effectively",
+      "Understand the role of sensory and motor stimulation",
+      "Develop more structured recovery strategies",
+      "Assess and track patient progress",
+      "Integrate neuroplasticity principles into your existing practice"
+    ],
+    summaryStatement: "The focus is on helping you think differently about recovery."
+  },
+
+  whoIsThisFor: {
+    heading: "Who is This Program For?",
+    subtitle: "Designed for professionals working with the brain & body",
+    lead:
+      "If you are already working with patients and want to understand the neuroscience behind recovery, this program can help you expand your approach.",
+    audiences: [
+      {
+        role: "Doctors",
+        desc: "Neurologists, physiatrists, and general physicians aiming to incorporate neuroplastic recovery mechanisms into patient guidance."
+      },
+      {
+        role: "Physiotherapists",
+        desc: "Physical therapists transitioning from passive musculoskeletal protocols to brain-targeted active neuro-rehabilitation."
+      },
+      {
+        role: "Neurotherapists",
+        desc: "Clinicians seeking deeper neuroscientific foundations, synaptic mapping, and neuromodulation synergy."
+      },
+      {
+        role: "Occupational Therapists",
+        desc: "OTs focusing on fine motor dexterity, upper limb reclamation, and daily activity neuroplastic re-education."
+      },
+      {
+        role: "Speech & Language Professionals",
+        desc: "Pathologists working with aphasia, dysarthria, apraxia, and neurogenic communication disorders."
+      },
+      {
+        role: "Healers & Wellness Professionals",
+        desc: "Holistic practitioners interested in mind-body neurobiology, nervous system regulation, and bio-energetics."
+      },
+      {
+        role: "Coaches",
+        desc: "Movement coaches, performance trainers, and recovery coaches wanting brain-based biomechanical insight."
+      },
+      {
+        role: "Rehabilitation Professionals",
+        desc: "Multidisciplinary rehabilitation center directors, clinical supervisors, and allied health staff."
+      }
+    ]
+  },
+
+  learningJourney: [
+    {
       number: "01",
-      title: "Post-Stroke Motor Re-Education & Hemiplegia Recovery",
-      subtitle: "Upper & Lower Limb Functional Reactivation",
-      description:
-        "Comprehensive motor relearning protocols designed specifically for post-ischemic and hemorrhagic stroke survivors suffering from hemiplegia, spasticity, and hand-function loss.",
-      deliverables: [
-        "Constraint-Induced Movement Therapy (CIMT) principles for upper limb activation",
-        "Fine motor pincer grasp, wrist extension, and tactile object recognition",
-        "Spasticity inhibition and antagonist muscle tone balancing",
-        "Mirror therapy for phantom cortical limb representation"
-      ],
-      image: "/images/stroke-motor-relearning.jpg",
-      tag: "STROKE REHABILITATION"
+      title: "Foundations of Neuroscience",
+      desc: "Understand the basic functioning of the brain and nervous system."
     },
     {
-      id: "track-paralysis",
       number: "02",
-      title: "Paralysis Functional Mobility & Gait Retraining",
-      subtitle: "Weight Bearing, Dynamic Balance & Independent Ambulation",
-      description:
-        "Re-establishing trunk control, pelvis stabilization, weight-shifting mechanisms, and reciprocal stepping patterns for spinal cord injuries and paraplegia/quadriplegia rehabilitation.",
-      deliverables: [
-        "Core trunk stabilization and sitting-to-standing transition mastery",
-        "Body-weight supported gait re-education and cadence training",
-        "Proprioceptive neuromuscular facilitation (PNF) for reciprocal movement",
-        "Fall prevention strategies and dynamic balance board coordination"
-      ],
-      image: "/images/paralysis-gait-retraining.jpg",
-      tag: "PARALYSIS MOBILITY"
+      title: "Understanding Neuroplasticity",
+      desc: "Learn how the brain adapts, learns, and creates new neural connections."
     },
     {
-      id: "track-parkinsons",
       number: "03",
-      title: "Parkinson’s Disease & Movement Disorder Conditioning",
-      subtitle: "Large-Amplitude Movement, Rhythm & Freezing Mitigation",
-      description:
-        "Neuroplastic cueing mechanisms designed to bypass dysfunctional basal ganglia circuitry using auditory rhythms, visual pacing lines, and amplitude training.",
-      deliverables: [
-        "High-amplitude movement training (LSVT BIG inspired protocols)",
-        "Rhythmic auditory stimulation (RAS) to overcome gait freezing",
-        "Dual-task cognitive-motor agility drills",
-        "Postural realignment and rigidity reduction routines"
-      ],
-      image: "/images/parkinsons-movement-training.jpg",
-      tag: "MOVEMENT DISORDERS"
+      title: "Adaptive vs Maladaptive Neuroplasticity",
+      desc: "Understand how the brain can learn both useful and inefficient patterns."
     },
     {
-      id: "track-speech-aphasia",
       number: "04",
-      title: "Neuro-Cognitive, Speech & Facial Nerve Retraining",
-      subtitle: "Bell’s Palsy, Aphasia & Post-Stroke Cognitive Rehabilitation",
-      description:
-        "Specialized neuroplastic drills targeting Broca's and Wernicke's speech circuits, facial nerve neuromuscular re-education, memory, and executive function.",
-      deliverables: [
-        "Facial muscle selective recruitment for Bell’s Palsy & stroke facial asymmetry",
-        "Melodic intonation and neuro-linguistic recovery for expressive aphasia",
-        "Spatial awareness, hemispatial neglect correction, and visual tracking",
-        "Executive processing, working memory, and dual-task everyday sequencing"
-      ],
-      image: "/images/cognitive-speech-retraining.jpg",
-      tag: "COGNITIVE & SPEECH"
+      title: "Brain & Functional Assessment",
+      desc: "Learn to look beyond symptoms and understand functional limitations."
+    },
+    {
+      number: "05",
+      title: "Motor & Sensory Recovery",
+      desc: "Understand the relationship between sensory input, movement, and brain function."
+    },
+    {
+      number: "06",
+      title: "Neuroplasticity in Rehabilitation",
+      desc: "Learn how repetition, intensity, task specificity, and feedback influence learning."
+    },
+    {
+      number: "07",
+      title: "Advanced Brain-Based Approaches",
+      desc: "Understand the role of emerging technologies and neuromodulation."
+    },
+    {
+      number: "08",
+      title: "Clinical Application",
+      desc: "Learn to translate concepts into patient-specific strategies and protocols."
     }
   ],
 
-  clinicalMethodology: [
+  decisionFlowchart: {
+    heading: "From Knowledge to Application",
+    subheading:
+      "It's not just about learning neuroplasticity — the real value lies in knowing how to apply it.",
+    steps: [
+      {
+        step: "01",
+        question: "What is the patient's actual functional goal?",
+        context: "Identify specific, meaningful daily activities rather than abstract muscle groups."
+      },
+      {
+        step: "02",
+        question: "What is preventing them from achieving it?",
+        context: "Differentiate between mechanical restrictions, tone spasticity, and central circuit suppression."
+      },
+      {
+        step: "03",
+        question: "What has their brain already learned?",
+        context: "Evaluate compensation strategies, learned non-use, and altered motor representations."
+      },
+      {
+        step: "04",
+        question: "Is the current pattern adaptive or maladaptive?",
+        context: "Distinguish between compensatory assistance and harmful neuroplastic habituation."
+      },
+      {
+        step: "05",
+        question: "What type of stimulation, repetition, or task-specific training may be appropriate?",
+        context: "Calibrate intensity, sensory priming, neuromodulation, and high-frequency drills."
+      },
+      {
+        step: "06",
+        question: "How will we measure progress?",
+        context: "Track objective functional indices, voluntary movement kinematics, and real-world independence."
+      }
+    ]
+  },
+
+  benefits: [
     {
-      phase: "PHASE 01",
-      title: "Comprehensive Neurological Evaluation",
-      desc: "Baseline assessment of motor deficits, spasticity (Modified Ashworth Scale), muscle recruitment, sensory thresholds, and cognitive status."
+      number: "01",
+      title: "Think More Clinically",
+      desc: "Develop a stronger understanding of the brain's role in movement, behaviour, cognition, and recovery."
     },
     {
-      phase: "PHASE 02",
-      title: "Neuroplastic Prime & Circuit Calibration",
-      desc: "Non-invasive brain stimulation or peripheral nerve priming applied right before motor exercises to induce long-term potentiation (LTP)."
+      number: "02",
+      title: "Create More Purposeful Strategies",
+      desc: "Move from generic interventions towards patient-specific, goal-oriented approaches."
     },
     {
-      phase: "PHASE 03",
-      title: "Task-Specific Intensive Training",
-      desc: "High-repetition, meaningful goal-directed motor activities that simulate real-world activities (drinking water, standing, walking, writing)."
+      number: "03",
+      title: "Understand Repetition Better",
+      desc: "Learn why what you repeat and how you repeat it matters for cortical reorganization."
     },
     {
-      phase: "PHASE 04",
-      title: "Caregiver Bedside Protocol Training",
-      desc: "Empowering family members with safe transfer techniques, home range-of-motion drills, and positioning to maintain gains around the clock."
+      number: "04",
+      title: "Track Progress",
+      desc: "Learn to look at measurable functional changes rather than relying only on subjective improvement."
     },
     {
-      phase: "PHASE 05",
-      title: "Long-Term Re-Evaluation & Milestones",
-      desc: "Continuous functional score tracking, gradual tapering of assistance, and celebration of reclaimed everyday independence."
+      number: "05",
+      title: "Expand Your Skill Set",
+      desc: "Add applied neuroplasticity to the professional knowledge you already have."
+    },
+    {
+      number: "06",
+      title: "Evolve Your Practice",
+      desc: "Differentiate your approach by bringing neuroscience-based thinking into your existing work."
     }
   ],
 
-  trainingPrograms: [
+  perspectiveShift: {
+    heading: "What Makes This Different?",
+    subtitle: "From Practitioner to Neuroplasticity Coach",
+    traditional: {
+      question: "“What exercise should we do?”",
+      label: "TRADITIONAL REHABILITATION ASKS",
+      desc: "Often focuses on repetitive mechanical motions, passive limb stretching, and muscle group maintenance."
+    },
+    neuroplasticity: {
+      question: "“What does the brain need to learn?”",
+      label: "A NEUROPLASTICITY-FOCUSED APPROACH ASKS",
+      desc: "That change in perspective influences how you assess a patient, design an intervention, and measure recovery."
+    },
+    frameworkSteps: [
+      { step: "ASSESS", desc: "Baseline neural & functional mapping" },
+      { step: "UNDERSTAND", desc: "Identify brain circuits & limitations" },
+      { step: "ACTIVATE", desc: "Non-invasive priming & stimulation" },
+      { step: "TRAIN", desc: "Goal-directed task-specific drills" },
+      { step: "REPEAT", desc: "High-dose targeted synaptogenesis" },
+      { step: "ADAPT", desc: "Reinforce adaptive motor learning" },
+      { step: "MEASURE", desc: "Objective recovery milestone verification" }
+    ],
+    footer:
+      "The program is designed to help you build this way of thinking into your professional practice."
+  },
+
+  takeaways: [
+    "A stronger foundation in neuroscience and neuroplasticity",
+    "An understanding of adaptive & maladaptive neuroplasticity",
+    "Practical frameworks for thinking about patient recovery",
+    "Greater understanding of motor and sensory learning",
+    "Tools for developing goal-oriented strategies",
+    "A structured approach to patient assessment and progress tracking",
+    "Understanding of advanced brain-based approaches",
+    "Case-based learning and practical application",
+    "A framework to integrate neuroplasticity into your existing practice"
+  ],
+  takeawayConclusion: "And most importantly… A new way of looking at recovery.",
+
+  courses: [
     {
-      name: "In-Clinic Intensive Neuroplasticity Program",
-      category: "ONE-ON-ONE CLINICAL CARE",
+      id: "course-offline",
+      format: "OFFLINE COURSE",
+      name: "Certification in Neuromodulation Technology",
+      duration: "5 DAYS",
+      location: "In-Clinic Practicum (Shree Namoh Wellness, Indore)",
       featured: true,
       description:
-        "Daily personalized 1-on-1 rehabilitation sessions supervised directly by Dr. Neha Arora Verma and senior neurotherapists at Shree Namoh Wellness in Indore.",
-      features: [
-        "Comprehensive Initial Clinical & Functional Mobility Mapping",
-        "Daily Intensive Task-Specific Motor Relearning (90-120 mins/day)",
-        "Advanced Non-Invasive Neuromodulation Device Integration",
-        "Gait Lab & Balance Training Sessions",
-        "Weekly Progress Milestones & Objective Video Metric Reviews",
-        "Personalized Home Exercise Plan on Discharge"
+        "Intensive 5-day hands-on clinical certification covering advanced non-invasive neuromodulation technologies, brain stimulation physics, and practical patient case demonstrations.",
+      highlights: [
+        "Hands-on device operation & electrode calibration (tDCS, tACS, peripheral stimulation)",
+        "Direct clinical case demonstrations supervised by Dr. Neha Arora Verma",
+        "Protocols for Stroke, Hemiplegia, Parkinson's & Paralysis recovery",
+        "Safety parameters, contraindication screening & current intensity dosing",
+        "Official Certificate of Competence in Neuromodulation Technology"
       ],
-      recommendedFor: "Patients recovering from acute or chronic stroke, paralysis, and severe functional loss."
+      recommendedFor: "Physiotherapists, doctors, neuro-rehab specialists, and occupational therapists."
     },
     {
-      name: "Lakwa Mukt Family & Tele-Rehab Mentorship",
-      category: "OUTSTATION & HOME CARE",
+      id: "course-online",
+      format: "ONLINE COURSE",
+      name: "Advance Neuroplasticity Master Coach Program",
+      duration: "2 MONTHS",
+      location: "Interactive Online Virtual Campus",
+      featured: true,
       description:
-        "For patients residing outside Indore across India who seek Dr. Neha’s clinical guidance, structured weekly exercise schedules, and family coaching.",
-      features: [
-        "Deep-Dive Virtual Neurological Assessment & Video Gait Analysis",
-        "Step-by-Step Video Exercise Library Tailored to Patient's Exact Stage",
-        "Weekly Live Video Consultations with Dr. Neha Arora Verma",
-        "Family / Caregiver Technique Certification & Support",
-        "Direct WhatsApp Helpline with Clinical Neuro-Team",
-        "Monthly Protocol Adjustments as Neural Recovery Evolves"
+        "Comprehensive 2-month professional master program providing in-depth neuroscience modules, adaptive vs. maladaptive frameworks, weekly live mentoring, and clinical implementation.",
+      highlights: [
+        "8 comprehensive modules covering neuroscience to clinical translation",
+        "Weekly live interactive coaching sessions with Dr. Neha Arora Verma",
+        "Adaptive vs. maladaptive motor habituation identification protocols",
+        "Goal-oriented task-specific training architectures & patient progress metrics",
+        "Prestigious Master Coach Certification & Alumni Professional Network"
       ],
-      recommendedFor: "Patients unable to travel to Indore who require expert remote guidance."
-    },
-    {
-      name: "Practitioner Clinical Fellowship & Mentorship",
-      category: "FOR PHYSIOTHERAPISTS & DOCTORS",
-      description:
-        "Hands-on clinical training for physiotherapists, occupational therapists, and doctors seeking mastery in applied clinical neuroplasticity.",
-      features: [
-        "Hands-on Patient Case Demonstration with Dr. Neha Arora Verma",
-        "Waveform Physics & Device Calibration (tDCS, VNS, Functional Stimulation)",
-        "Differential Diagnosis of Upper vs. Lower Motor Neuron Lesions",
-        "Spasticity Breaking & Functional Movement Recovery Techniques",
-        "Official Certificate of Clinical Neuroplasticity Competence",
-        "Alumni Referral Network & Clinical Case Consultation Access"
-      ],
-      recommendedFor: "Rehab specialists, physiotherapists, and neuro-clinicians."
+      recommendedFor: "Doctors, rehab specialists, coaches, healers, speech therapists, and healthcare practitioners across India and globally."
     }
   ],
+
+  webinar: {
+    title: "Join Our Upcoming Webinar",
+    subtitle: "Want to know more about the Neuroplasticity Coach Program?",
+    description:
+      "Discover the course structure, learning outcomes, case-study methodologies, and career opportunities in applied neuroplasticity and neuromodulation.",
+    bulletPoints: [
+      "Live overview with Dr. Neha Arora Verma",
+      "Explanation of the 7-stage clinical framework",
+      "Interactive Q&A on practice integration and patient recovery",
+      "Preview of course curriculum and enrollment guidelines"
+    ],
+    contactPhones: [
+      { raw: "9827079888", display: "+91 98270-79888" },
+      { raw: "7470529991", display: "+91 74705-29991" }
+    ]
+  },
+
+  closingManifesto: {
+    heading: "Your Patient's Recovery Starts With Understanding the Brain",
+    lead:
+      "Neuroplasticity is not about promising miracles. It is about understanding the brain's capacity to adapt, learn, and change — and learning how to create better conditions for meaningful recovery.",
+    actionCall: "It's time to learn neuroplasticity. Become a Neuroplasticity Coach today.",
+    motto: "LEARN THE SCIENCE. UNDERSTAND THE PROCESS. APPLY IT IN PRACTICE.",
+    directorName: "Dr. Neha Arora Verma",
+    directorTitle: "India's First Neuroplasticity Coach • M.S. (Neurological Rehabilitation, UK)",
+    contactNumbers: [
+      { raw: "9827079888", display: "+91 98270-79888" },
+      { raw: "7470529991", display: "+91 74705-29991" }
+    ]
+  },
 
   faqs: [
     {
-      q: "Can chronic stroke or paralysis patients recover after months or years?",
-      a: "Yes. While the first 6 months offer rapid spontaneous recovery, scientific research confirms that neuroplasticity never ends. Even years post-stroke or injury, structured high-intensity task-specific training combined with neuromodulation can reactivate dormant neural pathways and yield meaningful functional gains."
+      q: "What is the main objective of the Neuroplasticity Coach Program?",
+      a: "The program is designed to take neuroscience beyond theoretical textbooks into practical clinical application. It trains healthcare and wellness practitioners to understand how the brain learns, adapts, and recovers, enabling them to design purposeful, goal-oriented, task-specific recovery programs."
     },
     {
-      q: "How does Neuroplasticity Training differ from ordinary physiotherapy?",
-      a: "Ordinary physiotherapy often focuses on passive limb stretching and muscle maintenance. Neuroplasticity Training targets the brain and spinal circuits driving those muscles. We use active problem-solving exercises, sensory cueing, non-invasive cortical priming, and cognitive-motor integration to stimulate actual neurological rewiring."
+      q: "Who is eligible to enroll in this program?",
+      a: "The program is designed for professionals working with the brain and body: Doctors, Physiotherapists, Neurotherapists, Occupational Therapists, Speech & Language Professionals, Healers, Wellness Professionals, Coaches, and Rehabilitation Specialists."
     },
     {
-      q: "What is the role of family members in this training?",
-      a: "Family involvement is at the very core of Dr. Neha's Lakwa Mukt Bharat philosophy. Patients spend 1-2 hours in therapy and 22 hours at home. We train caregivers extensively so they understand safe transfer mechanics, positive reinforcement, and daily home movement routines."
+      q: "What is the difference between the 5-Day Offline Course and 2-Month Online Course?",
+      a: "The 5-Day Offline Course (Certification in Neuromodulation Technology) is an intensive in-clinic hands-on practicum focusing on neuromodulation device calibration, electrode placement, and live patient demonstrations. The 2-Month Online Course (Advance Neuroplasticity Master Coach Program) provides deep theoretical, diagnostic, and clinical framework training with weekly live sessions, case studies, and mentorship."
     },
     {
-      q: "Where is the in-clinic training conducted?",
-      a: "In-clinic training is conducted at Shree Namoh Wellness, located at A-65 MIG, Behind CHL Hospital, Indore, Madhya Pradesh. For outstation patients, we also provide virtual assessment and family coaching modules."
+      q: "How does applied neuroplasticity change traditional rehabilitation?",
+      a: "Traditional rehabilitation typically asks 'What exercise should we do?', focusing heavily on passive limb manipulation. Neuroplasticity asks 'What does the brain need to learn?', focusing on active problem solving, sensory cueing, synaptogenesis, and reversing maladaptive compensatory habits."
+    },
+    {
+      q: "How can I attend the introductory webinar or register for an upcoming batch?",
+      a: "You can submit the application form on this page or call our direct program helplines at 98270-79888 or 7470529991. Our clinical education desk will assist you with batch dates, webinar links, and syllabus details."
     }
   ]
 };

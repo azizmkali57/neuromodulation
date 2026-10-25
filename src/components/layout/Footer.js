@@ -2,10 +2,16 @@
 
 import React, { useState } from "react";
 import { siteData } from "@/app/siteData";
+import { SocialIcon } from "@/components/common/SocialIcons";
 
-export default function Footer() {
+export default function Footer({ socialLinks } = {}) {
   const { navLinks, tuvLogo, financialStats, locations, legalLinks, copyright } =
     siteData.footer;
+
+  const activeSocialLinks =
+    socialLinks && socialLinks.length > 0
+      ? socialLinks
+      : siteData.footer.socialLinks;
 
   const [email, setEmail] = useState("");
   const [agreed, setAgreed] = useState(false);
@@ -153,16 +159,18 @@ export default function Footer() {
             ))}
           </div>
 
-          <div className="flex items-center gap-3">
-            {siteData.footer.socialLinks.map((s, idx) => (
+          <div className="flex flex-wrap items-center gap-2.5">
+            {activeSocialLinks.map((s, idx) => (
               <a
                 key={idx}
                 href={s.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-white/70 hover:text-[#00AF9C] transition-colors"
+                aria-label={s.name}
+                className="inline-flex items-center gap-1.5 text-white/80 hover:text-[#00AF9C] bg-white/5 hover:bg-white/10 px-2.5 py-1 rounded transition-colors"
               >
-                {s.name}
+                <SocialIcon name={s.name} className="w-3.5 h-3.5 fill-current" />
+                <span>{s.name}</span>
               </a>
             ))}
           </div>

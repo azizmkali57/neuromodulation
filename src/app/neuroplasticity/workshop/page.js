@@ -5,6 +5,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { siteData } from "@/app/siteData";
 import { neuroplasticityData } from "../neuroplasticityData";
+import { SocialIcon } from "@/components/common/SocialIcons";
 
 const TARGET_ADMISSIONS_EMAIL = "neha_arora27@yahoo.com";
 const WHATSAPP_NUMBER = "7470529991";
@@ -279,6 +280,23 @@ export default function NeuroplasticityWorkshopPage() {
               </div>
 
               <div className="flex flex-wrap items-center gap-3">
+                {hero.director.socialLinks && (
+                  <div className="flex items-center gap-2 mr-2">
+                    {hero.director.socialLinks.map((soc, sIdx) => (
+                      <a
+                        key={sIdx}
+                        href={soc.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={`Dr. Neha on ${soc.name}`}
+                        className="inline-flex items-center gap-1.5 px-3 py-2 bg-white/10 hover:bg-[#FEE003] hover:text-[#1D1A55] text-white rounded text-xs font-bold transition-all"
+                      >
+                        <SocialIcon name={soc.name} className="w-3.5 h-3.5 fill-current" />
+                        <span>{soc.name}</span>
+                      </a>
+                    ))}
+                  </div>
+                )}
                 <a
                   href={hero.director.link}
                   className="font-headings text-xs uppercase px-4 py-2.5 bg-white/10 hover:bg-white/20 text-white rounded transition-colors"
@@ -838,7 +856,7 @@ export default function NeuroplasticityWorkshopPage() {
       </main>
 
       {/* Global Footer */}
-      <Footer />
+      <Footer socialLinks={neuroplasticityData.socialLinks} />
     </div>
   );
 }

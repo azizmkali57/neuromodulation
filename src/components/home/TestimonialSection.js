@@ -341,8 +341,8 @@ export default function TestimonialSection() {
               Begin Your Journey to Recovery &amp; Personalized Wellness
             </h3>
             <p className="text-xs text-[#BDDFEC] mt-1 max-w-xl">
-              Connect with our clinical team at Shree Namoh Wellness for paralysis rehabilitation, genetic counseling,
-              and advanced eye consultations.
+              Connect with our clinical team at Shree Namoh Wellness for Paralysis Rehabilitation, Genetic Counseling,
+              and Advanced Eye Care Consultations.
             </p>
           </div>
 

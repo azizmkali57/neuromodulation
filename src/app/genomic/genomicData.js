@@ -4,7 +4,7 @@ export const genomicData = {
     headingHighlight: "KNOW YOUR DNA",
     headingRest: "DISCOVER YOUR HEALTH POTENTIAL",
     lead:
-      "Unlock the 0.1% of your genetic code that makes all the difference. Discover how your unique biological blueprint metabolizes nutrients, governs disease predisposition, and shapes optimal longevity with precision DNA testing and expert genetic counseling.",
+      "Unlock the 0.1% of your Genetic Code that makes all the difference. Discover how your unique biological blueprint metabolizes nutrients, governs disease predisposition, and shapes optimal longevity with precision DNA Testing and expert Genetic Counseling.",
     metrics: [
       { value: "3 Billion", label: "Base Pairs Decoded per Cell" },
       { value: "25,000", label: "Functional Human Genes" },
@@ -105,8 +105,8 @@ export const genomicData = {
       paragraphs: [
         "All chronic health complaints—from unexplained fatigue, brain fog, and low immunity to stubborn abdominal adiposity and mood fluctuations—arise from imbalances within your body's unique biological systems. The master set of operating instructions for these systems is hardcoded into your DNA.",
         "By testing your DNA blueprint, we identify the root causes of health challenges rather than merely suppressing surface symptoms with temporary fixes.",
-        "For example, consider a patient experiencing chronic anxiety, depressive episodes, low vitality, and cognitive brain fog. Conventional approaches might suggest generic supplements or antidepressants. Through genetic screening, we may discover variant alleles in the HLA gene complex causing an autoimmune sensitivity to gluten. Armed with this insight, transitioning the patient away from wheat chapatis to naachni (ragi) or rice alternatives, alongside a structured anti-inflammatory protocol, resolves the underlying autoimmune cascade at its biological source.",
-        "Because every human possesses unique DNA, it is biologically impossible for one standardized diet to work for everyone. DNA testing pinpoints your capacity to metabolize carbohydrates, saturated fats, monounsaturated fats, proteins, and fibers. It reveals your sensitivity to gluten, lactose, and caffeine, and evaluates your cellular ability to absorb essential vitamins (such as B12, D3, Folate) and activate endogenous antioxidants."
+        "For example, consider a patient experiencing chronic anxiety, depressive episodes, low vitality, and cognitive brain fog. Conventional approaches might suggest generic supplements or antidepressants. Through Genetic Screening, we may discover variant alleles in the HLA gene complex causing an autoimmune sensitivity to gluten. Armed with this insight, transitioning the patient away from wheat chapatis to naachni (ragi) or rice alternatives, alongside a structured anti-inflammatory protocol, resolves the underlying autoimmune cascade at its biological source.",
+        "Because every human possesses unique DNA, it is biologically impossible for one standardized diet to work for everyone. DNA testing pinpoints your capacity to metabolize carbohydrates, saturated fats, monounsaturated fats, proteins, and fibers. It reveals your sensitivity to gluten, lactose, and caffeine, and evaluates your cellular ability to absorb essential vitamins (such as B12, D3, Folate) and activate endogenous antioxidants.",
       ],
       keyTakeaways: [
         "Targets the root biological etiology rather than masking recurring symptoms.",
@@ -122,12 +122,11 @@ export const genomicData = {
       title: "Your Genetic Counseling Session",
       subtitle: "Expert Scientific Interpretation Delivered with Compassion & Clarity",
       image: "/images/genomics/image5.jpeg",
-      imageCaption: "Virtual 1-on-1 Genetic Counseling: Translating complex bioinformatics into understandable lifestyle actions.",
       paragraphs: [
-        "Undergoing a once-in-a-lifetime DNA test followed by an insightful, structured genetic counseling session is a transformative turning point for our clients. Many describe it as receiving a personal GPS for their health, wellness, and longevity.",
+        "Undergoing a once-in-a-lifetime DNA test followed by an insightful, structured Genetic Counseling session is a transformative turning point for our clients. Many describe it as receiving a personal GPS for their health, wellness, and longevity.",
         "It is natural to wonder: 'Will knowing my genetic predispositions stress me out?' Literally everyone experiences this initial hesitation. We frequently worry about the 'what-ifs'. But consider what is far worse: not knowing about a preventable condition until chronic disease has already caused irreversible physiological damage.",
         "With our comprehensive DNA test, you discover what you are predisposed to while simultaneously receiving economical, gene-based wellness solutions to avert those risks before they manifest. As the medical adage states: 'Genes load the gun, but environment and lifestyle pull the trigger.' You cannot alter the genes you were born with, but you have immense power to prevent risk alleles from being expressed through targeted nutrition and lifestyle.",
-        "When your report is ready, there is no need to decipher technical bioinformatics on your own. Our experienced Nutrigenomics Counselors (NGCs) decode every phenotype, explain the findings in plain, accessible language, and analyze your current dietary patterns. Genetic counseling is conducted virtually via secure video or voice calls worldwide, allowing you to participate comfortably from your home or office at a time that suits your schedule. We also provide counseling in multiple languages to ensure total clarity."
+        "When your report is ready, there is no need to decipher technical bioinformatics on your own. Our experienced Nutrigenomics Counselors (NGCs) decode every phenotype, explain the findings in plain, accessible language, and analyze your current dietary patterns. Genetic Counseling is conducted virtually via secure video or voice calls worldwide, allowing you to participate comfortably from your home or office at a time that suits your schedule. We also provide counseling in multiple languages to ensure total clarity."
       ],
       keyTakeaways: [
         "Translates complex bioinformatics into actionable, practical lifestyle modifications.",
@@ -145,10 +144,10 @@ export const genomicData = {
       image: "/images/genomics/image6.png",
       imageCaption: "Personalized Action Plan Roadmap: Guiding you to Live Better, Eat Better, and Get Better.",
       paragraphs: [
-        "Predictive genetic testing combined with gene-based personalized nutrition shatters the antiquated dogma of 'one size fits all' and generic 'Recommended Daily Allowances'. Your dietary strategy should never depend solely on basic anthropometric weight, height, and standard routine blood panels.",
-        "Instead of waiting to arrive at a specialist's clinic after severe symptoms emerge, genetic insights allow you to implement predictive and preventive safeguards years in advance. A genetic report is both a predictive risk assessment and a diagnostic foundation for precision health interventions.",
+        "Predictive Genetic Testing combined with gene-based personalized nutrition shatters the antiquated dogma of 'one size fits all' and generic 'Recommended Daily Allowances'. Your dietary strategy should never depend solely on basic anthropometric weight, height, and standard routine blood panels.",
+        "Instead of waiting to arrive at a specialist's clinic after severe symptoms emerge, Genetic Insights allow you to implement predictive and preventive safeguards years in advance. A genetic report is both a predictive risk assessment and a diagnostic foundation for precision health interventions.",
         "At Shree Namoh Wellness, we provide focused Targeted Panels as well as our flagship Comprehensive DNA Testing Program covering Wellness, Nutrition, Medical Risk Predispositions, and Athletic Fitness. Following your consultation, our clinical team curates your Personalized Gene-Based Diet & Lifestyle Plan within 7 working days, delivered directly in high-resolution PDF format.",
-        "Because this roadmap is precision-calibrated to your genetic sequence, there is zero trial and error. We recommend gene-compatible foods, micro-nutritional supplements, and exercise parameters that harmonize with your physiology. Through scheduled one-on-one follow-ups, we track your measurable markers to ensure sustainable, life-long vitality."
+        "Because this roadmap is precision-calibrated to your Genetic Sequence, there is zero trial and error. We recommend gene-compatible foods, micro-nutritional supplements, and exercise parameters that harmonize with your physiology. Through scheduled one-on-one follow-ups, we track your measurable markers to ensure sustainable, life-long vitality."
       ],
       keyTakeaways: [
         "Eliminates trial-and-error dieting with genetically validated nutritional parameters.",
@@ -173,7 +172,7 @@ export const genomicData = {
     },
     {
       title: "Comprehensive Whole-Genome Wellness Program",
-      focus: "All panels combined with comprehensive bioinformatics decoding, 1-on-1 expert genetic counseling, and a tailored 7-day personalized PDF diet roadmap."
+      focus: "All panels combined with comprehensive bioinformatics decoding, 1-on-1 expert Genetic Counseling, and a tailored 7-day personalized PDF diet roadmap."
     }
   ]
 };

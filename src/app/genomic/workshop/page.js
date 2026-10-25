@@ -125,7 +125,7 @@ export default function GenomicWorkshopPage() {
               <span>/</span>
               <span className="text-gray-400">Genomic</span>
               <span>/</span>
-              <span className="text-[#1D1A55] font-bold">Workshop Overview &amp; DNA Counseling</span>
+              <span className="text-[#1D1A55] font-bold">Genomic Counseling &amp; DNA Testing</span>
             </nav>
 
             {/* Top Eyebrow */}

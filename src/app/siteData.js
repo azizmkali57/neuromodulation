@@ -156,7 +156,7 @@ export const siteData = {
       tag: "ADVANCED EYE CARE",
       title: "ADVANCED EYE CARE YOU CAN TRUST.",
       subtitle: "Safe, Precise & Compassionate Specialist Care",
-      supportingText: "From routine eye check-ups to advanced ophthalmic surgery, our experienced specialists provide safe, precise and compassionate care. We use modern technology to protect and restore your vision at every stage of life.",
+      supportingText: "From routine eye check-ups to Advanced Ophthalmic Surgery, our experienced specialists provide safe, precise, and compassionate care. We use modern technology to protect and restore your vision at every stage of life.",
       href: "/directors/dr-ss-verma",
       ctaLabel: "Consult Specialist",
       image: "/images/slider-eyecare.png",
@@ -168,7 +168,7 @@ export const siteData = {
     tagline: "ADVANCED CARE. PERSONALIZED SOLUTIONS. HEALTHIER LIVES.",
     pillars: "Specialized Paralysis Care | Genetic Counseling | Advanced Eye Care",
     title: "SHREE NAMOH WELLNESS",
-    description: "At Shree Namoh Wellness, our mission is to deliver advanced, compassionate, and patient-centered healthcare through innovative treatment solutions in paralysis care, genetic counseling, and advanced eye care. We are committed to combining modern medical advancements, personalized care, and scientific expertise to support neurological recovery, provide meaningful genetic health guidance, and promote better vision and eye health.",
+    description: "At Shree Namoh Wellness, our mission is to deliver advanced, compassionate, and patient-centered healthcare through innovative treatment solutions in Paralysis Care, Genetic Counseling, and Advanced Eye Care. We are committed to combining modern medical advancements, personalized care, and scientific expertise to support Neurological Recovery, provide meaningful Genetic Health Guidance, and promote better vision and eye health.",
     secondaryDescription: "Through a holistic and individualized approach, we strive to empower patients and their families with knowledge, confidence, and access to appropriate healthcare solutions. Our goal is to enhance quality of life, encourage informed health decisions, and make advanced healthcare more accessible, reliable, and focused on every patient's unique needs.",
     linkText: "MEET OUR DIRECTORS",
     linkHref: "/directors"
@@ -176,8 +176,8 @@ export const siteData = {
   mission: {
     title: "OUR MISSION",
     quote: "DELIVERING ADVANCED, COMPASSIONATE, AND PATIENT-CENTERED HEALTHCARE THROUGH INNOVATIVE TREATMENT SOLUTIONS.",
-    description: "At Shree Namoh Wellness, our mission is to deliver advanced, compassionate, and patient-centered healthcare through innovative treatment solutions in paralysis care, genetic counseling, and advanced eye care.",
-    subDescription: "We are committed to combining modern medical advancements, personalized care, and scientific expertise to support neurological recovery, provide meaningful genetic health guidance, and promote better vision and eye health. Through a holistic and individualized approach, we strive to empower patients and their families with knowledge, confidence, and access to appropriate healthcare solutions.",
+    description: "At Shree Namoh Wellness, our mission is to deliver advanced, compassionate, and patient-centered healthcare through innovative treatment solutions in Paralysis Care, Genetic Counseling, and Advanced Eye Care.",
+    subDescription: "We are committed to combining modern medical advancements, personalized care, and scientific expertise to support Neurological Recovery, provide meaningful Genetic Health Guidance, and promote better vision and eye health. Through a holistic and individualized approach, we strive to empower patients and their families with knowledge, confidence, and access to appropriate healthcare solutions.",
     goal: "Our goal is to enhance quality of life, encourage informed health decisions, and make advanced healthcare more accessible, reliable, and focused on every patient's unique needs.",
     buttonText: "LEARN MORE ABOUT US",
     buttonHref: "/directors",
@@ -188,7 +188,7 @@ export const siteData = {
     title: "OUR VISION",
     quote: "A TRUSTED CENTER OF EXCELLENCE IN ADVANCED AND PERSONALIZED HEALTHCARE.",
     description: "Our vision is to establish Shree Namoh Wellness as a trusted center of excellence in advanced and personalized healthcare, recognized for innovation, clinical quality, compassionate service, and patient well-being.",
-    subDescription: "We aspire to create a future where advanced treatment solutions, genetic insights, and specialized eye care work together to improve health outcomes and transform lives. By embracing medical innovation, ethical practices, and a commitment to continuous improvement, we aim to help individuals lead healthier, more independent, and more fulfilling lives."
+    subDescription: "We aspire to create a future where Advanced Treatment Solutions, Genetic Insights, and Specialized Eye Care work together to improve health outcomes and transform lives. By embracing medical innovation, ethical practices, and a commitment to continuous improvement, we aim to help individuals lead healthier, more independent, and more fulfilling lives."
   },
   commitments: {
     title: "OUR COMMITMENT",
@@ -204,7 +204,7 @@ export const siteData = {
       {
         id: "genetic-counseling",
         title: "Genetic Counseling",
-        description: "Helping individuals and families understand genetic risks and make informed healthcare decisions.",
+        description: "Helping individuals and families understand Genetic Risks and make informed healthcare decisions.",
         icon: "dna",
         color: "#00AF9C"
       },
@@ -243,7 +243,7 @@ export const siteData = {
         category: "PARALYSIS CARE",
         date: "CLINICAL PILLAR 01",
         title: "Advanced Paralysis Care & Neuro-Rehabilitation",
-        excerpt: "Supporting rehabilitation, functional recovery, and improved independence through individualized neuroplasticity protocols and movement retraining.",
+        excerpt: "Supporting Rehabilitation, Functional Recovery, and improved independence through individualized Neuroplasticity Protocols and movement retraining.",
         image: "/images/track-paralysis-care-home.jpg",
         href: "/directors/dr-neha-arora-verma"
       },
@@ -252,7 +252,7 @@ export const siteData = {
         category: "GENOMIC HEALTH",
         date: "CLINICAL PILLAR 02",
         title: "Genomic Wellness & Genetic Counseling",
-        excerpt: "Helping individuals and families understand genetic predispositions, actionable nutrition insights, and personalized lifestyle disease prevention.",
+        excerpt: "Helping individuals and families understand Genetic Predispositions, actionable nutrition insights, and personalized lifestyle disease prevention.",
         image: "/images/track-genomic-nutrition.jpg",
         href: "/directors/coach-richha-arrora"
       }
@@ -281,7 +281,7 @@ export const siteData = {
   transparency: {
     headingHighlight: "OUR VISION",
     headingRest: "A TRUSTED CENTER OF EXCELLENCE \nIN PERSONALIZED HEALTHCARE",
-    description: "Our vision is to establish Shree Namoh Wellness as a trusted center of excellence in advanced and personalized healthcare, recognized for innovation, clinical quality, compassionate service, and patient well-being. We aspire to create a future where advanced treatment solutions, genetic insights, and specialized eye care work together to improve health outcomes and transform lives.",
+    description: "Our vision is to establish Shree Namoh Wellness as a trusted center of excellence in advanced and personalized healthcare, recognized for innovation, clinical quality, compassionate service, and patient well-being. We aspire to create a future where Advanced Treatment Solutions, Genetic Insights, and Specialized Eye Care work together to improve health outcomes and transform lives.",
     subheading: "CORE HEALTHCARE COMMITMENTS \nCLINICAL RIGOR & PATIENT EMPATHY",
     stats: [
       {
@@ -315,7 +315,7 @@ export const siteData = {
   },
   actions: {
     title: "OUR COMMITMENT TO ADVANCED & COMPASSIONATE CARE",
-    description: "At Shree Namoh Wellness, we believe that every individual deserves quality healthcare, personalized attention, and compassionate support. We are dedicated to supporting rehabilitation, genetic health understanding, vision preservation, and ethical clinical excellence.",
+    description: "At Shree Namoh Wellness, we believe that every individual deserves quality healthcare, personalized attention, and compassionate support. We are dedicated to supporting Rehabilitation, Genetic Health Understanding, Vision Preservation, and ethical clinical excellence.",
     tabs: [
       {
         id: "map-0",
@@ -328,7 +328,7 @@ export const siteData = {
     ],
     highlights: [
       "Advanced Paralysis Care: Supporting rehabilitation, functional recovery, and improved independence through individualized care",
-      "Genetic Counseling: Helping individuals and families understand genetic risks and make informed healthcare decisions",
+      "Genetic Counseling: Helping individuals and families understand Genetic Risks and make informed healthcare decisions",
       "Advanced Eye Care: Promoting vision health through appropriate assessment, diagnosis, treatment, and preventive care",
       "Patient-Centered Approach: Treating every patient with dignity, empathy, transparency, and respect",
       "Innovation and Excellence: Continuously embracing evidence-based practices and advancements in healthcare"
@@ -358,7 +358,7 @@ export const siteData = {
       },
       {
         benefit: "Genetic Counseling",
-        gain: "Helping individuals and families understand genetic risks and make informed healthcare decisions"
+        gain: "Helping individuals and families understand Genetic Risks and make informed healthcare decisions"
       },
       {
         benefit: "Advanced Eye Care",
@@ -417,7 +417,7 @@ export const siteData = {
     headingHighlight: "REAL STORIES",
     headingRest: "MEASURABLE RECOVERY & CLINICAL TRUST",
     lead:
-      "Hear directly from patients, families, and healthcare practitioners whose lives have been transformed through specialized neurological rehabilitation, personalized genomics, and advanced ophthalmic care at Shree Namoh Wellness.",
+      "Hear directly from patients, families, and healthcare practitioners whose lives have been transformed through Specialized Neurological Rehabilitation, Personalized Genomics, and Advanced Ophthalmic Care at Shree Namoh Wellness.",
     stats: [
       { value: "98%", label: "Patient Satisfaction & Functional Recovery" },
       { value: "1,500+", label: "Paralysis & Neurological Patients Rehabilitated" },
@@ -615,16 +615,16 @@ export const siteData = {
     ],
     socialLinks: [
       {
-        name: "Instagram",
-        href: "https://www.instagram.com/drnehaaroravermaa/"
+        name: "Facebook",
+        href: "https://www.facebook.com/drnehaaroravermawellness/"
       },
       {
-        name: "Facebook",
-        href: "https://www.facebook.com/people/Dr-Neha-Arora-Verma-Wellness/100083231435211/"
+        name: "Instagram",
+        href: "https://www.instagram.com/drnehaaroravermaa"
       },
       {
         name: "YouTube",
-        href: "https://www.youtube.com/"
+        href: "https://www.youtube.com/@drnehaaroraverma9899"
       }
     ],
     legalLinks: [

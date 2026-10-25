@@ -19,11 +19,11 @@ export const directorsData = {
       "Neurological Rehabilitation Expert"
     ],
     mission:
-      "To transform the lives of people affected by paralysis by advancing neurological rehabilitation, promoting awareness of neuroplasticity, empowering families, and helping patients work toward greater independence and a better quality of life.",
+      "To transform the lives of people affected by Paralysis by advancing Neurological Rehabilitation, promoting awareness of Neuroplasticity, empowering families, and helping patients work toward greater independence and a better quality of life.",
     missionSlogan:
       "Dr. Neha Arora Verma — Advancing Recovery. Empowering Lives. Building a Lakwa Mukt Bharat.",
     intro:
-      "Dr. Neha Arora Verma is a dedicated neurological rehabilitation professional with 17 years of experience and a visionary leader committed to transforming the future of paralysis care in India. As Director of Shree Namoh Wellness, she strives to bring advanced neurological rehabilitation solutions to Central India, with a strong focus on recovery, functional independence, and improved quality of life for individuals affected by paralysis and other neurological conditions.",
+      "Dr. Neha Arora Verma is a dedicated Neurological Rehabilitation professional with 17 years of experience and a visionary leader committed to transforming the future of Paralysis Care in India. As Director of Shree Namoh Wellness, she strives to bring advanced Neurological Rehabilitation solutions to Central India, with a strong focus on recovery, functional independence, and improved quality of life for individuals affected by Paralysis and other neurological conditions.",
     quote:
       "True clinical mastery does not come from memorizing waveforms on paper. It comes from having the probe in your hand, calibrating the amplitude, and witnessing the patient's neural circuits respond in real time.",
     stats: [
@@ -33,17 +33,17 @@ export const directorsData = {
       { value: "Director", label: "Shree Namoh Wellness, Central India" }
     ],
     overview: [
-      "Dr. Neha Arora Verma is a dedicated neurological rehabilitation professional with 17 years of experience and a visionary leader committed to transforming the future of paralysis care in India. As Director of Shree Namoh Wellness, she strives to bring advanced neurological rehabilitation solutions to Central India, with a strong focus on recovery, functional independence, and improved quality of life for individuals affected by paralysis and other neurological conditions.",
-      "As the Founder of Lakwa Mukt Bharat, Dr. Neha is driven by a mission to create greater awareness, access to rehabilitation, and renewed hope for individuals living with paralysis. Her work emphasizes the potential of neuroplasticity—the brain's ability to adapt and reorganize—and its role in supporting neurological rehabilitation and functional recovery.",
+      "Dr. Neha Arora Verma is a dedicated Neurological Rehabilitation professional with 17 years of experience and a visionary leader committed to transforming the future of Paralysis Care in India. As Director of Shree Namoh Wellness, she strives to bring advanced Neurological Rehabilitation solutions to Central India, with a strong focus on recovery, functional independence, and improved quality of life for individuals affected by Paralysis and other neurological conditions.",
+      "As the Founder of Lakwa Mukt Bharat, Dr. Neha is driven by a mission to create greater awareness, access to rehabilitation, and renewed hope for individuals living with Paralysis. Her work emphasizes the potential of Neuroplasticity—the brain's ability to adapt and reorganize—and its role in supporting Neurological Rehabilitation and functional recovery.",
       "Recognized by her own professional mission as India's First Neuroplasticity Coach, Dr. Neha is passionate about promoting innovative, individualized rehabilitation approaches that focus on each patient's abilities, goals, and recovery potential.",
-      "Under her leadership, Shree Namoh Wellness aspires to be one of Central India's most advanced destinations for neurological rehabilitation, integrating modern treatment approaches with personalized care, compassionate guidance, and a commitment to continuous innovation. The center also brings together genetic counseling and advanced eye care as part of its broader healthcare vision."
+      "Under her leadership, Shree Namoh Wellness aspires to be one of Central India's most advanced destinations for Neurological Rehabilitation, integrating modern treatment approaches with personalized care, compassionate guidance, and a commitment to continuous innovation. The center also brings together Genetic Counseling and Advanced Eye Care as part of its broader healthcare vision."
     ],
     shreeNamohVision: [
       {
         title: "Advanced Neurological Rehabilitation",
         lead: "Spearheaded by Dr. Neha Arora Verma",
         description:
-          "Targeted non-invasive neuromodulation, motor re-education, and individualized recovery pathways for paralysis, stroke, and spinal conditions."
+          "Targeted Non-Invasive Neuromodulation, motor re-education, and individualized recovery pathways for Paralysis, Stroke, and spinal conditions."
       },
       {
         title: "Precision Genetic Counseling",
@@ -55,7 +55,7 @@ export const directorsData = {
         title: "Advanced Eye Care & Medical Safety",
         lead: "Directed by Dr. S. S. Verma",
         description:
-          "Decades of surgical ophthalmic expertise, neuro-visual assessment, and rigorous clinical governance ensuring patient safety."
+          "Decades of surgical Ophthalmic expertise, neuro-visual assessment, and rigorous clinical governance ensuring patient safety."
       }
     ],
     specializations: [
@@ -118,7 +118,21 @@ export const directorsData = {
       whatsapp: "https://wa.me/919827079888",
       email: "neha_arora27@yahoo.com",
       location: "A-65 MIG, Behind CHL Hospital, Indore, Madhya Pradesh 452001"
-    }
+    },
+    socialLinks: [
+      {
+        name: "Instagram",
+        href: "https://www.instagram.com/neurplasticitycoachprogram/",
+        handle: "@neurplasticitycoachprogram",
+        label: "Neuroplasticity Coach Program"
+      },
+      {
+        name: "Facebook",
+        href: "https://www.facebook.com/DrNehaAroravermaNeuroPlasticityCoach/",
+        handle: "@DrNehaAroravermaNeuroPlasticityCoach",
+        label: "Dr. Neha Neuroplasticity Coach"
+      }
+    ]
   },
 
   "dr-s-s-verma": {
@@ -141,11 +155,11 @@ export const directorsData = {
       "Corneal Care & Ophthalmic Diagnostics Expert"
     ],
     mission:
-      "To deliver reliable, advanced, and compassionate eye care through modern ophthalmic techniques, surgical expertise, and a commitment to protecting and improving vision.",
+      "To deliver reliable, advanced, and compassionate eye care through modern Ophthalmic techniques, surgical expertise, and a commitment to protecting and improving vision.",
     vision:
       "To contribute to a future where quality eye care is accessible to more people, helping individuals maintain healthy vision and enjoy a better quality of life.",
     intro:
-      "Dr. S. S. Verma is a highly experienced senior eye surgeon with over 18 years of experience in ophthalmology, dedicated to delivering quality eye care and advanced surgical solutions. With expertise in phacoemulsification (modern cataract surgery) and corneal care, Dr. Verma is committed to helping patients preserve, protect, and improve their vision through appropriate treatment and personalized care.",
+      "Dr. S. S. Verma is a highly experienced senior eye surgeon with over 18 years of experience in ophthalmology, dedicated to delivering quality eye care and advanced surgical solutions. With expertise in Phacoemulsification (Modern Cataract Surgery) and Corneal Care, Dr. Verma is committed to helping patients preserve, protect, and improve their vision through appropriate treatment and personalized care.",
     quote:
       "Every patient deserves a thorough evaluation, clear communication, and a treatment plan tailored to their individual needs. Protecting vision is about combining surgical precision with compassionate guidance.",
     stats: [
@@ -155,10 +169,10 @@ export const directorsData = {
       { value: "Director", label: "Shree Namoh Wellness Eye Care" }
     ],
     overview: [
-      "Dr. S. S. Verma is a highly experienced senior eye surgeon with over 18 years of experience in ophthalmology, dedicated to delivering quality eye care and advanced surgical solutions. With expertise in phacoemulsification (modern cataract surgery) and corneal care, Dr. Verma is committed to helping patients preserve, protect, and improve their vision through appropriate treatment and personalized care.",
-      "With a strong focus on surgical precision, patient safety, and clinical excellence, Dr. Verma brings extensive experience in evaluating and managing a wide range of eye conditions. His expertise in phacoemulsification supports modern cataract treatment, while his focus on corneal health addresses the diagnosis and management of conditions affecting this vital part of the eye.",
-      "At Shree Namoh Wellness, Dr. Verma is committed to providing patient-centered eye care that combines contemporary ophthalmic practices with compassionate guidance. He believes that every patient deserves a thorough evaluation, clear communication, and a treatment plan tailored to their individual needs.",
-      "As part of the leadership team at Shree Namoh Wellness, Dr. Verma's advanced eye care division complements neurological rehabilitation and genetic counseling, providing comprehensive neuro-ophthalmic and visual wellness under one roof."
+      "Dr. S. S. Verma is a highly experienced senior eye surgeon with over 18 years of experience in ophthalmology, dedicated to delivering quality eye care and advanced surgical solutions. With expertise in Phacoemulsification (Modern Cataract Surgery) and Corneal Care, Dr. Verma is committed to helping patients preserve, protect, and improve their vision through appropriate treatment and personalized care.",
+      "With a strong focus on surgical precision, patient safety, and clinical excellence, Dr. Verma brings extensive experience in evaluating and managing a wide range of eye conditions. His expertise in Phacoemulsification supports modern Cataract treatment, while his focus on Corneal Health addresses the diagnosis and management of conditions affecting this vital part of the eye.",
+      "At Shree Namoh Wellness, Dr. Verma is committed to providing patient-centered eye care that combines contemporary Ophthalmic practices with compassionate guidance. He believes that every patient deserves a thorough evaluation, clear communication, and a treatment plan tailored to their individual needs.",
+      "As part of the leadership team at Shree Namoh Wellness, Dr. Verma's advanced eye care division complements Neurological Rehabilitation and Genetic Counseling, providing comprehensive Neuro-Ophthalmic and visual wellness under one roof."
     ],
     specializations: [
       {
@@ -220,7 +234,21 @@ export const directorsData = {
       whatsapp: "https://wa.me/917470529991",
       email: "eyecare@drnehaarora.com",
       location: "A-65 MIG, Behind CHL Hospital, Indore, Madhya Pradesh 452001"
-    }
+    },
+    socialLinks: [
+      {
+        name: "Facebook",
+        href: "https://www.facebook.com/drssvermaeyesurgeon/",
+        handle: "@drssvermaeyesurgeon",
+        label: "Dr. SS Verma Eye Surgeon"
+      },
+      {
+        name: "YouTube",
+        href: "https://www.youtube.com/@Dr.S.S.VermaEyeSurgeon",
+        handle: "@Dr.S.S.VermaEyeSurgeon",
+        label: "Dr. S. S. Verma Eye Surgeon Channel"
+      }
+    ]
   },
 
   "coach-richha-arrora": {
@@ -247,7 +275,7 @@ export const directorsData = {
     vision:
       "My vision as a nutritional wellness consultant is to empower individuals to build a deeply nourishing relationship with food, grounded in awareness, balance, and long-term well-being. I aim to create a world where people understand their bodies’ unique needs and feel confident making choices that support sustained energy, emotional harmony, and vibrant health. Through evidence-based guidance, compassionate coaching, and personalized nutrition strategies, I hope to help clients move beyond restrictive mindsets and instead embrace food as a source of strength, healing, and joy. I envision fostering communities that prioritize preventive health, mindful eating, and sustainable lifestyle habits, enabling people to thrive in every stage of life. By integrating modern nutritional science with practical, culturally sensitive approaches, I aspire to make wellness accessible, realistic, and enjoyable for all. Ultimately, my vision is to inspire lasting transformation—where individuals not only achieve their health goals but also cultivate resilience, self-trust, and a renewed sense of vitality that radiates into every aspect of their lives.",
     intro:
-      "Coach Richha Arrora is an experienced Genomic Wellness expert with a background of 8 years in IT. She brings a unique blend of technology and wellness to her practice. Her tech experience allows her to use data, genomics insights, and digital tools to design highly personalized nutrition strategies for her clients. She has successfully helped numerous individuals live a holistic life which revolves around not just physical but also mental, emotional and spiritual well-being.",
+      "Coach Richha Arrora is an experienced Genomic Wellness expert with a background of 8 years in IT. She brings a unique blend of technology and wellness to her practice. Her tech experience allows her to use data, Genomics Insights, and digital tools to design highly personalized nutrition strategies for her clients. She has successfully helped numerous individuals live a holistic life which revolves around not just physical but also mental, emotional and spiritual well-being.",
     quote:
       "Holistic living is the need of the hour. Instead of quick fixes and crash diets which are just temporary, adopting natural, effective and result-oriented lifestyle modifications is what creates true, lasting vitality.",
     stats: [
@@ -257,7 +285,7 @@ export const directorsData = {
       { value: "Director", label: "Shree Namoh Wellness Genomic Desk" }
     ],
     overview: [
-      "Coach Richha Arrora is an experienced Genomic Wellness expert with a background of 8 years in IT. She brings a unique blend of technology and wellness to her practice. Her tech experience allows her to use data, genomics insights, and digital tools to design highly personalized nutrition strategies for her clients.",
+      "Coach Richha Arrora is an experienced Genomic Wellness expert with a background of 8 years in IT. She brings a unique blend of technology and wellness to her practice. Her tech experience allows her to use data, Genomics Insights, and digital tools to design highly personalized nutrition strategies for her clients.",
       "She has successfully helped numerous individuals live a holistic life which revolves around not just physical but also mental, emotional and spiritual well-being. She is also a Certified Genomic Wellness Consultant, Educator and Certified in Translational Nutrigenetics.",
       "\"Holistic living is the need of the hour\" is her genuine conviction. Instead of quick fixes and crash diets which are just temporary, adopting natural, effective and result-oriented lifestyle modifications is what Coach Richha credibly advocates.",
       "At Namoh Wellness, she holds effective counseling sessions for our valued clients, creates targeted action plans, and provides dedicated follow-up. Her integration of modern nutritional science with practical, culturally sensitive approaches makes wellness accessible, realistic, and enjoyable for all."
