@@ -120,7 +120,7 @@ export default function TestimonialSection() {
           </div>
 
           {/* Navigation Buttons (Left & Right Arrows) */}
-          <div className="flex items-center gap-3">
+          <div className="hidden sm:flex items-center gap-3">
             <button
               type="button"
               onClick={handlePrev}

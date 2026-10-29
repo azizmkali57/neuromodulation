@@ -5,6 +5,7 @@ import HeroSection from "@/components/home/HeroSection";
 import IntroductionSection from "@/components/home/IntroductionSection";
 import NewsSection from "@/components/home/NewsSection";
 import TransparencySection from "@/components/home/TransparencySection";
+import ClinicalGallerySection from "@/components/home/ClinicalGallerySection";
 import SupportSection from "@/components/home/SupportSection";
 import TestimonialSection from "@/components/home/TestimonialSection";
 
@@ -25,13 +26,16 @@ export default function Home() {
         {/* C. Clinical Disciplines & Healthcare Specialties */}
         <NewsSection />
 
-        {/* D. Our Mission & Vision & Clinical Commitments (Directly Below Healthcare Specialties) */}
+        {/* D. Our Mission & Vision & Clinical Commitments */}
         <TransparencySection />
 
-        {/* E. Healthcare Commitments & Contact Desk */}
+        {/* E. Clinical Groundwork & Real Documentation Gallery */}
+        <ClinicalGallerySection />
+
+        {/* F. Healthcare Commitments & Contact Desk */}
         <SupportSection />
 
-        {/* F. Verified Patient & Clinician Testimonials */}
+        {/* G. Verified Patient & Clinician Testimonials */}
         <TestimonialSection />
       </main>
 

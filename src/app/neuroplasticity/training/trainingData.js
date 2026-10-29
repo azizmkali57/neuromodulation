@@ -4,7 +4,7 @@ export const neuroplasticityTrainingData = {
     title: "Neuroplasticity Coach Program",
     tagline: "Understand the Brain. Transform Your Practice.",
     subtitle:
-      "An intensive professional program designed to help healthcare and wellness professionals understand neuroplasticity and its practical application in patient recovery.",
+      "An Intensive Professional Program Designed to Help Healthcare and Wellness Professionals Understand Neuroplasticity and its Practical Application in Patient Recovery.",
     director: "Dr. Neha Arora Verma",
     credentials:
       "M.S. (Neurological Rehabilitation, UK) • Neuromodulation Expert • Expert in Neuro Acupuncture • India's First Neuroplasticity Coach (Awarded by UN Book of World Records) • Founder, Paralysis Free India (Lakva Mukt Bharat)",
@@ -64,41 +64,41 @@ export const neuroplasticityTrainingData = {
   meetDirector: {
     heading: "Meet Dr. Neha Arora Verma",
     subtitle:
-      "M.S. (Neurological Rehabilitation, UK) • Neuromodulation Expert • Neuro-Acupuncture Specialist • Neuroplasticity Coach",
+      "M.S. (Neurological Rehabilitation, Uk) • Neuromodulation Expert • Neuro-Acupuncture Specialist • Neuroplasticity Coach",
     bio: [
       "Dr. Neha Arora Verma, M.S. (Neurological Rehabilitation, UK) is a renowned Neuromodulation Expert, Neuro-Acupuncture Specialist, and Neuroplasticity Coach dedicated to transforming lives through advanced neurological rehabilitation.",
       "She is recognized as India’s First Neuroplasticity Coach, awarded by the UN Book of World Records, and is the Founder of Paralysis Free India (Lakva Mukt Bharat).",
-      "With her expertise in neuroplasticity, neuromodulation, and neurological rehabilitation, Dr. Neha has successfully helped 1 Lakh+ patients on their journey toward improved recovery, mobility, and quality of life.",
-      "Her mission: Harness the power of neuroplasticity to make neurological recovery possible for millions."
+      "With her expertise in Neuroplasticity, Neuromodulation, and Neurological Rehabilitation, Dr. Neha has successfully helped 1 Lakh+ patients on their journey toward improved recovery, mobility, and quality of life.",
+      "Her mission: Harness the power of Neuroplasticity to make neurological recovery possible for millions."
     ],
-    quote: "Harness the power of neuroplasticity to make neurological recovery possible for millions."
+    quote: "Harness the Power of Neuroplasticity to Make Neurological Recovery Possible for Millions."
   },
 
   lookBeyondSymptoms: {
-    heading: "What If You Could Look Beyond the Symptoms?",
+    heading: "What if you Could Look Beyond the Symptoms?",
     lead:
       "A patient may present with muscle weakness, difficulty walking, speech problems, poor coordination, or reduced cognitive function. But behind every movement, every sensation, and every behaviour is a brain that is constantly learning and adapting.",
     goalHighlight: "THE GOAL? NOT JUST TO TREAT THE SYMPTOM. UNDERSTAND THE BRAIN BEHIND THE SYMPTOM.",
     symptoms: [
       {
         title: "Muscle Weakness",
-        desc: "Decreased voluntary motor unit recruitment and cortical representation loss."
+        desc: "Decreased Voluntary Motor Unit Recruitment and Cortical Representation Loss."
       },
       {
         title: "Difficulty Walking",
-        desc: "Disrupted reciprocal stepping circuits, balance pathways, and sensory feedback."
+        desc: "Disrupted Reciprocal Stepping Circuits, Balance Pathways, and Sensory Feedback."
       },
       {
         title: "Speech Problems",
-        desc: "Impairments in Broca's/Wernicke's linguistic networks or motor speech coordination."
+        desc: "Impairments in Broca's/Wernicke's Linguistic Networks or Motor Speech Coordination."
       },
       {
         title: "Poor Coordination",
-        desc: "Cerebellar and basal ganglia signaling disconnects affecting fluidity of motion."
+        desc: "Cerebellar and Basal Ganglia Signaling Disconnects Affecting Fluidity of Motion."
       },
       {
         title: "Reduced Cognitive Function",
-        desc: "Altered working memory, attentional bandwidth, and executive sequencing."
+        desc: "Altered Working Memory, Attentional Bandwidth, and Executive Sequencing."
       }
     ],
     coreTruth: "Behind every symptom is a brain that is constantly learning and adapting."
@@ -109,55 +109,55 @@ export const neuroplasticityTrainingData = {
     lead:
       "This program takes neuroscience beyond theory and focuses on practical clinical application. The focus is on helping you think differently about recovery.",
     objectives: [
-      "Understand the fundamentals of neuroplasticity",
+      "Understand the fundamentals of Neuroplasticity",
       "Identify adaptive and maladaptive patterns",
       "Understand how the brain learns new movements and behaviours",
       "Use repetition and task-specific training more effectively",
       "Understand the role of sensory and motor stimulation",
       "Develop more structured recovery strategies",
       "Assess and track patient progress",
-      "Integrate neuroplasticity principles into your existing practice"
+      "Integrate Neuroplasticity principles into your existing practice"
     ],
     summaryStatement: "The focus is on helping you think differently about recovery."
   },
 
   whoIsThisFor: {
-    heading: "Who is This Program For?",
-    subtitle: "Designed for professionals working with the brain & body",
+    heading: "Who is this Program for?",
+    subtitle: "Designed for Professionals Working with the Brain & Body",
     lead:
       "If you are already working with patients and want to understand the neuroscience behind recovery, this program can help you expand your approach.",
     audiences: [
       {
         role: "Doctors",
-        desc: "Neurologists, physiatrists, and general physicians aiming to incorporate neuroplastic recovery mechanisms into patient guidance."
+        desc: "Neurologists, Physiatrists, and General Physicians Aiming to Incorporate Neuroplastic Recovery Mechanisms into Patient Guidance."
       },
       {
         role: "Physiotherapists",
-        desc: "Physical therapists transitioning from passive musculoskeletal protocols to brain-targeted active neuro-rehabilitation."
+        desc: "Physical Therapists Transitioning from Passive Musculoskeletal Protocols to Brain-Targeted Active Neuro-Rehabilitation."
       },
       {
         role: "Neurotherapists",
-        desc: "Clinicians seeking deeper neuroscientific foundations, synaptic mapping, and neuromodulation synergy."
+        desc: "Clinicians Seeking Deeper Neuroscientific Foundations, Synaptic Mapping, and Neuromodulation Synergy."
       },
       {
         role: "Occupational Therapists",
-        desc: "OTs focusing on fine motor dexterity, upper limb reclamation, and daily activity neuroplastic re-education."
+        desc: "Ots Focusing on Fine Motor Dexterity, Upper Limb Reclamation, and Daily Activity Neuroplastic Re-Education."
       },
       {
         role: "Speech & Language Professionals",
-        desc: "Pathologists working with aphasia, dysarthria, apraxia, and neurogenic communication disorders."
+        desc: "Pathologists Working with Aphasia, Dysarthria, Apraxia, and Neurogenic Communication Disorders."
       },
       {
         role: "Healers & Wellness Professionals",
-        desc: "Holistic practitioners interested in mind-body neurobiology, nervous system regulation, and bio-energetics."
+        desc: "Holistic Practitioners Interested in Mind-Body Neurobiology, Nervous System Regulation, and Bio-Energetics."
       },
       {
         role: "Coaches",
-        desc: "Movement coaches, performance trainers, and recovery coaches wanting brain-based biomechanical insight."
+        desc: "Movement Coaches, Performance Trainers, and Recovery Coaches Wanting Brain-Based Biomechanical Insight."
       },
       {
         role: "Rehabilitation Professionals",
-        desc: "Multidisciplinary rehabilitation center directors, clinical supervisors, and allied health staff."
+        desc: "Multidisciplinary Rehabilitation Center Directors, Clinical Supervisors, and Allied Health Staff."
       }
     ]
   },
@@ -166,79 +166,79 @@ export const neuroplasticityTrainingData = {
     {
       number: "01",
       title: "Foundations of Neuroscience",
-      desc: "Understand the basic functioning of the brain and nervous system."
+      desc: "Understand the Basic Functioning of the Brain and Nervous System."
     },
     {
       number: "02",
       title: "Understanding Neuroplasticity",
-      desc: "Learn how the brain adapts, learns, and creates new neural connections."
+      desc: "Learn how the Brain Adapts, Learns, and Creates New Neural Connections."
     },
     {
       number: "03",
-      title: "Adaptive vs Maladaptive Neuroplasticity",
-      desc: "Understand how the brain can learn both useful and inefficient patterns."
+      title: "Adaptive Vs Maladaptive Neuroplasticity",
+      desc: "Understand how the Brain can Learn both Useful and Inefficient Patterns."
     },
     {
       number: "04",
       title: "Brain & Functional Assessment",
-      desc: "Learn to look beyond symptoms and understand functional limitations."
+      desc: "Learn to Look Beyond Symptoms and Understand Functional Limitations."
     },
     {
       number: "05",
       title: "Motor & Sensory Recovery",
-      desc: "Understand the relationship between sensory input, movement, and brain function."
+      desc: "Understand the Relationship between Sensory Input, Movement, and Brain Function."
     },
     {
       number: "06",
       title: "Neuroplasticity in Rehabilitation",
-      desc: "Learn how repetition, intensity, task specificity, and feedback influence learning."
+      desc: "Learn how Repetition, Intensity, Task Specificity, and Feedback Influence Learning."
     },
     {
       number: "07",
       title: "Advanced Brain-Based Approaches",
-      desc: "Understand the role of emerging technologies and neuromodulation."
+      desc: "Understand the Role of Emerging Technologies and Neuromodulation."
     },
     {
       number: "08",
       title: "Clinical Application",
-      desc: "Learn to translate concepts into patient-specific strategies and protocols."
+      desc: "Learn to Translate Concepts into Patient-Specific Strategies and Protocols."
     }
   ],
 
   decisionFlowchart: {
     heading: "From Knowledge to Application",
     subheading:
-      "It's not just about learning neuroplasticity — the real value lies in knowing how to apply it.",
+      "It's not just about Learning Neuroplasticity — the Real Value Lies in Knowing how to Apply it.",
     steps: [
       {
         step: "01",
         question: "What is the patient's actual functional goal?",
-        context: "Identify specific, meaningful daily activities rather than abstract muscle groups."
+        context: "Identify Specific, Meaningful Daily Activities Rather than Abstract Muscle Groups."
       },
       {
         step: "02",
         question: "What is preventing them from achieving it?",
-        context: "Differentiate between mechanical restrictions, tone spasticity, and central circuit suppression."
+        context: "Differentiate between Mechanical Restrictions, Tone Spasticity, and Central Circuit Suppression."
       },
       {
         step: "03",
         question: "What has their brain already learned?",
-        context: "Evaluate compensation strategies, learned non-use, and altered motor representations."
+        context: "Evaluate Compensation Strategies, Learned Non-Use, and Altered Motor Representations."
       },
       {
         step: "04",
         question: "Is the current pattern adaptive or maladaptive?",
-        context: "Distinguish between compensatory assistance and harmful neuroplastic habituation."
+        context: "Distinguish between Compensatory Assistance and Harmful Neuroplastic Habituation."
       },
       {
         step: "05",
         question: "What type of stimulation, repetition, or task-specific training may be appropriate?",
-        context: "Calibrate intensity, sensory priming, neuromodulation, and high-frequency drills."
+        context: "Calibrate Intensity, Sensory Priming, Neuromodulation, and High-Frequency Drills."
       },
       {
         step: "06",
         question: "How will we measure progress?",
-        context: "Track objective functional indices, voluntary movement kinematics, and real-world independence."
+        context: "Track Objective Functional Indices, Voluntary Movement Kinematics, and Real-World Independence."
       }
     ]
   },
@@ -246,72 +246,72 @@ export const neuroplasticityTrainingData = {
   benefits: [
     {
       number: "01",
-      title: "Think More Clinically",
-      desc: "Develop a stronger understanding of the brain's role in movement, behaviour, cognition, and recovery."
+      title: "Think more Clinically",
+      desc: "Develop a Stronger Understanding of the Brain's Role in Movement, Behaviour, Cognition, and Recovery."
     },
     {
       number: "02",
-      title: "Create More Purposeful Strategies",
-      desc: "Move from generic interventions towards patient-specific, goal-oriented approaches."
+      title: "Create more Purposeful Strategies",
+      desc: "Move from Generic Interventions Towards Patient-Specific, Goal-Oriented Approaches."
     },
     {
       number: "03",
       title: "Understand Repetition Better",
-      desc: "Learn why what you repeat and how you repeat it matters for cortical reorganization."
+      desc: "Learn why what you Repeat and how you Repeat it Matters for Cortical Reorganization."
     },
     {
       number: "04",
       title: "Track Progress",
-      desc: "Learn to look at measurable functional changes rather than relying only on subjective improvement."
+      desc: "Learn to Look at Measurable Functional Changes Rather than Relying only on Subjective Improvement."
     },
     {
       number: "05",
-      title: "Expand Your Skill Set",
-      desc: "Add applied neuroplasticity to the professional knowledge you already have."
+      title: "Expand your Skill Set",
+      desc: "Add Applied Neuroplasticity to the Professional Knowledge you Already have."
     },
     {
       number: "06",
-      title: "Evolve Your Practice",
-      desc: "Differentiate your approach by bringing neuroscience-based thinking into your existing work."
+      title: "Evolve your Practice",
+      desc: "Differentiate your Approach by Bringing Neuroscience-Based Thinking into your Existing Work."
     }
   ],
 
   perspectiveShift: {
-    heading: "What Makes This Different?",
+    heading: "What Makes this Different?",
     subtitle: "From Practitioner to Neuroplasticity Coach",
     traditional: {
       question: "“What exercise should we do?”",
       label: "TRADITIONAL REHABILITATION ASKS",
-      desc: "Often focuses on repetitive mechanical motions, passive limb stretching, and muscle group maintenance."
+      desc: "Often Focuses on Repetitive Mechanical Motions, Passive Limb Stretching, and Muscle Group Maintenance."
     },
     neuroplasticity: {
       question: "“What does the brain need to learn?”",
       label: "A NEUROPLASTICITY-FOCUSED APPROACH ASKS",
-      desc: "That change in perspective influences how you assess a patient, design an intervention, and measure recovery."
+      desc: "That Change in Perspective Influences how you Assess a Patient, Design an Intervention, and Measure Recovery."
     },
     frameworkSteps: [
-      { step: "ASSESS", desc: "Baseline neural & functional mapping" },
-      { step: "UNDERSTAND", desc: "Identify brain circuits & limitations" },
-      { step: "ACTIVATE", desc: "Non-invasive priming & stimulation" },
-      { step: "TRAIN", desc: "Goal-directed task-specific drills" },
-      { step: "REPEAT", desc: "High-dose targeted synaptogenesis" },
-      { step: "ADAPT", desc: "Reinforce adaptive motor learning" },
-      { step: "MEASURE", desc: "Objective recovery milestone verification" }
+      { step: "ASSESS", desc: "Baseline Neural & Functional Mapping" },
+      { step: "UNDERSTAND", desc: "Identify Brain Circuits & Limitations" },
+      { step: "ACTIVATE", desc: "Non-Invasive Priming & Stimulation" },
+      { step: "TRAIN", desc: "Goal-Directed Task-Specific Drills" },
+      { step: "REPEAT", desc: "High-Dose Targeted Synaptogenesis" },
+      { step: "ADAPT", desc: "Reinforce Adaptive Motor Learning" },
+      { step: "MEASURE", desc: "Objective Recovery Milestone Verification" }
     ],
     footer:
       "The program is designed to help you build this way of thinking into your professional practice."
   },
 
   takeaways: [
-    "A stronger foundation in neuroscience and neuroplasticity",
-    "An understanding of adaptive & maladaptive neuroplasticity",
+    "A stronger foundation in neuroscience and Neuroplasticity",
+    "An understanding of adaptive & maladaptive Neuroplasticity",
     "Practical frameworks for thinking about patient recovery",
     "Greater understanding of motor and sensory learning",
     "Tools for developing goal-oriented strategies",
     "A structured approach to patient assessment and progress tracking",
     "Understanding of advanced brain-based approaches",
     "Case-based learning and practical application",
-    "A framework to integrate neuroplasticity into your existing practice"
+    "A framework to integrate Neuroplasticity into your existing practice"
   ],
   takeawayConclusion: "And most importantly… A new way of looking at recovery.",
 
@@ -324,7 +324,7 @@ export const neuroplasticityTrainingData = {
       location: "In-Clinic Practicum (Shree Namoh Wellness, Indore)",
       featured: true,
       description:
-        "Intensive 5-day hands-on clinical certification covering advanced non-invasive neuromodulation technologies, brain stimulation physics, and practical patient case demonstrations.",
+        "Intensive 5-Day Hands-on Clinical Certification Covering Advanced Non-Invasive Neuromodulation Technologies, Brain Stimulation Physics, and Practical Patient Case Demonstrations.",
       highlights: [
         "Hands-on device operation & electrode calibration (tDCS, tACS, peripheral stimulation)",
         "Direct clinical case demonstrations supervised by Dr. Neha Arora Verma",
@@ -342,7 +342,7 @@ export const neuroplasticityTrainingData = {
       location: "Interactive Online Virtual Campus",
       featured: true,
       description:
-        "Comprehensive 2-month professional master program providing in-depth neuroscience modules, adaptive vs. maladaptive frameworks, weekly live mentoring, and clinical implementation.",
+        "Comprehensive 2-Month Professional Master Program Providing in-Depth Neuroscience Modules, Adaptive Vs. Maladaptive Frameworks, Weekly Live Mentoring, and Clinical Implementation.",
       highlights: [
         "8 comprehensive modules covering neuroscience to clinical translation",
         "Weekly live interactive coaching sessions with Dr. Neha Arora Verma",
@@ -355,10 +355,10 @@ export const neuroplasticityTrainingData = {
   ],
 
   webinar: {
-    title: "Join Our Upcoming Webinar",
-    subtitle: "Want to know more about the Neuroplasticity Coach Program?",
+    title: "Join our Upcoming Webinar",
+    subtitle: "Want to Know more about the Neuroplasticity Coach Program?",
     description:
-      "Discover the course structure, learning outcomes, case-study methodologies, and career opportunities in applied neuroplasticity and neuromodulation.",
+      "Discover the Course Structure, Learning Outcomes, Case-Study Methodologies, and Career Opportunities in Applied Neuroplasticity and Neuromodulation.",
     bulletPoints: [
       "Live overview with Dr. Neha Arora Verma",
       "Explanation of the 7-stage clinical framework",
@@ -372,10 +372,10 @@ export const neuroplasticityTrainingData = {
   },
 
   closingManifesto: {
-    heading: "Your Patient's Recovery Starts With Understanding the Brain",
+    heading: "Your Patient's Recovery Starts with Understanding the Brain",
     lead:
       "Neuroplasticity is not about promising miracles. It is about understanding the brain's capacity to adapt, learn, and change — and learning how to create better conditions for meaningful recovery.",
-    actionCall: "It's time to learn neuroplasticity. Become a Neuroplasticity Coach today.",
+    actionCall: "It's Time to Learn Neuroplasticity. Become a Neuroplasticity Coach Today.",
     motto: "LEARN THE SCIENCE. UNDERSTAND THE PROCESS. APPLY IT IN PRACTICE.",
     directorName: "Dr. Neha Arora Verma",
     directorTitle: "India's First Neuroplasticity Coach • M.S. (Neurological Rehabilitation, UK)",
@@ -396,10 +396,10 @@ export const neuroplasticityTrainingData = {
     },
     {
       q: "What is the difference between the 5-Day Offline Course and 2-Month Online Course?",
-      a: "The 5-Day Offline Course (Certification in Neuromodulation Technology) is an intensive in-clinic hands-on practicum focusing on neuromodulation device calibration, electrode placement, and live patient demonstrations. The 2-Month Online Course (Advance Neuroplasticity Master Coach Program) provides deep theoretical, diagnostic, and clinical framework training with weekly live sessions, case studies, and mentorship."
+      a: "The 5-Day Offline Course (Certification in Neuromodulation Technology) is an intensive in-clinic hands-on practicum focusing on Neuromodulation device calibration, electrode placement, and live patient demonstrations. The 2-Month Online Course (Advance Neuroplasticity Master Coach Program) provides deep theoretical, diagnostic, and clinical framework training with weekly live sessions, case studies, and mentorship."
     },
     {
-      q: "How does applied neuroplasticity change traditional rehabilitation?",
+      q: "How does applied Neuroplasticity change traditional rehabilitation?",
       a: "Traditional rehabilitation typically asks 'What exercise should we do?', focusing heavily on passive limb manipulation. Neuroplasticity asks 'What does the brain need to learn?', focusing on active problem solving, sensory cueing, synaptogenesis, and reversing maladaptive compensatory habits."
     },
     {

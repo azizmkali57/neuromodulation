@@ -34,7 +34,7 @@ export const genomicData = {
       id: "foundations-dna",
       number: "01",
       badge: "MOLECULAR FOUNDATIONS",
-      title: "Know Your DNA: Discover Yourself",
+      title: "Know your DNA: Discover Yourself",
       subtitle: "The 3-Billion Base Pair Blueprint Inside Every Living Cell",
       image: "/images/genomics/image1.jpeg",
       imageCaption: "DNA Double Helix: Nucleotide base pairing of Adenine (A), Thymine (T), Cytosine (C), and Guanine (G).",
@@ -60,8 +60,8 @@ export const genomicData = {
       id: "snps-variations",
       number: "02",
       badge: "GENETIC HETEROGENEITY",
-      title: "Single Nucleotide Polymorphisms (SNPs)",
-      subtitle: "How Single-Letter Variations Alter Your Metabolic Destiny",
+      title: "Single Nucleotide Polymorphisms (Snps)",
+      subtitle: "How Single-Letter Variations Alter your Metabolic Destiny",
       paragraphs: [
         "During cellular replication, subtle copying errors naturally occur. When a single base in a sequence is substituted, a gene that was supposed to code for a specific protein may be read differently. These single-letter variations in the DNA sequence are known as Single Nucleotide Polymorphisms, or SNPs (pronounced 'snips').",
         "To visualize this profound impact: imagine hypothetically that the sequence 'CAT' coded for a cat. If a mutation changes the first letter from 'C' to 'R', the word becomes 'RAT'—coding for a completely different animal with entirely different characteristics. That is precisely how impactful a single SNP can be inside your body's biological enzymatic cascades.",
@@ -79,7 +79,7 @@ export const genomicData = {
       number: "03",
       badge: "NUTRIGENOMICS SCIENCE",
       title: "Nutritional Genomics: Towards Personalized Nutrition",
-      subtitle: "The Multidisciplinary Science of How Nutrients Regulate Gene Expression",
+      subtitle: "The Multidisciplinary Science of how Nutrients Regulate Gene Expression",
       image: "/images/genomics/image3.jpeg",
       imageCaption: "Nutrigenomics: Investigating how bioactive food compounds interact with gene expression.",
       paragraphs: [
@@ -98,8 +98,8 @@ export const genomicData = {
       id: "health-wellness",
       number: "04",
       badge: "ROOT-CAUSE HEALTHCARE",
-      title: "How Genetics Plays a Role in Your Health & Wellness",
-      subtitle: "Pinpointing Underlying Triggers Before Symptoms Escalate",
+      title: "How Genetics Plays a Role in your Health & Wellness",
+      subtitle: "Pinpointing Underlying Triggers before Symptoms Escalate",
       image: "/images/genomics/image4.png",
       imageCaption: "Targeted Root-Cause Identification Across Biological Systems.",
       paragraphs: [
@@ -140,7 +140,7 @@ export const genomicData = {
       number: "06",
       badge: "PRECISION ROADMAP",
       title: "Personalized Gene-Based Action Plan",
-      subtitle: "Defying 'One Size Fits All' With a Customized Blueprint for Life",
+      subtitle: "Defying 'One Size Fits all' with a Customized Blueprint for Life",
       image: "/images/genomics/image6.png",
       imageCaption: "Personalized Action Plan Roadmap: Guiding you to Live Better, Eat Better, and Get Better.",
       paragraphs: [

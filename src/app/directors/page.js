@@ -39,14 +39,12 @@ export default function DirectorsIndexPage() {
           <div className="m-auto" style={{ maxWidth: "1280px" }}>
             <div className="flex flex-wrap items-center gap-3 mb-6">
               <span
-                className="font-headings type-18 uppercase px-3 py-1 font-bold"
+                className="font-headings type-18 uppercase px-3 py-1 font-bold text-white bg-[#E9511C]"
                 style={{
-                  backgroundColor: "var(--c-light-blue, #BDDFEC)",
-                  color: "var(--c-darkest-blue, #1D1A55)",
                   letterSpacing: "0.05em"
                 }}
               >
-                EXECUTIVE & CLINICAL GOVERNANCE
+                DIRECTORSHIP — SHREE NAMOH WELLNESS CLINICS ALL ACROSS MP
               </span>
               <span className="font-headings type-18 uppercase color-orange">
                 MULTIDISCIPLINARY LEADERSHIP
@@ -69,8 +67,8 @@ export default function DirectorsIndexPage() {
             <div className="dg grid-auto gap-large g-vat">
               <div>
                 <p className="type-20 leading-relaxed font-semibold text-[#1D1A55] mb-4" style={{ maxWidth: "36em" }}>
-                  Our leadership brings together pioneer clinical neurorehabilitation,
-                  thirty-five years of surgical and medical governance, and cutting-edge
+                  Our leadership brings together pioneer clinical Neurorehabilitation,
+                  twenty+ years of experience in surgical and medical governance, and cutting-edge
                   precision nutrigenomics.
                 </p>
                 <p className="type-16 text-gray-700 leading-relaxed" style={{ maxWidth: "38em" }}>

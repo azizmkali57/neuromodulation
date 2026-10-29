@@ -13,7 +13,7 @@ export default function Header() {
 
   return (
     <>
-      <header className="header w-100 grid-p box-sizing fixed bg-white flex flex-vac gap-3 sm:gap-6 md:gap-8 color-brand z-[600]" id="header">
+      <header className="header w-100 grid-p box-sizing fixed bg-white/95 backdrop-blur-md flex flex-vac gap-3 sm:gap-6 md:gap-8 color-brand z-[600] border-b border-gray-100 shadow-[0_2px_12px_rgba(29,26,85,0.06)]" id="header">
         <a
           href={siteData.header.logoHref}
           className="logo flex__0 over flex items-center py-1"
@@ -29,13 +29,13 @@ export default function Header() {
         </a>
 
         {/* Desktop primary links */}
-        <nav className="font type-14 uppercase over tabv-hide">
+        <nav className="font-headings uppercase over tabv-hide">
           <ul id="menu-topmenu_el" className="menu-ul flex gap-sm" style={{ gap: "22px" }}>
             {siteData.header.navLinks.map((link, idx) => (
               <li key={idx} className="menu-item relative group">
                 <a
                   href={link.href || "#"}
-                  className="menu-a hover-underline flex items-center gap-1"
+                  className="menu-a hover-underline flex items-center gap-1.5 text-[16px] xl:text-[18px] font-bold tracking-wider py-1.5"
                 >
                   <span>{link.title}</span>
                   {link.children && (
@@ -56,7 +56,7 @@ export default function Header() {
                         <a
                           key={sIdx}
                           href={sub.href.startsWith("#") ? `/${sub.href}` : sub.href}
-                          className="block px-4 py-2.5 text-xs font-headings uppercase hover:bg-[#E9511C] hover:text-white transition-colors tracking-wide whitespace-nowrap"
+                          className="block px-4 py-3 text-sm font-headings uppercase hover:bg-[#E9511C] hover:text-white transition-colors tracking-wider whitespace-nowrap"
                         >
                           {sub.title}
                         </a>
@@ -82,7 +82,7 @@ export default function Header() {
 
           <a
             href={siteData.header.donateBtn.href}
-            className="button-link relative font-headings color-orange text-xs sm:text-sm md:text-base"
+            className="button-link relative font-headings color-orange text-sm sm:text-base md:text-lg font-bold"
             style={{ padding: "8px 14px", borderRadius: "8px" }}
           >
             <span className="over color-white uppercase no-wrap">
@@ -93,7 +93,7 @@ export default function Header() {
           <button
             onClick={toggleMenu}
             type="button"
-            className="burger flex button-link relative trans clickable font-headings color-blue text-xs sm:text-sm md:text-base no-wrap border-0 bg-transparent text-left cursor-pointer"
+            className="burger flex button-link relative trans clickable font-headings color-blue text-sm sm:text-base md:text-lg font-bold no-wrap border-0 bg-transparent text-left cursor-pointer"
             id="burger"
             aria-label="Toggle navigation menu"
             style={{ padding: "8px 14px", borderRadius: "8px" }}
@@ -128,7 +128,7 @@ export default function Header() {
             </a>
           </div>
 
-          <div className="w-100 grid-p uppercase font-headings type-80 py-8 flex-auto flex flex-col justify-center">
+          <div className="w-100 grid-p uppercase font-headings text-2xl sm:text-3xl md:text-5xl lg:text-6xl py-8 flex-auto flex flex-col justify-center">
             <ul className="w-100 max-w-4xl mx-auto space-y-4">
               {siteData.burgerMenu.items.map((item, idx) => (
                 <li

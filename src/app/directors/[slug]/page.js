@@ -2,7 +2,7 @@ import React from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import { siteData } from "@/app/siteData";
-import { directorsData, directorsList } from "@/app/directorsData";
+import { directorsData } from "@/app/directorsData";
 import { SocialIcon } from "@/components/common/SocialIcons";
 
 export function generateStaticParams() {
@@ -76,7 +76,6 @@ export default function DirectorSinglePage({ params }) {
   }
 
   const isDrNeha = director.slug === "dr-neha-arora-verma";
-  const otherDirectors = directorsList.filter((d) => d.slug !== director.slug);
 
   return (
     <div className="w-100 bg-white" style={{ minHeight: "100vh" }}>
@@ -283,7 +282,7 @@ export default function DirectorSinglePage({ params }) {
                           Location
                         </div>
                         <div className="text-xs font-semibold text-[#1D1A55]">
-                          Indore, MP
+                          {director.contactInfo?.shortLocation || director.contactInfo?.location || "Indore, MP"}
                         </div>
                       </div>
                     </div>
@@ -588,7 +587,7 @@ export default function DirectorSinglePage({ params }) {
               className="font-headings type-18 uppercase px-4 py-1 inline-block mb-6"
               style={{ backgroundColor: "rgba(0,0,0,0.25)" }}
             >
-              DIRECTOR&apos;S CLINICAL &amp; WELLNESS PHILOSOPHY
+              DIRECTOR&apos;s CLINICAL &amp; WELLNESS PHILOSOPHY
             </span>
             <h2
               className="font-headings type-36 uppercase leading-snug mx-auto mb-8"
@@ -598,66 +597,6 @@ export default function DirectorSinglePage({ params }) {
             </h2>
             <div className="font-headings type-20 uppercase text-[#FEE003]">
               {director.name} — {director.badge}
-            </div>
-          </div>
-        </section>
-
-        {/* =================================================================
-            SECTION 6: MEET OTHER DIRECTORS (Seamless Navigation)
-        ================================================================= */}
-        <section className="grid-p pt-88 pb-88 bg-white border-b border-[#BDDFEC]">
-          <div className="m-auto" style={{ maxWidth: "1280px" }}>
-            <div className="flex flex-col md:flex-row md:items-end justify-between mb-12">
-              <div>
-                <span className="font-headings type-18 color-orange uppercase mb-2 block">
-                  LEADERSHIP TEAM
-                </span>
-                <h2 className="font-headings type-48 uppercase text-[#1D1A55] leading-tight">
-                  MEET OUR OTHER DIRECTORS
-                </h2>
-              </div>
-              <a
-                href="/directors"
-                className="font-headings type-20 uppercase text-[#E9511C] hover:underline mt-4 md:mt-0"
-              >
-                View All Directors →
-              </a>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {otherDirectors.map((other, oIdx) => (
-                <a
-                  key={oIdx}
-                  href={`/directors/${other.slug}`}
-                  className="group bg-[#f8fafc] border border-[#BDDFEC] hover:border-[#E9511C] transition-all p-6 flex flex-col sm:flex-row gap-6 items-center shadow-sm hover:shadow-lg"
-                >
-                  <div
-                    className="w-32 h-32 flex-shrink-0 overflow-hidden bg-[#1D1A55] border-2 border-[#E9511C]"
-                    style={{ aspectRatio: "1" }}
-                  >
-                    <img
-                      src={other.image}
-                      alt={other.name}
-                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                      style={{ objectPosition: other.objectPosition || "center top" }}
-                    />
-                  </div>
-                  <div className="flex-auto text-left">
-                    <span className="text-[11px] font-headings uppercase text-[#E9511C] tracking-wider block mb-1">
-                      {other.badge}
-                    </span>
-                    <h3 className="font-headings type-24 uppercase text-[#1D1A55] group-hover:text-[#E9511C] transition-colors mb-1">
-                      {other.name}
-                    </h3>
-                    <p className="text-xs text-gray-600 line-clamp-2 mb-3">
-                      {other.tagline}
-                    </p>
-                    <span className="inline-flex items-center text-xs font-headings uppercase font-bold text-[#0065BD] group-hover:translate-x-1 transition-transform">
-                      Read Full Profile →
-                    </span>
-                  </div>
-                </a>
-              ))}
             </div>
           </div>
         </section>

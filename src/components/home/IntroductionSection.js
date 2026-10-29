@@ -52,7 +52,7 @@ export default function IntroductionSection() {
 
         {/* Description from Docx */}
         <div
-          className="style-content m-auto mb-40 text-gray-700"
+          className="style-content m-auto mb-10 text-gray-700"
           style={{ maxWidth: "44em", fontSize: "1.05rem", lineHeight: "1.7em" }}
         >
           <p className="mb-4">
@@ -64,6 +64,19 @@ export default function IntroductionSection() {
           <p>
             Our dedicated clinical focus enhances quality of life, supports informed healthcare decisions, and ensures that specialized, world-class treatments remain accessible, dignified, and responsive to every individual&apos;s unique health journey.
           </p>
+        </div>
+
+        {/* Direct Action */}
+        <div>
+          <a
+            href="/directors"
+            className="inline-flex items-center gap-2 font-headings type-18 uppercase px-6 py-3 bg-[#1D1A55] text-white hover:bg-[#E9511C] transition-colors rounded font-bold tracking-wider shadow-md"
+          >
+            <span>MEET OUR DIRECTORS</span>
+            <svg className="w-4 h-4 fill-none stroke-current" strokeWidth="2.5" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+            </svg>
+          </a>
         </div>
       </div>
     </section>

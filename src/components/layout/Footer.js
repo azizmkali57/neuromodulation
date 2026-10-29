@@ -1,165 +1,143 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import { siteData } from "@/app/siteData";
 import { SocialIcon } from "@/components/common/SocialIcons";
 
 export default function Footer({ socialLinks } = {}) {
-  const { navLinks, tuvLogo, financialStats, locations, legalLinks, copyright } =
-    siteData.footer;
+  const { navLinks, locations, legalLinks, copyright } = siteData.footer;
 
   const activeSocialLinks =
     socialLinks && socialLinks.length > 0
       ? socialLinks
       : siteData.footer.socialLinks;
 
-  const [email, setEmail] = useState("");
-  const [agreed, setAgreed] = useState(false);
-  const [newsletterStatus, setNewsletterStatus] = useState("");
-
-  const handleNewsletterSubmit = (e) => {
-    e.preventDefault();
-    if (!email) {
-      setNewsletterStatus("Please enter your email address.");
-      return;
-    }
-    if (!agreed) {
-      setNewsletterStatus("Please accept the terms to proceed.");
-      return;
-    }
-    setNewsletterStatus("Thank you! Our admissions coordinator will contact you shortly.");
-    setEmail("");
-  };
-
   return (
-    <footer className="footer pt-12 sm:pt-16 bg-[#0e1026] text-white border-t border-[#1D1A55]">
-      <div className="grid-p m-auto" style={{ maxWidth: "1280px" }}>
-        {/* Main 3-Column Responsive Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12 pb-12">
-          {/* Col 1: Brand & Navigation Links */}
-          <div className="flex flex-col justify-between">
-            <div>
-              <div className="w-44 mb-6">
-                <img
-                  loading="lazy"
-                  src="/logo-white.webp"
-                  alt="Shree Namoh Wellness Logo"
-                  className="w-full h-auto object-contain"
-                  style={{ maxHeight: "110px" }}
-                />
-              </div>
-              <ul className="space-y-2.5 font-headings text-xs sm:text-sm uppercase tracking-wider">
-                {navLinks.map((item, idx) => (
-                  <li key={idx}>
-                    <a
-                      href={item.href}
-                      className="text-white/80 hover:text-[#FEE003] hover:underline transition-colors block py-0.5"
-                    >
-                      {item.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
+    <footer className="footer pt-14 sm:pt-20 pb-10 bg-[#0a0c1f] text-white border-t border-[#1D1A55]">
+      <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-12">
+        {/* Main 4-Column Balanced Grid */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-8 pb-12 border-b border-white/10 items-start">
+          
+          {/* Column 1: Brand & Logo (4 cols on lg, full on mobile) */}
+          <div className="lg:col-span-4 flex flex-col justify-start">
+            <a href="/" className="inline-block w-44 sm:w-52 mb-4">
+              <img
+                loading="lazy"
+                src="/logo-white.webp"
+                alt="Shree Namoh Wellness Logo"
+                className="w-full h-auto object-contain"
+                style={{ maxHeight: "88px" }}
+              />
+            </a>
+            <p className="text-xs sm:text-sm text-white/75 leading-relaxed pr-0 lg:pr-6 mb-4">
+              Pioneering multidisciplinary healthcare institution combining Specialized Paralysis Rehabilitation, Personalized Genomic Wellness, and Advanced Ophthalmic Microsurgery.
+            </p>
+            <div className="text-[11px] sm:text-xs uppercase font-bold text-[#00AF9C] tracking-wider">
+              Central India&apos;s Integrated Healthcare Destination
             </div>
           </div>
 
-          {/* Col 2: Enquiries & Brochure Request */}
-          <div>
-            <div className="font-headings text-xs uppercase tracking-widest text-[#FEE003] mb-4">
-              CLINICAL ENQUIRIES
-            </div>
-            <p className="text-xs text-white/70 mb-4 leading-relaxed">
-              Connect with Shree Namoh Wellness for appointment schedules, treatment protocol documentation, and specialized care assistance.
-            </p>
-            <form onSubmit={handleNewsletterSubmit} className="space-y-3">
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Doctor's / Patient's Email"
-                className="w-full bg-white/10 text-white placeholder-white/50 px-3.5 py-2.5 rounded border border-white/20 text-xs outline-none focus:border-[#FEE003] transition-colors"
-              />
-              <div className="flex items-start gap-2">
-                <input
-                  type="checkbox"
-                  id="agree-terms"
-                  checked={agreed}
-                  onChange={(e) => setAgreed(e.target.checked)}
-                  className="mt-0.5"
-                />
-                <label htmlFor="agree-terms" className="text-[11px] text-white/70 leading-tight">
-                  I agree to receive clinical updates &amp; appointment notifications.
-                </label>
-              </div>
-              <button
-                type="submit"
-                className="w-full font-headings uppercase py-2.5 px-4 bg-[#00AF9C] text-white hover:bg-[#E9511C] transition-colors rounded text-xs font-bold tracking-wider cursor-pointer"
-              >
-                REQUEST INFORMATION
-              </button>
-              {newsletterStatus && (
-                <div className="text-xs text-[#FEE003] font-sans">{newsletterStatus}</div>
-              )}
-            </form>
+          {/* Column 2: Quick Links (3.5 cols on lg to eliminate wrapping, div-based to eliminate any legacy list bullets) */}
+          <div className="lg:col-span-3 sm:pl-2 lg:pl-6">
+            <h4 className="font-headings text-xs sm:text-sm uppercase tracking-widest text-[#FEE003] mb-4 font-bold border-b border-white/10 pb-2 inline-block sm:block">
+              QUICK LINKS
+            </h4>
+            <nav className="flex flex-col gap-2 font-headings text-xs sm:text-sm uppercase tracking-wider">
+              {navLinks.map((item, idx) => (
+                <a
+                  key={idx}
+                  href={item.href}
+                  className="text-white/80 hover:text-[#00AF9C] hover:translate-x-1 transition-all inline-block py-1 leading-normal whitespace-nowrap"
+                >
+                  {item.label}
+                </a>
+              ))}
+            </nav>
+          </div>
 
-            <div className="mt-6 pt-4 border-t border-white/10">
-              <div className="font-headings text-[11px] uppercase text-white/50 mb-1">
-                DIRECT PATIENT HELPLINE
-              </div>
+          {/* Column 3: Clinical Enquiries & Direct Booking (2.5 cols on lg) */}
+          <div className="lg:col-span-2">
+            <h4 className="font-headings text-xs sm:text-sm uppercase tracking-widest text-[#FEE003] mb-4 font-bold border-b border-white/10 pb-2 inline-block sm:block">
+              CLINICAL ENQUIRIES
+            </h4>
+            <p className="text-xs text-white/75 mb-4 leading-relaxed">
+              Connect with our clinical desk for appointment schedules, treatment protocols, and consultation assistance.
+            </p>
+            <a
+              href="/contact"
+              className="inline-block w-full text-center font-headings uppercase py-2.5 px-4 bg-[#00AF9C] text-white hover:bg-[#E9511C] transition-colors rounded text-xs font-bold tracking-wider shadow-md whitespace-nowrap"
+            >
+              REQUEST INFORMATION
+            </a>
+
+            <div className="mt-5 pt-3 border-t border-white/10">
+              <span className="block font-headings text-[10px] uppercase tracking-wider text-white/50 mb-0.5">
+                Direct Patient Helpline
+              </span>
               <a
-                href="tel:7470529991"
-                className="font-headings text-lg text-[#FEE003] hover:underline block"
+                href="tel:+919827079888"
+                className="font-headings text-sm sm:text-base text-[#FEE003] hover:underline font-bold tracking-wide block whitespace-nowrap"
               >
-                CALL: +91 7470529991
+                +91 9827079888
               </a>
             </div>
           </div>
 
-          {/* Col 3: Single Clinical Venue Address */}
-          <div>
-            <div className="font-headings text-xs uppercase tracking-widest text-[#FEE003] mb-4">
-              CLINICAL CENTER &amp; ADDRESS
-            </div>
+          {/* Column 4: Clinical Center & Locations (2.5 cols on lg) */}
+          <div className="lg:col-span-3">
+            <h4 className="font-headings text-xs sm:text-sm uppercase tracking-widest text-[#FEE003] mb-4 font-bold border-b border-white/10 pb-2 inline-block sm:block">
+              CLINICAL CENTERS
+            </h4>
             <div className="space-y-3 text-xs">
-              <div className="font-bold uppercase text-[#00AF9C] text-sm">
-                Shree Namoh Wellness
+              <div>
+                <div className="font-bold uppercase text-[#00AF9C] text-xs sm:text-sm mb-1 tracking-wider">
+                  Shree Namoh Wellness
+                </div>
+                <div className="text-white/80 leading-relaxed">
+                  A-65 MIG, Behind CHL Hospital,<br />
+                  Indore, Madhya Pradesh 452001
+                </div>
               </div>
-              <div className="text-white/80 leading-relaxed">
-                A-65 MIG, Behind CHL Hospital,<br />
-                Indore, Madhya Pradesh 452001
+
+              <div className="text-white/70 text-[11px] sm:text-xs">
+                <span className="font-semibold text-white/90">Regional Services: </span>
+                Indore • Khandwa • Mundi (MP)
               </div>
-              <div className="pt-2 text-white/90">
-                <span className="text-white/50 block text-[11px] uppercase">Phone:</span>
-                <a href="tel:+919827079888" className="text-white hover:text-[#FEE003] block">
-                  +91 9827079888
-                </a>
-                <a href="tel:+917470529991" className="text-white hover:text-[#FEE003] block">
-                  +91 7470529991
-                </a>
-              </div>
-              <div className="pt-1 text-white/90">
-                <span className="text-white/50 block text-[11px] uppercase">Email:</span>
-                <a href="mailto:neha_arora27@yahoo.com" className="text-white hover:text-[#FEE003]">
-                  neha_arora27@yahoo.com
-                </a>
+
+              <div className="pt-2 border-t border-white/10 space-y-1 text-xs">
+                <div>
+                  <span className="text-white/50 uppercase text-[10px] tracking-wider block">Phone</span>
+                  <a href="tel:+919827079888" className="text-white hover:text-[#00AF9C] font-semibold">
+                    +91 9827079888
+                  </a>
+                </div>
+                <div>
+                  <span className="text-white/50 uppercase text-[10px] tracking-wider block">Email</span>
+                  <a href="mailto:info@shreenamohwellness.com" className="text-white hover:text-[#00AF9C]">
+                    info@shreenamohwellness.com
+                  </a>
+                </div>
               </div>
             </div>
           </div>
+
         </div>
 
-        {/* Bottom Bar: Copyright, Legal Links & Socials */}
-        <div className="pt-6 pb-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/60">
-          <div>{copyright}</div>
+        {/* Bottom Bar: Copyright, Legal Links, Social Icons */}
+        <div className="pt-8 flex flex-col md:flex-row items-center justify-between gap-5 text-xs text-white/60">
+          <div className="text-center md:text-left text-[11px] sm:text-xs">
+            {copyright}
+          </div>
 
-          <div className="flex flex-wrap items-center gap-4">
+          <div className="flex flex-wrap items-center justify-center gap-5 text-[11px] sm:text-xs">
             {legalLinks.map((leg, idx) => (
-              <a key={idx} href={leg.href} className="hover:text-white underline">
+              <a key={idx} href={leg.href} className="hover:text-white underline transition-colors">
                 {leg.label}
               </a>
             ))}
           </div>
 
-          <div className="flex flex-wrap items-center gap-2.5">
+          <div className="flex flex-wrap items-center justify-center gap-2">
             {activeSocialLinks.map((s, idx) => (
               <a
                 key={idx}
@@ -167,14 +145,15 @@ export default function Footer({ socialLinks } = {}) {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={s.name}
-                className="inline-flex items-center gap-1.5 text-white/80 hover:text-[#00AF9C] bg-white/5 hover:bg-white/10 px-2.5 py-1 rounded transition-colors"
+                className="inline-flex items-center gap-1.5 text-white/80 hover:text-white bg-white/5 hover:bg-[#E9511C] px-3 py-1.5 rounded transition-all"
               >
                 <SocialIcon name={s.name} className="w-3.5 h-3.5 fill-current" />
-                <span>{s.name}</span>
+                <span className="text-xs font-semibold">{s.name}</span>
               </a>
             ))}
           </div>
         </div>
+
       </div>
     </footer>
   );

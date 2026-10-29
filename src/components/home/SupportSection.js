@@ -10,39 +10,62 @@ export default function SupportSection() {
 
   return (
     <section className="grid-p pt-88 pb-88" id="benefits">
-      {/* Banner with two overlapping circle cutouts */}
-      <aside
-        className="w-100 relative mb-12 sm:mb-16 m-auto overflow"
-        style={{ maxWidth: "1225px", aspectRatio: 1.9444444444444 }}
+      {/* Dual Overlapping Circles: Award Presentation Photos */}
+      <div
+        className="w-100 relative mb-10 sm:mb-14 mx-auto overflow-hidden flex flex-col items-center justify-center"
+        style={{ maxWidth: "1225px" }}
         id="images-circles"
       >
-        <picture className="fill-dimensions z-1 pe-none picture">
-          <source type="image/webp" srcSet={bannerSrcset} />
-          <img
-            loading="lazy"
-            src={bannerImage}
-            alt="Advanced Neuromodulation Workshop Benefits"
-            className="abs-tl z-1 pe-none fit img"
-            srcSet={bannerSrcset}
-          />
-        </picture>
-        <div className="fill-dimensions bg-white blend-screen flex flex-vac flex-center">
-          <div className="mask-circle ratio-1 br-50"></div>
-          <div className="mask-circle ratio-1 br-50"></div>
+        <div className="relative flex items-center justify-center -space-x-8 sm:-space-x-16 md:-space-x-24 py-4 w-full">
+          {/* Left Circle: Dr. Neha Arora Verma receiving award from Gulshan Grover */}
+          <div className="relative w-[180px] h-[180px] sm:w-[280px] sm:h-[280px] md:w-[380px] md:h-[380px] lg:w-[440px] lg:h-[440px] rounded-full overflow-hidden shadow-2xl border-4 sm:border-8 border-white ring-4 ring-[#00AF9C]/25 bg-[#1D1A55] z-10 hover:z-30 hover:scale-105 transition-all duration-300">
+            <img
+              loading="lazy"
+              src="/images/award-grover-honour.jpg"
+              alt="Dr. Neha Arora Verma receiving Healthcare Excellence Award from Gulshan Grover"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end justify-center pb-3 sm:pb-5">
+              <span className="font-headings text-[10px] sm:text-xs md:text-sm text-white uppercase tracking-wider bg-[#1D1A55]/90 px-3 py-1 rounded shadow">
+                Healthcare Excellence Award
+              </span>
+            </div>
+          </div>
+
+          {/* Right Circle: Dr. Neha Arora Verma receiving Health Coach Award */}
+          <div className="relative w-[180px] h-[180px] sm:w-[280px] sm:h-[280px] md:w-[380px] md:h-[380px] lg:w-[440px] lg:h-[440px] rounded-full overflow-hidden shadow-2xl border-4 sm:border-8 border-white ring-4 ring-[#E9511C]/25 bg-[#1D1A55] z-20 hover:z-30 hover:scale-105 transition-all duration-300">
+            <img
+              loading="lazy"
+              src="/images/award-health-coach.jpg"
+              alt="Dr. Neha Arora Verma receiving National Recognition Award on Stage"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end justify-center pb-3 sm:pb-5">
+              <span className="font-headings text-[10px] sm:text-xs md:text-sm text-white uppercase tracking-wider bg-[#1D1A55]/90 px-3 py-1 rounded shadow">
+                National Clinical Recognition
+              </span>
+            </div>
+          </div>
         </div>
-      </aside>
+      </div>
 
       {/* Heading */}
       <h2
-        className="font-headings type-72 sm:type-108 uppercase mb-6 a-center m-auto highlight-bolds overflow"
-        style={{ maxWidth: "14em", "--bg": "var(--c-green)", lineHeight: "1.02em" }}
+        className="font-headings uppercase mb-6 sm:mb-8 a-center m-auto highlight-bolds overflow text-[#1D1A55]"
+        style={{
+          fontSize: "clamp(32px, 5vw, 68px)",
+          lineHeight: "1.06em",
+          maxWidth: "20em",
+          "--bg": "var(--c-green)",
+          letterSpacing: "0.01em",
+        }}
       >
         <b>{headingHighlight}</b> <br />
         {headingRest}
       </h2>
 
       {/* Description */}
-      <div className="style-content m-auto mb-12 sm:mb-16 a-center text-gray-700" style={{ maxWidth: "44em" }}>
+      <div className="style-content m-auto mb-10 sm:mb-14 a-center text-gray-700" style={{ maxWidth: "44em" }}>
         <p>{description}</p>
       </div>
 

@@ -1,7 +1,7 @@
 export const geneticSolutionsData = {
   hero: {
     badge: "PRECISION GENOMIC WELLNESS • TRANSLATIONAL NUTRIGENETICS",
-    title: "Crack Your Genetic Code",
+    title: "Crack your Genetic Code",
     subtitle: "Shree Namoh Wellness Genetics Advanced DNA Testing Program",
     tagline: "Know Your DNA • Discover Yourself",
     description: [
@@ -25,7 +25,7 @@ export const geneticSolutionsData = {
       id: "step-kit",
       title: "Premium DNA Saliva Sample Collection Kit",
       subTitle: "(Made in India)",
-      description: "Receive an easy-to-use saliva collection kit designed for accurate genetic testing. Proudly made in India.",
+      description: "Receive an Easy-to-Use Saliva Collection Kit Designed for Accurate Genetic Testing. Proudly Made in India.",
       icon: "/images/genomics/process/kit.png",
       badgeColor: "#BDDFEC",
       borderColor: "#7CC0D8",
@@ -34,9 +34,9 @@ export const geneticSolutionsData = {
     },
     {
       id: "step-delivery",
-      title: "Quick Delivery of DNA Kit across India",
+      title: "Quick Delivery of DNA Kit Across India",
       subTitle: "(4-7 Days, by Courier)",
-      description: "Your DNA kit will be swiftly delivered to your doorstep anywhere in India within 4-7 working days via trusted courier partners.",
+      description: "Your DNA Kit will be Swiftly Delivered to your Doorstep Anywhere in India Within 4-7 Working Days via Trusted Courier Partners.",
       icon: "/images/genomics/process/delivery.png",
       badgeColor: "#FCE7F3",
       borderColor: "#F472B6",
@@ -45,9 +45,9 @@ export const geneticSolutionsData = {
     },
     {
       id: "step-report",
-      title: "Advanced DNA Testing Program Report PDF",
+      title: "Advanced DNA Testing Program Report Pdf",
       subTitle: "(28 Working Days from the batch date)",
-      description: "Once we receive your samples, our labs analyze your DNA and deliver an exhaustive report (PDF) within 28 working days from the batch processing date.",
+      description: "Once we Receive your Samples, our Labs Analyze your DNA and Deliver an Exhaustive Report (Pdf) Within 28 Working Days from the Batch Processing Date.",
       icon: "/images/genomics/process/report.png",
       badgeColor: "#FEF3C7",
       borderColor: "#FBBF24",
@@ -56,9 +56,9 @@ export const geneticSolutionsData = {
     },
     {
       id: "step-counselling",
-      title: "60 min Genetic Counselling from Shree Namoh Wellness Genetic Counselors",
+      title: "60 Min Genetic Counselling from Shree Namoh Wellness Genetic Counselors",
       subTitle: "",
-      description: "Our certified genetic counselors guide you through your DNA report in a 60-minute one-on-one session, helping you understand your unique genetic profile.",
+      description: "Our Certified Genetic Counselors Guide you through your DNA Report in a 60-Minute One-on-One Session, Helping you Understand your Unique Genetic Profile.",
       icon: "/images/genomics/process/counselling.png",
       badgeColor: "#FEF9C3",
       borderColor: "#FACC15",
@@ -67,9 +67,9 @@ export const geneticSolutionsData = {
     },
     {
       id: "step-action-plan",
-      title: "Personalized Action Plan (PDF) Based on Your Genetic Report",
+      title: "Personalized Action Plan (Pdf) Based on your Genetic Report",
       subTitle: "(7 Working Days)",
-      description: "Within a week after your counseling, receive a customized action plan (PDF) tailored to your genetics, lifestyle, and health goals.",
+      description: "Within a Week after your Counseling, Receive a Customized Action Plan (Pdf) Tailored to your Genetics, Lifestyle, and Health Goals.",
       icon: "/images/genomics/process/action-plan.png",
       badgeColor: "#E0F2FE",
       borderColor: "#38BDF8",
@@ -80,7 +80,7 @@ export const geneticSolutionsData = {
       id: "step-helpdesk",
       title: "12-Months Wellness Helpdesk Assistance",
       subTitle: "",
-      description: "Enjoy continuous support with a full year of access to our wellness helpdesk for ongoing guidance and queries.",
+      description: "Enjoy Continuous Support with a Full Year of Access to our Wellness Helpdesk for Ongoing Guidance and Queries.",
       icon: "/images/genomics/process/helpdesk.png",
       badgeColor: "#DCFCE7",
       borderColor: "#4ADE80",
@@ -182,7 +182,7 @@ export const geneticSolutionsData = {
     },
     {
       id: "genes-family",
-      title: "Your Genes & Impact on Your Family",
+      title: "Your Genes & Impact on your Family",
       image: "/images/genomics/categories/genes-family.png"
     }
   ],
@@ -194,7 +194,7 @@ export const geneticSolutionsData = {
       title: "DNA-Guided Nutritional Architecture",
       subtitle: "Personalized Diet & Macro-Micro Nutrient Precision",
       description:
-        "Every individual metabolizes fats, carbohydrates, and micronutrients differently based on gene variants such as FTO, PPARG, and FABP2. We eliminate trial-and-error dieting with an exact nutritional profile.",
+        "Every Individual Metabolizes Fats, Carbohydrates, and Micronutrients Differently Based on Gene Variants such as Fto, Pparg, and FABP2. We Eliminate Trial-and-Error Dieting with an Exact Nutritional Profile.",
       deliverables: [
         "Optimal macro-nutrient ratio (Carbohydrate sensitivity vs. Saturated fat response)",
         "Lactose, gluten, fructose, and caffeine sensitivity profiling",
@@ -210,7 +210,7 @@ export const geneticSolutionsData = {
       title: "Metabolic & Cardiogenomic Defense",
       subtitle: "Preventative Interception of Chronic Lifestyle Disorders",
       description:
-        "Analyze specific polygenic score markers associated with blood glucose fluctuations, cholesterol clearance (APOE & LDLR), hypertension risks, and arterial stiffness to prevent chronic disease decades in advance.",
+        "Analyze Specific Polygenic Score Markers Associated with Blood Glucose Fluctuations, Cholesterol Clearance (Apoe & Ldlr), Hypertension Risks, and Arterial Stiffness to Prevent Chronic Disease Decades in Advance.",
       deliverables: [
         "Deep-dive insulin sensitivity and glycemic fluctuation mapping",
         "Cardiovascular lipid metabolism and arterial inflammation defense",
@@ -226,7 +226,7 @@ export const geneticSolutionsData = {
       title: "Stress, Sleep & Epigenetic Longevity",
       subtitle: "Circadian Synchronization & Neurotransmitter Balance",
       description:
-        "Genes are not destiny—they are tendencies triggered or silenced by lifestyle choices. We evaluate COMT, BDNF, and CLOCK genes to harmonize mental vitality, sleep architecture, and stress recovery.",
+        "Genes are not Destiny—they are Tendencies Triggered or Silenced by Lifestyle Choices. We Evaluate Comt, Bdnf, and Clock Genes to Harmonize Mental Vitality, Sleep Architecture, and Stress Recovery.",
       deliverables: [
         "Cortisol metabolism and adrenal stress-response mapping (COMT & SLC6A4)",
         "Deep REM and Slow-Wave Sleep optimization aligned with your CLOCK gene",
@@ -242,7 +242,7 @@ export const geneticSolutionsData = {
       title: "Genomic Fitness, Recovery & Injury Prevention",
       subtitle: "Aligning Physical Training with Muscle Fiber Genetics",
       description:
-        "Your muscle fiber composition (ACTN3), VO2 max potential, and collagen tendon strength (COL1A1) dictate whether you thrive on high-intensity intervals or endurance pacing, and how fast you recover from exercise.",
+        "Your Muscle Fiber Composition (ACTN3), VO2 Max Potential, and Collagen Tendon Strength (COL1A1) Dictate Whether you Thrive on High-Intensity Intervals or Endurance Pacing, and how Fast you Recover from Exercise.",
       deliverables: [
         "Power vs. Endurance muscle genetic categorization (ACTN3 R577X genotype)",
         "Tendon and ligament injury predisposition analysis (Collagen synthesis)",
@@ -259,7 +259,7 @@ export const geneticSolutionsData = {
       name: "Metabolic & Nutrition Genomic Solution",
       category: "ESSENTIAL PRECISION",
       description:
-        "Focused on resolving dietary confusion, weight management, food sensitivities, and micronutrient deficiencies.",
+        "Focused on Resolving Dietary Confusion, Weight Management, Food Sensitivities, and Micronutrient Deficiencies.",
       features: [
         "Comprehensive Nutrigenomic & Dietary Genetic Report",
         "Carbohydrate, Fat & Protein Metabolism Analysis",
@@ -275,7 +275,7 @@ export const geneticSolutionsData = {
       category: "FLAGSHIP PROGRAM",
       featured: true,
       description:
-        "The all-inclusive gold-standard blueprint covering diet, metabolic disease interception, cardiac safety, fitness, and cellular longevity.",
+        "The all-Inclusive Gold-Standard Blueprint Covering Diet, Metabolic Disease Interception, Cardiac Safety, Fitness, and Cellular Longevity.",
       features: [
         "Full 220+ Phenotype Multi-System Genomic Analysis across 19 Vital Categories",
         "Metabolic & Cardiovascular Risk Stratification",
@@ -292,7 +292,7 @@ export const geneticSolutionsData = {
       name: "Family Heritage & Preventative Health Panel",
       category: "FAMILY ADVANTAGE",
       description:
-        "Designed for couples and multi-generational families committed to understanding shared familial genetic vulnerabilities and building healthy homes.",
+        "Designed for Couples and Multi-Generational Families Committed to Understanding Shared Familial Genetic Vulnerabilities and Building Healthy Homes.",
       features: [
         "Multi-person genomic testing with cross-generational pattern analysis",
         "Family lifestyle & dietary harmonization guidelines",

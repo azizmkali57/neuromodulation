@@ -11,51 +11,51 @@ export const directorsData = {
     image: "/images/dr-neha-portrait.jpg",
     objectPosition: "center top",
     experience: "17 Years of Experience in Neurological Rehabilitation",
-    credentials: "Neuroplasticity Coach | Neurological Rehabilitation Expert | Director, Shree Namoh Wellness",
+    credentials: "Neuroplasticity Coach | Neurological Rehabilitation Expert | Directorship - Shree Namoh Wellness Clinics All Across MP",
     rolesList: [
-      "Director, Shree Namoh Wellness",
+      "Directorship - Shree Namoh Wellness Clinics All Across MP",
       "Founder, Lakwa Mukt Bharat",
       "India's First Neuroplasticity Coach",
       "Neurological Rehabilitation Expert"
     ],
     mission:
-      "To transform the lives of people affected by Paralysis by advancing Neurological Rehabilitation, promoting awareness of Neuroplasticity, empowering families, and helping patients work toward greater independence and a better quality of life.",
+      "To Transform the Lives of People Affected by Paralysis by Advancing Neurological Rehabilitation, Promoting Awareness of Neuroplasticity, Empowering Families, and Helping Patients Work Toward Greater Independence and a Better Quality of Life.",
     missionSlogan:
       "Dr. Neha Arora Verma — Advancing Recovery. Empowering Lives. Building a Lakwa Mukt Bharat.",
     intro:
-      "Dr. Neha Arora Verma is a dedicated Neurological Rehabilitation professional with 17 years of experience and a visionary leader committed to transforming the future of Paralysis Care in India. As Director of Shree Namoh Wellness, she strives to bring advanced Neurological Rehabilitation solutions to Central India, with a strong focus on recovery, functional independence, and improved quality of life for individuals affected by Paralysis and other neurological conditions.",
+      "Dr. Neha Arora Verma is a Dedicated Neurological Rehabilitation Professional with 17 Years of Experience and a Visionary Leader Committed to Transforming the Future of Paralysis Care in India. Holding Directorship - Shree Namoh Wellness Clinics All Across MP, she Strives to Bring Advanced Neurological Rehabilitation Solutions Across Central India, with a Strong Focus on Recovery, Functional Independence, and Improved Quality of Life for Individuals Affected by Paralysis and other Neurological Conditions.",
     quote:
-      "True clinical mastery does not come from memorizing waveforms on paper. It comes from having the probe in your hand, calibrating the amplitude, and witnessing the patient's neural circuits respond in real time.",
+      "True Clinical Mastery does not Come from Memorizing Waveforms on Paper. It Comes from Having the Probe in your Hand, Calibrating the Amplitude, and Witnessing the Patient's Neural Circuits Respond in Real Time.",
     stats: [
       { value: "17", label: "Years Experience in Neurological Rehabilitation" },
       { value: "1st", label: "Recognized Neuroplasticity Coach in India" },
       { value: "Mission", label: "Founder, Lakwa Mukt Bharat" },
-      { value: "Director", label: "Shree Namoh Wellness, Central India" }
+      { value: "Directorship", label: "Shree Namoh Wellness Clinics All Across MP" }
     ],
     overview: [
-      "Dr. Neha Arora Verma is a dedicated Neurological Rehabilitation professional with 17 years of experience and a visionary leader committed to transforming the future of Paralysis Care in India. As Director of Shree Namoh Wellness, she strives to bring advanced Neurological Rehabilitation solutions to Central India, with a strong focus on recovery, functional independence, and improved quality of life for individuals affected by Paralysis and other neurological conditions.",
-      "As the Founder of Lakwa Mukt Bharat, Dr. Neha is driven by a mission to create greater awareness, access to rehabilitation, and renewed hope for individuals living with Paralysis. Her work emphasizes the potential of Neuroplasticity—the brain's ability to adapt and reorganize—and its role in supporting Neurological Rehabilitation and functional recovery.",
-      "Recognized by her own professional mission as India's First Neuroplasticity Coach, Dr. Neha is passionate about promoting innovative, individualized rehabilitation approaches that focus on each patient's abilities, goals, and recovery potential.",
-      "Under her leadership, Shree Namoh Wellness aspires to be one of Central India's most advanced destinations for Neurological Rehabilitation, integrating modern treatment approaches with personalized care, compassionate guidance, and a commitment to continuous innovation. The center also brings together Genetic Counseling and Advanced Eye Care as part of its broader healthcare vision."
+      "Dr. Neha Arora Verma is a Dedicated Neurological Rehabilitation Professional with 17 Years of Experience and a Visionary Leader Committed to Transforming the Future of Paralysis Care in India. Holding Directorship - Shree Namoh Wellness Clinics All Across MP, she Strives to Bring Advanced Neurological Rehabilitation Solutions to Central India, with a Strong Focus on Recovery, Functional Independence, and Improved Quality of Life for Individuals Affected by Paralysis and other Neurological Conditions.",
+      "As the Founder of Lakwa Mukt Bharat, Dr. Neha is Driven by a Mission to Create Greater Awareness, Access to Rehabilitation, and Renewed Hope for Individuals Living with Paralysis. Her Work Emphasizes the Potential of Neuroplasticity—the Brain's Ability to Adapt and Reorganize—and its Role in Supporting Neurological Rehabilitation and Functional Recovery.",
+      "Recognized by her own Professional Mission as India's First Neuroplasticity Coach, Dr. Neha is Passionate about Promoting Innovative, Individualized Rehabilitation Approaches that Focus on each Patient's Abilities, Goals, and Recovery Potential.",
+      "Under her Directorship, Shree Namoh Wellness Clinics All Across MP Aspires to be Central India's most Advanced Destination for Neurological Rehabilitation, Integrating Modern Treatment Approaches with Personalized Care, Compassionate Guidance, and a Commitment to Continuous Innovation. The Center also Brings Together Genetic Counseling and Advanced Eye Care as Part of its Broader Healthcare Vision."
     ],
     shreeNamohVision: [
       {
         title: "Advanced Neurological Rehabilitation",
         lead: "Spearheaded by Dr. Neha Arora Verma",
         description:
-          "Targeted Non-Invasive Neuromodulation, motor re-education, and individualized recovery pathways for Paralysis, Stroke, and spinal conditions."
+          "Targeted Non-Invasive Neuromodulation, Motor Re-Education, and Individualized Recovery Pathways for Paralysis, Stroke, and Spinal Conditions."
       },
       {
         title: "Precision Genetic Counseling",
         lead: "Directed by Coach Richha Arrora",
         description:
-          "DNA-guided nutrition and metabolic health analysis that primes cellular health and amplifies neuroplastic recovery."
+          "DNA-Guided Nutrition and Metabolic Health Analysis that Primes Cellular Health and Amplifies Neuroplastic Recovery."
       },
       {
         title: "Advanced Eye Care & Medical Safety",
-        lead: "Directed by Dr. S. S. Verma",
+        lead: "Directed by Dr. S. S. Verma (Senior Eye Surgeon Chennai)",
         description:
-          "Decades of surgical Ophthalmic expertise, neuro-visual assessment, and rigorous clinical governance ensuring patient safety."
+          "Decades of Surgical Ophthalmic Expertise, Cataract, Lasic & Glaucoma Governance, and Rigorous Clinical Safety."
       }
     ],
     specializations: [
@@ -63,63 +63,70 @@ export const directorsData = {
         title: "Transcranial & Peripheral Neuromodulation",
         category: "ADVANCED ELECTROCEUTICALS",
         description:
-          "Mastery in non-invasive stimulation techniques including tDCS, tACS, peripheral nerve stimulation, and cortical priming for neurological disorders."
+          "Mastery in Non-Invasive Stimulation Techniques Including Tdcs, Tacs, Peripheral Nerve Stimulation, and Cortical Priming for Neurological Disorders."
       },
       {
         title: "Post-Stroke & Paralysis Rehabilitation",
         category: "MOTOR RELEARNING",
         description:
-          "Designing targeted stimulation montages to stimulate neuroplastic reorganization, promote bilateral hemispheric balance, and facilitate functional recovery."
+          "Designing Targeted Stimulation Montages to Stimulate Neuroplastic Reorganization, Promote Bilateral Hemispheric Balance, and Facilitate Functional Recovery."
       },
       {
         title: "Complex Spine & Chronic Pain Management",
         category: "SPINE SPECIALIZATION",
         description:
-          "Non-surgical spine alignment protocols, decompression techniques, and sensory-motor neuromodulation for chronic neuropathic pain syndromes."
+          "Non-Surgical Spine Alignment Protocols, Decompression Techniques, and Sensory-Motor Neuromodulation for Chronic Neuropathic Pain Syndromes."
       },
       {
         title: "Neurodegenerative Disease Interventions",
         category: "PARKINSON'S & DEMENTIA",
         description:
-          "Protocol design for frontoparietal and basal ganglia network activation to manage tremors, gait freezing, bradykinesia, and executive cognitive deficits."
+          "Protocol Design for Frontoparietal and Basal Ganglia Network Activation to Manage Tremors, Gait Freezing, Bradykinesia, and Executive Cognitive Deficits."
       }
     ],
     timeline: [
       {
         year: "17 YEARS JOURNEY",
         title: "Dedication to Neurological Rehabilitation",
-        description: "17 years of frontline clinical experience transforming patient mobility, motor re-education, and functional independence."
+        description: "17 Years of Frontline Clinical Experience Transforming Patient Mobility, Motor Re-Education, and Functional Independence."
       },
       {
         year: "NATIONAL MOVEMENT",
         title: "Founding Lakwa Mukt Bharat",
-        description: "Established the Lakwa Mukt Bharat mission to create nationwide awareness and access for paralysis recovery."
+        description: "Established the Lakwa Mukt Bharat Mission to Create Nationwide Awareness and Access for Paralysis Recovery."
       },
       {
         year: "CLINICAL PIONEER",
         title: "India's First Neuroplasticity Coaching",
-        description: "Connected cutting-edge non-invasive brain stimulation with functional physical neurorehabilitation."
+        description: "Connected Cutting-Edge Non-Invasive Brain Stimulation with Functional Physical Neurorehabilitation."
       },
       {
         year: "DIRECTORSHIP",
-        title: "Shree Namoh Wellness Leadership",
-        description: "Directing Central India's premier integrated center combining neurorehabilitation, genomics, and advanced eye care."
+        title: "Shree Namoh Wellness Clinics All Across MP",
+        description: "Directing Central India's Premier Network of Clinics Combining Neurorehabilitation, Genomics, and Advanced Eye Care."
       }
     ],
     keyResponsibilities: [
-      "Director of Shree Namoh Wellness and Clinical Head of Neurorehabilitation",
+      "Directorship - Shree Namoh Wellness Clinics All Across MP and Clinical Head of Neurorehabilitation",
       "Founder and National Leader of the Lakwa Mukt Bharat Movement",
       "Head of Advanced Neuromodulation Workshops & Hands-on Masterclasses",
       "Individualized Clinical Protocols for Paralysis, Stroke & Spine Rehabilitation"
     ],
     contactInfo: {
-      phone: "+91 9827079888 / 7470529991",
+      phone: "+91 9827079888",
       phoneHref: "tel:9827079888",
       whatsapp: "https://wa.me/919827079888",
       email: "neha_arora27@yahoo.com",
-      location: "A-65 MIG, Behind CHL Hospital, Indore, Madhya Pradesh 452001"
+      location: "A-65 MIG, Behind CHL Hospital, Indore, Madhya Pradesh 452001",
+      shortLocation: "Indore, MP"
     },
     socialLinks: [
+      {
+        name: "YouTube",
+        href: "https://www.youtube.com/@drnehaaroraverma9899",
+        handle: "@drnehaaroraverma9899",
+        label: "Neuroplasticity Youtube Channel"
+      },
       {
         name: "Instagram",
         href: "https://www.instagram.com/neurplasticitycoachprogram/",
@@ -138,112 +145,119 @@ export const directorsData = {
   "dr-s-s-verma": {
     slug: "dr-s-s-verma",
     name: "Dr. S. S. Verma",
-    mainHeadline: "Expertise That Protects Vision. Care That Inspires Confidence.",
-    designation: "Director | Senior Eye Surgeon | Phacoemulsification & Corneal Care Specialist",
-    roleCategory: "Advanced Eye Care & Ophthalmic Surgery",
-    badge: "DIRECTOR & SENIOR EYE SURGEON",
-    subBadge: "CORNEAL & CATARACT SPECIALIST",
-    tagline: "18+ Years of Experience in Eye Care and Ophthalmic Surgery",
+    mainHeadline: "Senior Eye Surgeon Chennai | Specialist - Cataract, Cornea, LASIK and ICL Surgeries",
+    designation: "Director | Senior Eye Surgeon Chennai | Specialist - Cataract, Cornea, LASIK & ICL Surgeries",
+    roleCategory: "Advanced Eye Care & Microsurgery (Indore, Khandwa & Mundi)",
+    badge: "DIRECTOR & SENIOR EYE SURGEON CHENNAI",
+    subBadge: "CATARACT, CORNEA, LASIK & ICL SURGEON",
+    tagline: "20+ Years of Experience in Advanced Eye Care & Microsurgery — Advance Eye Care Services Available at Mundi",
     image: "/images/dr-ss-verma-portrait.jpg",
     objectPosition: "center top",
-    experience: "18+ Years of Experience in Eye Care and Ophthalmic Surgery",
-    credentials: "Senior Eye Surgeon | Phacoemulsification & Corneal Care Specialist | Director, Shree Namoh Wellness",
+    experience: "20+ Years of Experience in Eye Care and Ophthalmic Surgery",
+    credentials: "Senior Eye Surgeon Chennai | Specialist - Cataract, Cornea, LASIK and ICL Surgeries | Directorship - Shree Namoh Wellness Clinics All Across MP",
     rolesList: [
-      "Director, Shree Namoh Wellness",
-      "Senior Eye Surgeon & Ophthalmic Consultant",
-      "Phacoemulsification (Modern Cataract Surgery) Specialist",
-      "Corneal Care & Ophthalmic Diagnostics Expert"
+      "Directorship - Shree Namoh Wellness Clinics All Across MP",
+      "Senior Eye Surgeon Chennai",
+      "Specialist - Cataract, Cornea, LASIK and ICL Surgeries",
+      "Advance Eye Care Services Available at Mundi, Khandwa & Indore"
     ],
     mission:
-      "To deliver reliable, advanced, and compassionate eye care through modern Ophthalmic techniques, surgical expertise, and a commitment to protecting and improving vision.",
+      "To Deliver Reliable, Advanced, and Compassionate Eye Care through Modern Ophthalmic Techniques, Chennai-Caliber Surgical Expertise, and an Unwavering Commitment to Protecting and Improving Vision Across Indore, Khandwa and Mundi.",
     vision:
-      "To contribute to a future where quality eye care is accessible to more people, helping individuals maintain healthy vision and enjoy a better quality of life.",
+      "To contribute to a future where world-class Cataract, Cornea, LASIK, and ICL surgical care is accessible to all communities across Madhya Pradesh, including Advance Eye Care Services Available at Mundi.",
     intro:
-      "Dr. S. S. Verma is a highly experienced senior eye surgeon with over 18 years of experience in ophthalmology, dedicated to delivering quality eye care and advanced surgical solutions. With expertise in Phacoemulsification (Modern Cataract Surgery) and Corneal Care, Dr. Verma is committed to helping patients preserve, protect, and improve their vision through appropriate treatment and personalized care.",
+      "Dr. S. S. Verma is a Renowned Senior Eye Surgeon Chennai with over 20+ Years of Surgical Experience in Ophthalmology, Dedicated to Delivering Highest-Quality Vision Care and Advanced Microsurgical Solutions. As a Specialist in Cataract, Cornea, LASIK and ICL Surgeries and Director at Shree Namoh Wellness Clinics Across Indore and Khandwa—with Advance Eye Care Services Available at Mundi— Dr. Verma is Committed to Helping Patients Preserve, Protect, and Restore their Vision through Cutting-Edge Technology and Compassionate Clinical Guidance.",
     quote:
-      "Every patient deserves a thorough evaluation, clear communication, and a treatment plan tailored to their individual needs. Protecting vision is about combining surgical precision with compassionate guidance.",
+      "Every Patient Deserves Surgical Precision, Clear Communication, and Personalized Care. Protecting Vision is about Combining Chennai Surgical Rigor with Compassionate Clinical Guidance.",
     stats: [
-      { value: "18+", label: "Years Experience in Eye Care & Ophthalmic Surgery" },
-      { value: "Specialist", label: "Phacoemulsification (Cataract Surgery)" },
-      { value: "Focus", label: "Corneal Health & Vision Preservation" },
-      { value: "Director", label: "Shree Namoh Wellness Eye Care" }
+      { value: "20+", label: "Years Experience in Advanced Eye Care & Surgery" },
+      { value: "Chennai", label: "Senior Eye Surgeon Clinical Rigor" },
+      { value: "Surgeries", label: "Cataract, Cornea, LASIK & ICL Specialist" },
+      { value: "Locations", label: "Indore, Khandwa & Mundi Clinics (MP)" }
     ],
     overview: [
-      "Dr. S. S. Verma is a highly experienced senior eye surgeon with over 18 years of experience in ophthalmology, dedicated to delivering quality eye care and advanced surgical solutions. With expertise in Phacoemulsification (Modern Cataract Surgery) and Corneal Care, Dr. Verma is committed to helping patients preserve, protect, and improve their vision through appropriate treatment and personalized care.",
-      "With a strong focus on surgical precision, patient safety, and clinical excellence, Dr. Verma brings extensive experience in evaluating and managing a wide range of eye conditions. His expertise in Phacoemulsification supports modern Cataract treatment, while his focus on Corneal Health addresses the diagnosis and management of conditions affecting this vital part of the eye.",
-      "At Shree Namoh Wellness, Dr. Verma is committed to providing patient-centered eye care that combines contemporary Ophthalmic practices with compassionate guidance. He believes that every patient deserves a thorough evaluation, clear communication, and a treatment plan tailored to their individual needs.",
-      "As part of the leadership team at Shree Namoh Wellness, Dr. Verma's advanced eye care division complements Neurological Rehabilitation and Genetic Counseling, providing comprehensive Neuro-Ophthalmic and visual wellness under one roof."
+      "Dr. S. S. Verma is a Highly Experienced Senior Eye Surgeon Chennai with over 20+ Years of Distinguished Experience in Ophthalmology, Dedicated to Delivering Highest-Quality Vision Care and Advanced Surgical Solutions Across Madhya Pradesh.",
+      "As a Leading Specialist in Cataract, Cornea, LASIK and ICL Surgeries, Dr. Verma Brings Comprehensive Expertise in Sutureless Phacoemulsification, Refractive LASIK & ICL (Implantable Collamer Lens) Vision Correction, Advanced Corneal Preservation, and Medical and Laser Glaucoma Diagnostics. His Focus on Micro-Surgical Accuracy Supports Fast Visual Recovery and Maximum Patient Comfort.",
+      "At Shree Namoh Wellness Clinics in Indore, Khandwa, and with Advance Eye Care Services Available at Mundi, Dr. Verma Provides Patient-Centered Ophthalmic Care Combining Contemporary Ophthalmic Practices with Meticulous Safety Protocols. He Believes that Every Patient Deserves a Thorough Evaluation, Transparent Communication, and an Individualized Treatment Plan.",
+      "As Part of the Leadership Team at Shree Namoh Wellness Clinics All Across MP, Dr. Verma's Advanced Eye Care Division Complements Neurological Rehabilitation and Genetic Counseling, Establishing an Integrated Standard of Neuro-Visual and Comprehensive Wellness."
     ],
     specializations: [
       {
-        title: "Phacoemulsification (Modern Cataract Surgery)",
-        category: "SURGICAL EXPERTISE",
+        title: "Cataract, Cornea, LASIK and ICL Surgeries",
+        category: "MICROSURGICAL SPECIALIST",
         description:
-          "Advanced sutureless micro-incision cataract surgery utilizing ultrasound energy for rapid visual recovery, minimal downtime, and superior visual clarity."
+          "Specialist in Sutureless Phacoemulsification Cataract Surgery, Refractive LASIK Vision Correction, Implantable Collamer Lens (ICL) Procedures, and Advanced Corneal Therapies."
       },
       {
-        title: "Corneal Care & Ocular Health",
-        category: "CORNEAL SPECIALIZATION",
+        title: "Senior Eye Surgeon Chennai Clinical Rigor",
+        category: "SENIOR SURGICAL GOVERNANCE",
         description:
-          "Accurate diagnosis, assessment, and targeted medical management of conditions affecting the cornea to preserve corneal transparency and health."
+          "Decades of Surgical Excellence Practiced at Premier Ophthalmic Centers in Chennai, Bringing World-Class Clinical Protocols and Sterility Standards to Mp."
       },
       {
-        title: "Comprehensive Eye Evaluation & Vision Protection",
-        category: "CLINICAL OPHTHALMOLOGY",
+        title: "Corneal Care & Ophthalmic Diagnostics",
+        category: "CORNEAL & ANTERIOR SEGMENT",
         description:
-          "In-depth ophthalmic examinations, intraocular pressure monitoring, and tailored management plans to protect vision from preventable impairment."
+          "High-Resolution Diagnostic Imaging, Intraocular Pressure Monitoring, and Tailored Therapeutic Management to Protect Corneal Transparency and Vision."
       },
       {
-        title: "Patient-Centered Clinical Guidance",
-        category: "SAFETY & EXCELLENCE",
+        title: "Advance Eye Care Services Available at Mundi",
+        category: "MUNDI, KHANDWA & INDORE CLINICS",
         description:
-          "Dedicated patient education, clear communication, and meticulous pre- and post-operative care ensuring highest safety standards."
+          "Bringing Senior Eye Surgeon Consultations, Diagnostic Screenings, and Advance Eye Care Services Directly to Patients in Mundi, alongside Centers in Indore and Khandwa."
       }
     ],
     timeline: [
       {
-        year: "18+ YEARS PRACTICE",
+        year: "20+ YEARS PRACTICE",
         title: "Decades of Ophthalmic Excellence",
-        description: "Over 18 years of dedicated ophthalmic surgical practice delivering quality vision care to thousands of patients."
+        description: "Over 20+ Years of Dedicated Ophthalmic Surgical Practice Delivering Quality Vision Care to Thousands of Patients."
       },
       {
-        year: "SURGICAL FOCUS",
-        title: "Phacoemulsification & Corneal Care",
-        description: "Specialized expertise in modern cataract procedures and corneal preservation techniques."
+        year: "CHENNAI SURGERY",
+        title: "Senior Eye Surgeon Chennai Foundation",
+        description: "Extensive Surgical Training and Clinical Leadership as a Senior Eye Surgeon in Chennai Handling Complex Anterior Segment Cases."
+      },
+      {
+        year: "SPECIALIST CARE",
+        title: "Cataract, Cornea, LASIK & ICL Specialist",
+        description: "Pioneering Modern Phacoemulsification, Corneal Procedures, Refractive Laser Corrections (LASIK), and ICL Surgeries."
       },
       {
         year: "DIRECTORSHIP",
-        title: "Director of Eye Care, Shree Namoh Wellness",
-        description: "Leading the advanced eye care department at Shree Namoh Wellness in Central India."
-      },
-      {
-        year: "INTEGRATED HEALTH",
-        title: "Collaborative Clinical Governance",
-        description: "Uniting eye care with neurorehabilitation and precision wellness for holistic patient recovery."
+        title: "Shree Namoh Wellness (Indore, Khandwa & Mundi)",
+        description: "Directing Advanced Ophthalmic Care Across Shree Namoh Wellness Clinics All Across MP, with Dedicated Services at Mundi."
       }
     ],
     keyResponsibilities: [
-      "Director and Head of Ophthalmic Care at Shree Namoh Wellness",
-      "Lead Surgeon for Phacoemulsification and Corneal Care Interventions",
-      "Comprehensive Pre-Surgical & Diagnostic Eye Evaluations",
-      "Clinical Governance, Patient Safety & Tailored Treatment Protocols"
+      "Directorship - Shree Namoh Wellness Clinics All Across MP (Head of Ophthalmic Care)",
+      "Senior Eye Surgeon Chennai & Specialist - Cataract, Cornea, LASIK and ICL Surgeries",
+      "Advance Eye Care Services Available at Mundi, Khandwa and Indore Clinics",
+      "Clinical Governance, Advanced Microsurgical Protocols & Patient Safety"
     ],
     contactInfo: {
-      phone: "+91 7470529991",
-      phoneHref: "tel:7470529991",
-      whatsapp: "https://wa.me/917470529991",
+      phone: "+91 7024149799",
+      phoneHref: "tel:7024149799",
+      whatsapp: "https://wa.me/917024149799",
       email: "eyecare@drnehaarora.com",
-      location: "A-65 MIG, Behind CHL Hospital, Indore, Madhya Pradesh 452001"
+      location: "Indore, Khandwa & Mundi, Madhya Pradesh",
+      shortLocation: "Indore, Khandwa, Mundi"
     },
     socialLinks: [
+      {
+        name: "YouTube",
+        href: "https://www.youtube.com/@drnehaaroraverma9899",
+        handle: "@drnehaaroraverma9899",
+        label: "Neuroplasticity Youtube Channel"
+      },
       {
         name: "Facebook",
         href: "https://www.facebook.com/drssvermaeyesurgeon/",
         handle: "@drssvermaeyesurgeon",
-        label: "Dr. SS Verma Eye Surgeon"
+        label: "Dr. Ss Verma Eye Surgeon"
       },
       {
-        name: "YouTube",
+        name: "YouTube (Eye Care)",
         href: "https://www.youtube.com/@Dr.S.S.VermaEyeSurgeon",
         handle: "@Dr.S.S.VermaEyeSurgeon",
         label: "Dr. S. S. Verma Eye Surgeon Channel"
@@ -262,7 +276,7 @@ export const directorsData = {
     tagline: "Unique Blend of Technology, Data & Genomics for Natural, Result-Oriented Wellness",
     image: "/images/coach-richha-arora-portrait.jpg",
     objectPosition: "center 20%",
-    experience: "8 Years in IT + Certified Genomic Wellness Expert",
+    experience: "8 Years in it + Certified Genomic Wellness Expert",
     credentials: "Certified Genomic Wellness Consultant | Certified in Translational Nutrigenetics | Educator",
     rolesList: [
       "Director, Shree Namoh Wellness",
@@ -271,71 +285,71 @@ export const directorsData = {
       "Educator & Holistic Lifestyle Strategist"
     ],
     mission:
-      "My mission as a nutritional wellness consultant is to empower individuals to take charge of their health by providing personalized, evidence-based nutrition guidance and holistic lifestyle support. I aim to help people understand their bodies, make informed choices, and build sustainable habits that enhance their long-term well-being. Through compassionate coaching, education, and continuous support, I strive to inspire lasting transformation and contribute to a healthier, more mindful community.",
+      "My Mission as a Nutritional Wellness Consultant is to Empower Individuals to Take Charge of their Health by Providing Personalized, Evidence-Based Nutrition Guidance and Holistic Lifestyle Support. I Aim to Help People Understand their Bodies, Make Informed Choices, and Build Sustainable Habits that Enhance their Long-Term Well-being. Through Compassionate Coaching, Education, and Continuous Support, i Strive to Inspire Lasting Transformation and Contribute to a Healthier, more Mindful Community.",
     vision:
       "My vision as a nutritional wellness consultant is to empower individuals to build a deeply nourishing relationship with food, grounded in awareness, balance, and long-term well-being. I aim to create a world where people understand their bodies’ unique needs and feel confident making choices that support sustained energy, emotional harmony, and vibrant health. Through evidence-based guidance, compassionate coaching, and personalized nutrition strategies, I hope to help clients move beyond restrictive mindsets and instead embrace food as a source of strength, healing, and joy. I envision fostering communities that prioritize preventive health, mindful eating, and sustainable lifestyle habits, enabling people to thrive in every stage of life. By integrating modern nutritional science with practical, culturally sensitive approaches, I aspire to make wellness accessible, realistic, and enjoyable for all. Ultimately, my vision is to inspire lasting transformation—where individuals not only achieve their health goals but also cultivate resilience, self-trust, and a renewed sense of vitality that radiates into every aspect of their lives.",
     intro:
-      "Coach Richha Arrora is an experienced Genomic Wellness expert with a background of 8 years in IT. She brings a unique blend of technology and wellness to her practice. Her tech experience allows her to use data, Genomics Insights, and digital tools to design highly personalized nutrition strategies for her clients. She has successfully helped numerous individuals live a holistic life which revolves around not just physical but also mental, emotional and spiritual well-being.",
+      "Coach Richha Arrora is an Experienced Genomic Wellness Expert with a Background of 8 Years in it. She Brings a Unique Blend of Technology and Wellness to her Practice. Her Tech Experience Allows her to Use Data, Genomics Insights, and Digital Tools to Design Highly Personalized Nutrition Strategies for her Clients. She has Successfully Helped Numerous Individuals Live a Holistic Life which Revolves Around not just Physical but also Mental, Emotional and Spiritual Well-being.",
     quote:
-      "Holistic living is the need of the hour. Instead of quick fixes and crash diets which are just temporary, adopting natural, effective and result-oriented lifestyle modifications is what creates true, lasting vitality.",
+      "Holistic Living is the Need of the Hour. Instead of Quick Fixes and Crash Diets which are just Temporary, Adopting Natural, Effective and Result-Oriented Lifestyle Modifications is what Creates True, Lasting Vitality.",
     stats: [
-      { value: "8+", label: "Years IT & Tech Background in Data & Analytics" },
+      { value: "8+", label: "Years it & Tech Background in Data & Analytics" },
       { value: "Certified", label: "Translational Nutrigenetics & Genomic Wellness" },
       { value: "Holistic", label: "Physical, Mental, Emotional & Spiritual Care" },
       { value: "Director", label: "Shree Namoh Wellness Genomic Desk" }
     ],
     overview: [
-      "Coach Richha Arrora is an experienced Genomic Wellness expert with a background of 8 years in IT. She brings a unique blend of technology and wellness to her practice. Her tech experience allows her to use data, Genomics Insights, and digital tools to design highly personalized nutrition strategies for her clients.",
-      "She has successfully helped numerous individuals live a holistic life which revolves around not just physical but also mental, emotional and spiritual well-being. She is also a Certified Genomic Wellness Consultant, Educator and Certified in Translational Nutrigenetics.",
-      "\"Holistic living is the need of the hour\" is her genuine conviction. Instead of quick fixes and crash diets which are just temporary, adopting natural, effective and result-oriented lifestyle modifications is what Coach Richha credibly advocates.",
-      "At Namoh Wellness, she holds effective counseling sessions for our valued clients, creates targeted action plans, and provides dedicated follow-up. Her integration of modern nutritional science with practical, culturally sensitive approaches makes wellness accessible, realistic, and enjoyable for all."
+      "Coach Richha Arrora is an Experienced Genomic Wellness Expert with a Background of 8 Years in it. She Brings a Unique Blend of Technology and Wellness to her Practice. Her Tech Experience Allows her to Use Data, Genomics Insights, and Digital Tools to Design Highly Personalized Nutrition Strategies for her Clients.",
+      "She has Successfully Helped Numerous Individuals Live a Holistic Life which Revolves Around not just Physical but also Mental, Emotional and Spiritual Well-being. She is also a Certified Genomic Wellness Consultant, Educator and Certified in Translational Nutrigenetics.",
+      "\"Holistic living is the need of the hour\" Is her Genuine Conviction. Instead of Quick Fixes and Crash Diets which are just Temporary, Adopting Natural, Effective and Result-Oriented Lifestyle Modifications is what Coach Richha Credibly Advocates.",
+      "At Namoh Wellness, she Holds Effective Counseling Sessions for our Valued Clients, Creates Targeted Action Plans, and Provides Dedicated Follow-up. Her Integration of Modern Nutritional Science with Practical, Culturally Sensitive Approaches Makes Wellness Accessible, Realistic, and Enjoyable for all."
     ],
     specializations: [
       {
         title: "Translational Nutrigenetics & DNA-Guided Nutrition",
         category: "GENOMIC EXPERTISE",
         description:
-          "Translating complex genetic data into precise, individualized macronutrient and micronutrient blueprints tailored to each client's unique biological makeup."
+          "Translating Complex Genetic Data into Precise, Individualized Macronutrient and Micronutrient Blueprints Tailored to each Client's Unique Biological Makeup."
       },
       {
         title: "Technology & Data-Driven Wellness Design",
         category: "TECH-WELLNESS FUSION",
         description:
-          "Leveraging 8 years of IT experience, analytics, and modern digital tools to track metabolic biomarkers, monitor progress, and calibrate regimens."
+          "Leveraging 8 Years of it Experience, Analytics, and Modern Digital Tools to Track Metabolic Biomarkers, Monitor Progress, and Calibrate Regimens."
       },
       {
         title: "Holistic Living (Physical, Mental, Emotional & Spiritual)",
         category: "HOLISTIC HEALTH",
         description:
-          "Addressing wellness as an integrated continuum of physical vitality, emotional harmony, mental focus, and sustainable lifestyle modifications."
+          "Addressing Wellness as an Integrated Continuum of Physical Vitality, Emotional Harmony, Mental Focus, and Sustainable Lifestyle Modifications."
       },
       {
         title: "Targeted Action Plans & Client Counseling",
         category: "NAMOH WELLNESS SESSIONS",
         description:
-          "In-depth counseling sessions, actionable step-by-step roadmaps, ongoing accountability, and compassionate coaching that rejects crash diets."
+          "In-Depth Counseling Sessions, Actionable Step-by-Step Roadmaps, Ongoing Accountability, and Compassionate Coaching that Rejects Crash Diets."
       }
     ],
     timeline: [
       {
         year: "8 YEARS IT CAREER",
         title: "Technology & Data Analytical Foundation",
-        description: "8 years in the IT sector mastering systems thinking, data analytics, and digital architectures."
+        description: "8 Years in the it Sector Mastering Systems Thinking, Data Analytics, and Digital Architectures."
       },
       {
         year: "GENOMIC ADVANCEMENT",
         title: "Certification in Translational Nutrigenetics",
-        description: "Achieved certification as a Genomic Wellness Consultant and Educator in translational nutrigenetics."
+        description: "Achieved Certification as a Genomic Wellness Consultant and Educator in Translational Nutrigenetics."
       },
       {
         year: "HOLISTIC IMPACT",
         title: "Empowering Clients Toward Sustainable Health",
-        description: "Guided numerous individuals away from crash diets toward natural, result-oriented lifestyle modifications."
+        description: "Guided Numerous Individuals Away from Crash Diets Toward Natural, Result-Oriented Lifestyle Modifications."
       },
       {
         year: "NAMOH WELLNESS",
         title: "Director & Genomic Wellness Head",
-        description: "Directing personalized counseling sessions, action plans, and follow-ups at Shree Namoh Wellness."
+        description: "Directing Personalized Counseling Sessions, Action Plans, and Follow-Ups at Shree Namoh Wellness."
       }
     ],
     keyResponsibilities: [

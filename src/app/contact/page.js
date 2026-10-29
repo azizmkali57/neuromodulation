@@ -352,8 +352,8 @@ export default function ContactPage() {
                     3-Day Practical Masterclass
                   </h3>
                   <p className="text-sm text-[#BDDFEC] mb-6 leading-relaxed">
-                    Over 70% hands-on device training covering stroke recovery, paralysis protocols,
-                    Parkinson’s disease, and cognitive neurorehabilitation.
+                    Over 70% hands-on device training covering Stroke recovery, Paralysis protocols,
+                    Parkinson’s disease, and cognitive Neurorehabilitation.
                   </p>
                   <div>
                     <a
