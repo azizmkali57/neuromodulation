@@ -63,7 +63,7 @@ export default function PrivacyPage() {
               <p>
                 <strong>Shree Namoh Wellness</strong> respects your privacy. This policy explains
                 how we collect, use, store, and protect your personal, health, and genetic information
-                when you visit <strong>www.shreenamohwellness.com</strong> or use our clinical,
+                when you visit <strong>Www.Shreenamohwellness.Com</strong> or use our clinical,
                 educational, and genomic services.
               </p>
             </div>
@@ -112,8 +112,8 @@ export default function PrivacyPage() {
                   >
                     www.shreenamohwellness.com
                   </a>{" "}
-                  or use our services: the <strong>Neuroplasticity Course for Medical Professionals</strong>,{" "}
-                  <strong>Eye Care and Ophthalmic Surgery</strong>, and <strong>Genomic Wellness</strong>.
+                  or use our services: the <strong>Neuroplasticity Course For Medical Professionals</strong>,{" "}
+                  <strong>Eye Care And Ophthalmic Surgery</strong>, And <strong>Genomic Wellness</strong>.
                 </p>
                 <p className="type-15 text-gray-700">
                   By using our website or services, you agree to this policy.
@@ -127,26 +127,26 @@ export default function PrivacyPage() {
                 </h2>
                 <div className="space-y-3 type-15 text-gray-700">
                   <p>
-                    <strong className="text-[#1D1A55]">Personal information:</strong> Name, phone
+                    <strong className="text-[#1D1A55]">Personal Information:</strong> Name, phone
                     number, email address, age, gender, address, etc.
                   </p>
                   <p>
-                    <strong className="text-[#1D1A55]">Health information (eye care patients):</strong>{" "}
+                    <strong className="text-[#1D1A55]">Health Information (Eye Care Patients):</strong>{" "}
                     Medical history, symptoms, eye examination records, prescriptions, test
                     results, surgical records, and consent forms.
                   </p>
                   <p>
-                    <strong className="text-[#1D1A55]">Genetic information (Genomic Wellness clients):</strong>{" "}
+                    <strong className="text-[#1D1A55]">Genetic Information (Genomic Wellness Clients):</strong>{" "}
                     Biological samples (such as saliva or blood), DNA data, genomic reports, family
                     history, and lifestyle details.
                   </p>
                   <p>
-                    <strong className="text-[#1D1A55]">Professional information (course participants):</strong>{" "}
+                    <strong className="text-[#1D1A55]">Professional Information (Course Participants):</strong>{" "}
                     Medical registration number, qualifications, hospital or clinic affiliation,
                     and course progress or assessment records.
                   </p>
                   <p>
-                    <strong className="text-[#1D1A55]">Technical information:</strong> IP address,
+                    <strong className="text-[#1D1A55]">Technical Information:</strong> IP address,
                     browser type, device details, pages visited, and cookies.
                   </p>
                 </div>
@@ -158,13 +158,13 @@ export default function PrivacyPage() {
                   3. How We Use Your Information
                 </h2>
                 <ul className="list-disc pl-6 space-y-2 type-15 text-gray-700">
-                  <li>To book appointments and provide eye care, surgical, and genomic services.</li>
-                  <li>To process samples and prepare personalized genomic reports.</li>
-                  <li>To enroll you in courses, verify eligibility, and issue certificates.</li>
-                  <li>To send reminders, receipts, reports, and service updates.</li>
-                  <li>To respond to enquiries and provide support.</li>
-                  <li>To improve our website, services, and user experience.</li>
-                  <li>To meet legal and regulatory requirements.</li>
+                  <li>To Book Appointments And Provide Eye Care, Surgical, And Genomic Services.</li>
+                  <li>To Process Samples And Prepare Personalized Genomic Reports.</li>
+                  <li>To Enroll You In Courses, Verify Eligibility, And Issue Certificates.</li>
+                  <li>To Send Reminders, Receipts, Reports, And Service Updates.</li>
+                  <li>To Respond To Enquiries And Provide Support.</li>
+                  <li>To Improve Our Website, Services, And User Experience.</li>
+                  <li>To Meet Legal And Regulatory Requirements.</li>
                   <li>
                     To send promotional updates, only with your consent. You can opt out at any time.
                   </li>
@@ -197,9 +197,9 @@ export default function PrivacyPage() {
                     Confidentiality &amp; Genetic Data Safeguards:
                   </p>
                   <ul className="list-disc pl-5 space-y-1.5 text-gray-800">
-                    <li>Genetic data is used only for the purpose you consented to.</li>
+                    <li>Genetic Data Is Used Only For The Purpose You Consented To.</li>
                     <li>
-                      <strong>We do not sell your genetic or health data.</strong>
+                      <strong>We Do Not Sell Your Genetic Or Health Data.</strong>
                     </li>
                     <li>
                       Genetic data is not shared with insurers, employers, or any third party for
@@ -226,7 +226,7 @@ export default function PrivacyPage() {
                   We do not sell or rent your personal information. We may share it only with:
                 </p>
                 <ul className="list-disc pl-6 space-y-2 type-15 text-gray-700">
-                  <li>Healthcare professionals and laboratories involved in your care or testing.</li>
+                  <li>Healthcare Professionals And Laboratories Involved In Your Care Or Testing.</li>
                   <li>
                     Service providers such as payment gateways, IT, and communication platforms,
                     bound by confidentiality agreements.
@@ -282,15 +282,15 @@ export default function PrivacyPage() {
                 <h2 className="font-headings type-28 uppercase text-[#1D1A55] mb-4">
                   10. Your Rights
                 </h2>
-                <p className="type-15 text-gray-700 mb-3">Under applicable law, you may:</p>
+                <p className="type-15 text-gray-700 mb-3">Under Applicable Law, You May:</p>
                 <ul className="list-disc pl-6 space-y-2 type-15 text-gray-700 mb-4">
-                  <li>Request access to the personal data we hold about you.</li>
-                  <li>Request correction or updating of inaccurate data.</li>
+                  <li>Request Access To The Personal Data We Hold About You.</li>
+                  <li>Request Correction Or Updating Of Inaccurate Data.</li>
                   <li>
                     Request deletion of your data, subject to legal and medical record requirements.
                   </li>
-                  <li>Withdraw your consent.</li>
-                  <li>Raise a grievance regarding the handling of your data.</li>
+                  <li>Withdraw Your Consent.</li>
+                  <li>Raise A Grievance Regarding The Handling Of Your Data.</li>
                 </ul>
                 <p className="type-15 text-gray-700">
                   To exercise these rights, contact us using the details below.

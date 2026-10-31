@@ -817,7 +817,7 @@ export default function NeuroplasticityTrainingPage() {
 
                   <div className="pt-6 border-t border-neutral-300">
                     <p className="text-xs text-neutral-600 italic mb-4">
-                      <strong>Recommended for:</strong> {course.recommendedFor}
+                      <strong>Recommended For:</strong> {course.recommendedFor}
                     </p>
                     <div className="flex flex-col sm:flex-row gap-3">
                       <a
@@ -860,15 +860,15 @@ export default function NeuroplasticityTrainingPage() {
                 <div className="space-y-2 text-xs md:text-sm text-neutral-800">
                   <div className="flex items-center gap-2">
                     <span className="text-[#00AF9C] font-bold">✓</span>
-                    <span>Validates clinical competency in brain rewiring and neural recovery protocols</span>
+                    <span>Validates Clinical Competency In Brain Rewiring And Neural Recovery Protocols</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="text-[#00AF9C] font-bold">✓</span>
-                    <span>Authorizes integration of applied neuroplasticity coaching into professional practice</span>
+                    <span>Authorizes Integration Of Applied Neuroplasticity Coaching Into Professional Practice</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <span className="text-[#00AF9C] font-bold">✓</span>
-                    <span>Grants inclusion in the Shree Namoh Wellness clinical referral network</span>
+                    <span>Grants Inclusion In The Shree Namoh Wellness Clinical Referral Network</span>
                   </div>
                 </div>
               </div>

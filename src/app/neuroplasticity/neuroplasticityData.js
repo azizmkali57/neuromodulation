@@ -3,9 +3,9 @@ export const neuroplasticityData = {
     badge: "CLINICAL & PRACTITIONER TRAINING",
     headingHighlight: "NEUROMODULATION",
     headingRest: "WORKSHOP",
-    tagline: "Evidence-informed brain-based tools for regulation, performance & recovery",
+    tagline: "Evidence-Informed Brain-Based Tools For Regulation, Performance & Recovery",
     lead:
-      "This intensive, hands-on workshop introduces clinically relevant Neuromodulation principles and techniques for professionals who work directly with the nervous system — whether through medicine, movement, touch, energy work, or coaching conversations. Participants leave with a working knowledge of how the nervous system can be safely and effectively modulated using both device-assisted and device-free methods, along with protocols they can begin using with clients or patients immediately.",
+      "This Intensive, Hands-On Workshop Introduces Clinically Relevant Neuromodulation Principles And Techniques For Professionals Who Work Directly With The Nervous System — Whether Through Medicine, Movement, Touch, Energy Work, Or Coaching Conversations. Participants Leave With A Working Knowledge Of How The Nervous System Can Be Safely And Effectively Modulated Using Both Device-Assisted And Device-Free Methods, Along With Protocols They Can Begin Using With Clients Or Patients Immediately.",
     keySpecs: [
       { label: "Format", value: "Live, in-person / instructor-led online, with hands-on demonstration" },
       { label: "Duration", value: "3 Days" },
@@ -26,11 +26,11 @@ export const neuroplasticityData = {
       { role: "Coaches & Therapists", desc: "Wellness, mindset, executive performance, and trauma-informed coaches" }
     ],
     learningObjectives: [
-      "Understand the neurophysiological basis of Neuromodulation across central and peripheral pathways",
-      "Differentiate Neuromodulation, Neurostimulation, and Neuroplasticity — and where each fits in a care plan",
+      "Understand The Neurophysiological Basis Of Neuromodulation Across Central And Peripheral Pathways",
+      "Differentiate Neuromodulation, Neurostimulation, And Neuroplasticity — And Where Each Fits In A Care Plan",
       "Safely apply Brain Stimulation on chronic conditions like Stroke, CVA, Alzheimer's, Parkinson's, and Paralysis",
-      "Recognise contraindications, red flags, and when to refer to a medical specialist",
-      "Build a basic client/patient assessment and protocol-design workflow"
+      "Recognise Contraindications, Red Flags, And When To Refer To A Medical Specialist",
+      "Build A Basic Client/Patient Assessment And Protocol-Design Workflow"
     ],
     metrics: [
       { value: "3 Days", label: "Live & Practical Format" },
@@ -41,7 +41,7 @@ export const neuroplasticityData = {
     director: {
       name: "Dr. Neha",
       fullName: "Dr. Neha Arora Verma",
-      title: "Led by Dr. Neha",
+      title: "Led By Dr. Neha",
       role: "India's First Neuroplasticity Coach | Neuroplasticity & Neuromodulation Coaching",
       link: "/directors/dr-neha-arora-verma",
       image: "/images/dr-neha-portrait.jpg",
@@ -93,10 +93,10 @@ export const neuroplasticityData = {
       id: "module-1",
       number: "MODULE 01",
       badge: "CORE PRINCIPLES",
-      title: "Foundations of Neuromodulation",
-      subtitle: "Mechanisms, Pathways, Scope of Practice & Safety Baseline",
+      title: "Foundations Of Neuromodulation",
+      subtitle: "Mechanisms, Pathways, Scope Of Practice & Safety Baseline",
       image: "/images/hero-device-calibration.jpg",
-      imageCaption: "Mapping Central Vs. Peripheral Modulation Pathways and Establishing Safe Clinical Boundaries.",
+      imageCaption: "Mapping Central Vs. Peripheral Modulation Pathways And Establishing Safe Clinical Boundaries.",
       topics: [
         {
           title: "Definitions & Core Distinctions",
@@ -120,9 +120,9 @@ export const neuroplasticityData = {
         }
       ],
       keyTakeaways: [
-        "Clear demarcation between Neuromodulation, Neurostimulation, and Neuroplasticity in clinical practice.",
-        "Systematic mapping of CNS and autonomic/peripheral pathways for targeted intervention.",
-        "Full regulatory and ethical compliance frameworks tailored to your specific professional licensure."
+        "Clear Demarcation Between Neuromodulation, Neurostimulation, And Neuroplasticity In Clinical Practice.",
+        "Systematic Mapping Of CNS And Autonomic/Peripheral Pathways For Targeted Intervention.",
+        "Full Regulatory And Ethical Compliance Frameworks Tailored To Your Specific Professional Licensure."
       ]
     },
 
@@ -133,7 +133,7 @@ export const neuroplasticityData = {
       title: "Non-Invasive Neuromodulation Techniques",
       subtitle: "Tdcs, Tms, Vagus Nerve Stimulation, Neurofeedback & Polyvagal Tools",
       image: "/images/track-paralysis-activation.jpg",
-      imageCaption: "Device-Assisted and Device-Free Non-Invasive Neuromodulation Modalities in Active Application.",
+      imageCaption: "Device-Assisted And Device-Free Non-Invasive Neuromodulation Modalities In Active Application.",
       topics: [
         {
           title: "Tdcs (Transcranial Direct Current Stimulation)",
@@ -161,9 +161,9 @@ export const neuroplasticityData = {
         }
       ],
       keyTakeaways: [
-        "Mastery of tDCS montage physics, parameter programming, and clinical electrode placement.",
-        "Non-invasive auricular and manual Vagus Nerve Stimulation (VNS) protocols.",
-        "Integration of device-assisted (tDCS, AVE, EEG) and device-free (polyvagal, breath) modalities."
+        "Mastery Of tDCS Montage Physics, Parameter Programming, And Clinical Electrode Placement.",
+        "Non-Invasive Auricular And Manual Vagus Nerve Stimulation (VNS) Protocols.",
+        "Integration Of Device-Assisted (tDCS, AVE, EEG) And Device-Free (Polyvagal, Breath) Modalities."
       ]
     },
 
@@ -174,7 +174,7 @@ export const neuroplasticityData = {
       title: "Brain States, Autonomic Regulation & Biomarkers",
       subtitle: "Autonomic Balance, Brainwaves, Hrv & Real-Time Nervous System Assessment",
       image: "/images/track-stroke-rehab.jpg",
-      imageCaption: "Evaluating Autonomic Tone, Brainwave Synchronization, and Hrv Markers during Session Workflow.",
+      imageCaption: "Evaluating Autonomic Tone, Brainwave Synchronization, And Hrv Markers During Session Workflow.",
       topics: [
         {
           title: "Sympathetic Vs. Parasympathetic Balance",
@@ -185,7 +185,7 @@ export const neuroplasticityData = {
           text: "Delta, Theta, Alpha, Beta, and Gamma Oscillations: what each State Signifies in Rest, Focus, Trauma, and Recovery."
         },
         {
-          title: "Heart Rate Variability (Hrv) as an Objective Marker",
+          title: "Heart Rate Variability (Hrv) As An Objective Marker",
           text: "Using Hrv Metrics (Rmssd, Sdnn, Lf/Hf Ratio) as a Live Modulation Gauge, Baseline Assessor, and Longitudinal Progress Tracker."
         },
         {
@@ -193,14 +193,14 @@ export const neuroplasticityData = {
           text: "Chronic Stress Physiology, Neuro-Endocrine Allostatic Exhaustion, and Trauma-Informed Precautions when Stimulating Sensitive Nervous Systems."
         },
         {
-          title: "Reading Nervous-System States in Real Time",
+          title: "Reading Nervous-System States In Real Time",
           text: "Observing Polyvagal Social Engagement Cues, Postural Shifts, Micro-Expressions, Pupillary Cues, and Respiratory Cadence."
         }
       ],
       keyTakeaways: [
-        "Objective measurement of client readiness using Heart Rate Variability (HRV).",
-        "Deep understanding of Delta-to-Gamma brainwave profiles and their behavioral signatures.",
-        "Real-time observation of polyvagal markers to titrate stimulation intensity safely."
+        "Objective Measurement Of Client Readiness Using Heart Rate Variability (HRV).",
+        "Deep Understanding Of Delta-To-Gamma Brainwave Profiles And Their Behavioral Signatures.",
+        "Real-Time Observation Of Polyvagal Markers To Titrate Stimulation Intensity Safely."
       ]
     },
 
@@ -211,10 +211,10 @@ export const neuroplasticityData = {
       title: "Applied Clinical Protocols",
       subtitle: "Stroke, Cva, Alzheimer's, Parkinson's, Pain, Sleep & Cognitive Performance",
       image: "/images/track-parkinsons-protocol.jpg",
-      imageCaption: "Targeted Cortical Stimulation Algorithms for Chronic Neurological Conditions and Cognitive Enhancement.",
+      imageCaption: "Targeted Cortical Stimulation Algorithms For Chronic Neurological Conditions And Cognitive Enhancement.",
       topics: [
         {
-          title: "Advance Brain Stimulation in Chronic Diseases",
+          title: "Advance Brain Stimulation In Chronic Diseases",
           text: "Learn how to Use Advance Brain Stimulation in Chronic Disease Like Stroke, Cva, Alzheimer's, Parkinson and other Neurological Problems."
         },
         {
@@ -240,7 +240,7 @@ export const neuroplasticityData = {
       ],
       keyTakeaways: [
         "Proven clinical algorithms for Stroke, CVA, Alzheimer's, Parkinson's, and chronic neurological conditions.",
-        "Validated interventions for anxiety, insomnia, chronic pain, and attention-regulation.",
+        "Validated Interventions For Anxiety, Insomnia, Chronic Pain, And Attention-Regulation.",
         "Step-by-step workflow for customizing protocols to each client's neurological profile."
       ]
     },
@@ -252,10 +252,10 @@ export const neuroplasticityData = {
       title: "Live Practical & Demonstration Lab",
       subtitle: "Hands-On Technique Demonstrations, Supervised Practicum & Case Walkthroughs",
       image: "/images/hero-hands-on-practicum.jpg",
-      imageCaption: "Live Hands-on Practicum Supervised Personally by Dr. Neha: Electrode Placement, Impedance Testing & Case Rounds.",
+      imageCaption: "Live Hands-On Practicum Supervised Personally By Dr. Neha: Electrode Placement, Impedance Testing & Case Rounds.",
       topics: [
         {
-          title: "Live Demonstrations by Dr. Neha",
+          title: "Live Demonstrations By Dr. Neha",
           text: "Step-by-Step Live Demonstration of 2–3 Core Neuromodulation Techniques Conducted Directly by Dr. Neha."
         },
         {
@@ -267,7 +267,7 @@ export const neuroplasticityData = {
           text: "Real-World Case Studies Spanning Medical Consultations, Physiotherapy Motor Rehab, and Coaching/Peak-Performance Environments."
         },
         {
-          title: "Troubleshooting & Edge Cases Q&a",
+          title: "Troubleshooting & Edge Cases Q&A",
           text: "Structured Interactive Session Addressing Atypical Client Responses, Habituation, Paradoxical Reactions, and Equipment Adjustments."
         },
         {
@@ -276,9 +276,9 @@ export const neuroplasticityData = {
         }
       ],
       keyTakeaways: [
-        "Direct physical experience operating Neuromodulation devices under expert supervision.",
-        "Confidence in troubleshooting real-time patient sensations and technical edge cases.",
-        "Track-specific breakout practice adapted for medical, rehab, and coaching disciplines."
+        "Direct Physical Experience Operating Neuromodulation Devices Under Expert Supervision.",
+        "Confidence In Troubleshooting Real-Time Patient Sensations And Technical Edge Cases.",
+        "Track-Specific Breakout Practice Adapted For Medical, Rehab, And Coaching Disciplines."
       ]
     },
 
@@ -289,7 +289,7 @@ export const neuroplasticityData = {
       title: "Practice Integration, Certification & Take-Home Toolkit",
       subtitle: "Clinical Screening, Contraindications, Certification Issuance & Practitioner Toolkit",
       image: "/images/hero-cert-protocol.jpg",
-      imageCaption: "Professional Certification of Completion and Turnkey Clinical Toolkit for Immediate Practice Launch.",
+      imageCaption: "Professional Certification Of Completion And Turnkey Clinical Toolkit For Immediate Practice Launch.",
       topics: [
         {
           title: "Practice Integration Roadmap",
@@ -304,7 +304,7 @@ export const neuroplasticityData = {
           text: "Exclusion Criteria (Implants, Epilepsy Risk, Cranial Defects), Red Flags, and Establishing Collaborative Referral Channels with Medical Specialists."
         },
         {
-          title: "Certificate of Completion",
+          title: "Certificate Of Completion",
           text: "Official Verification of Attendance, Criteria Assessment, and Issuance of the Accredited Workshop Certificate."
         }
       ],
@@ -327,11 +327,11 @@ export const neuroplasticityData = {
         }
       ],
       disclaimer:
-        "This workshop is designed as a practitioner-facing educational program and does not replace formal clinical training, diagnosis, or treatment. Participants are expected to apply techniques within the boundaries of their own professional licensure and scope of practice.",
+        "This Workshop Is Designed As A Practitioner-Facing Educational Program And Does Not Replace Formal Clinical Training, Diagnosis, Or Treatment. Participants Are Expected To Apply Techniques Within The Boundaries Of Their Own Professional Licensure And Scope Of Practice.",
       keyTakeaways: [
-        "Official Certificate of Completion awarded upon successful demonstration of core competencies.",
-        "Ready-to-use Take-Home Toolkit enabling safe, professional implementation from Day 1.",
-        "Clear contraindication guidelines and specialist medical referral triggers."
+        "Official Certificate Of Completion Awarded Upon Successful Demonstration Of Core Competencies.",
+        "Ready-To-Use Take-Home Toolkit Enabling Safe, Professional Implementation From Day 1.",
+        "Clear Contraindication Guidelines And Specialist Medical Referral Triggers."
       ]
     }
   ],
@@ -347,19 +347,19 @@ export const neuroplasticityData = {
       title: "Physiotherapy & Movement Specialists Track",
       audience: "Physiotherapists (BPT / MPT) & Rehabilitation Specialists",
       focus:
-        "Combining non-invasive central stimulation (tDCS) with peripheral Neuro-Rehabilitation, spasticity management, motor relearning, and musculoskeletal gait recovery."
+        "Combining Non-Invasive Central Stimulation (tDCS) With Peripheral Neuro-Rehabilitation, Spasticity Management, Motor Relearning, And Musculoskeletal Gait Recovery."
     },
     {
       title: "Healers, Somatic & Energy Workers Track",
       audience: "Energy Healers, Craniosacral & Holistic Bodyworkers",
       focus:
-        "Vagus nerve stimulation, autonomic nervous system regulation, biofield awareness, polyvagal-informed somatic balancing, and device-free regulation methods."
+        "Vagus Nerve Stimulation, Autonomic Nervous System Regulation, Biofield Awareness, Polyvagal-Informed Somatic Balancing, And Device-Free Regulation Methods."
     },
     {
       title: "Wellness, Mindset & Performance Coaches Track",
       audience: "Executive, Mindset, Trauma-Informed & Performance Coaches",
       focus:
-        "Audio-visual entrainment, alpha/theta brainwave optimization, Heart Rate Variability (HRV) tracking, stress reduction, and peak cognitive performance workflows."
+        "Audio-Visual Entrainment, Alpha/Theta Brainwave Optimization, Heart Rate Variability (HRV) Tracking, Stress Reduction, And Peak Cognitive Performance Workflows."
     }
   ]
 };

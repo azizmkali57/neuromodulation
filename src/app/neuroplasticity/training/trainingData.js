@@ -2,9 +2,9 @@ export const neuroplasticityTrainingData = {
   hero: {
     badge: "NEUROPLASTICITY COACH PROGRAM • LEARN • APPLY • TRANSFORM",
     title: "Neuroplasticity Coach Program",
-    tagline: "Understand the Brain. Transform Your Practice.",
+    tagline: "Understand The Brain. Transform Your Practice.",
     subtitle:
-      "An Intensive Professional Program Designed to Help Healthcare and Wellness Professionals Understand Neuroplasticity and its Practical Application in Patient Recovery.",
+      "An Intensive Professional Program Designed To Help Healthcare And Wellness Professionals Understand Neuroplasticity And Its Practical Application In Patient Recovery.",
     director: "Dr. Neha Arora Verma",
     credentials:
       "M.S. (Neurological Rehabilitation, UK) • Neuromodulation Expert • Expert in Neuro Acupuncture • India's First Neuroplasticity Coach (Awarded by UN Book of World Records) • Founder, Paralysis Free India (Lakva Mukt Bharat)",
@@ -15,19 +15,19 @@ export const neuroplasticityTrainingData = {
     stats: [
       {
         value: "1 Lakh+",
-        label: "Patients Assisted Toward Recovery, Mobility & Quality of Life"
+        label: "Patients Assisted Toward Recovery, Mobility & Quality Of Life"
       },
       {
         value: "1st",
-        label: "Neuroplasticity Coach in India (UN Book of World Records)"
+        label: "Neuroplasticity Coach In India (UN Book Of World Records)"
       },
       {
         value: "M.S. (UK)",
-        label: "Specialized in Neurological Rehabilitation & Neuromodulation"
+        label: "Specialized In Neurological Rehabilitation & Neuromodulation"
       },
       {
         value: "Lakva Mukt",
-        label: "Founder of Paralysis Free India National Initiative"
+        label: "Founder Of Paralysis Free India National Initiative"
       }
     ],
     socialLinks: [
@@ -66,18 +66,18 @@ export const neuroplasticityTrainingData = {
     subtitle:
       "M.S. (Neurological Rehabilitation, Uk) • Neuromodulation Expert • Neuro-Acupuncture Specialist • Neuroplasticity Coach",
     bio: [
-      "Dr. Neha Arora Verma, M.S. (Neurological Rehabilitation, UK) is a renowned Neuromodulation Expert, Neuro-Acupuncture Specialist, and Neuroplasticity Coach dedicated to transforming lives through advanced neurological rehabilitation.",
-      "She is recognized as India’s First Neuroplasticity Coach, awarded by the UN Book of World Records, and is the Founder of Paralysis Free India (Lakva Mukt Bharat).",
-      "With her expertise in Neuroplasticity, Neuromodulation, and Neurological Rehabilitation, Dr. Neha has successfully helped 1 Lakh+ patients on their journey toward improved recovery, mobility, and quality of life.",
-      "Her mission: Harness the power of Neuroplasticity to make neurological recovery possible for millions."
+      "Dr. Neha Arora Verma, M.S. (Neurological Rehabilitation, UK) Is A Renowned Neuromodulation Expert, Neuro-Acupuncture Specialist, And Neuroplasticity Coach Dedicated To Transforming Lives Through Advanced Neurological Rehabilitation.",
+      "She Is Recognized As India’s First Neuroplasticity Coach, Awarded By The UN Book Of World Records, And Is The Founder Of Paralysis Free India (Lakva Mukt Bharat).",
+      "With Her Expertise In Neuroplasticity, Neuromodulation, And Neurological Rehabilitation, Dr. Neha Has Successfully Helped 1 Lakh+ Patients On Their Journey Toward Improved Recovery, Mobility, And Quality Of Life.",
+      "Her Mission: Harness The Power Of Neuroplasticity To Make Neurological Recovery Possible For Millions."
     ],
-    quote: "Harness the Power of Neuroplasticity to Make Neurological Recovery Possible for Millions."
+    quote: "Harness The Power Of Neuroplasticity To Make Neurological Recovery Possible For Millions."
   },
 
   lookBeyondSymptoms: {
-    heading: "What if you Could Look Beyond the Symptoms?",
+    heading: "What If You Could Look Beyond The Symptoms?",
     lead:
-      "A patient may present with muscle weakness, difficulty walking, speech problems, poor coordination, or reduced cognitive function. But behind every movement, every sensation, and every behaviour is a brain that is constantly learning and adapting.",
+      "A Patient May Present With Muscle Weakness, Difficulty Walking, Speech Problems, Poor Coordination, Or Reduced Cognitive Function. But Behind Every Movement, Every Sensation, And Every Behaviour Is A Brain That Is Constantly Learning And Adapting.",
     goalHighlight: "THE GOAL? NOT JUST TO TREAT THE SYMPTOM. UNDERSTAND THE BRAIN BEHIND THE SYMPTOM.",
     symptoms: [
       {
@@ -105,27 +105,27 @@ export const neuroplasticityTrainingData = {
   },
 
   whatIsTheProgram: {
-    heading: "A Practical Approach to Applied Neuroplasticity",
+    heading: "A Practical Approach To Applied Neuroplasticity",
     lead:
-      "This program takes neuroscience beyond theory and focuses on practical clinical application. The focus is on helping you think differently about recovery.",
+      "This Program Takes Neuroscience Beyond Theory And Focuses On Practical Clinical Application. The Focus Is On Helping You Think Differently About Recovery.",
     objectives: [
-      "Understand the fundamentals of Neuroplasticity",
-      "Identify adaptive and maladaptive patterns",
-      "Understand how the brain learns new movements and behaviours",
-      "Use repetition and task-specific training more effectively",
-      "Understand the role of sensory and motor stimulation",
-      "Develop more structured recovery strategies",
-      "Assess and track patient progress",
-      "Integrate Neuroplasticity principles into your existing practice"
+      "Understand The Fundamentals Of Neuroplasticity",
+      "Identify Adaptive And Maladaptive Patterns",
+      "Understand How The Brain Learns New Movements And Behaviours",
+      "Use Repetition And Task-Specific Training More Effectively",
+      "Understand The Role Of Sensory And Motor Stimulation",
+      "Develop More Structured Recovery Strategies",
+      "Assess And Track Patient Progress",
+      "Integrate Neuroplasticity Principles Into Your Existing Practice"
     ],
     summaryStatement: "The focus is on helping you think differently about recovery."
   },
 
   whoIsThisFor: {
-    heading: "Who is this Program for?",
-    subtitle: "Designed for Professionals Working with the Brain & Body",
+    heading: "Who Is This Program For?",
+    subtitle: "Designed For Professionals Working With The Brain & Body",
     lead:
-      "If you are already working with patients and want to understand the neuroscience behind recovery, this program can help you expand your approach.",
+      "If You Are Already Working With Patients And Want To Understand The Neuroscience Behind Recovery, This Program Can Help You Expand Your Approach.",
     audiences: [
       {
         role: "Doctors",
@@ -165,7 +165,7 @@ export const neuroplasticityTrainingData = {
   learningJourney: [
     {
       number: "01",
-      title: "Foundations of Neuroscience",
+      title: "Foundations Of Neuroscience",
       desc: "Understand the Basic Functioning of the Brain and Nervous System."
     },
     {
@@ -190,7 +190,7 @@ export const neuroplasticityTrainingData = {
     },
     {
       number: "06",
-      title: "Neuroplasticity in Rehabilitation",
+      title: "Neuroplasticity In Rehabilitation",
       desc: "Learn how Repetition, Intensity, Task Specificity, and Feedback Influence Learning."
     },
     {
@@ -206,7 +206,7 @@ export const neuroplasticityTrainingData = {
   ],
 
   decisionFlowchart: {
-    heading: "From Knowledge to Application",
+    heading: "From Knowledge To Application",
     subheading:
       "It's not just about Learning Neuroplasticity — the Real Value Lies in Knowing how to Apply it.",
     steps: [
@@ -246,12 +246,12 @@ export const neuroplasticityTrainingData = {
   benefits: [
     {
       number: "01",
-      title: "Think more Clinically",
+      title: "Think More Clinically",
       desc: "Develop a Stronger Understanding of the Brain's Role in Movement, Behaviour, Cognition, and Recovery."
     },
     {
       number: "02",
-      title: "Create more Purposeful Strategies",
+      title: "Create More Purposeful Strategies",
       desc: "Move from Generic Interventions Towards Patient-Specific, Goal-Oriented Approaches."
     },
     {
@@ -266,19 +266,19 @@ export const neuroplasticityTrainingData = {
     },
     {
       number: "05",
-      title: "Expand your Skill Set",
+      title: "Expand Your Skill Set",
       desc: "Add Applied Neuroplasticity to the Professional Knowledge you Already have."
     },
     {
       number: "06",
-      title: "Evolve your Practice",
+      title: "Evolve Your Practice",
       desc: "Differentiate your Approach by Bringing Neuroscience-Based Thinking into your Existing Work."
     }
   ],
 
   perspectiveShift: {
-    heading: "What Makes this Different?",
-    subtitle: "From Practitioner to Neuroplasticity Coach",
+    heading: "What Makes This Different?",
+    subtitle: "From Practitioner To Neuroplasticity Coach",
     traditional: {
       question: "“What exercise should we do?”",
       label: "TRADITIONAL REHABILITATION ASKS",
@@ -299,19 +299,19 @@ export const neuroplasticityTrainingData = {
       { step: "MEASURE", desc: "Objective Recovery Milestone Verification" }
     ],
     footer:
-      "The program is designed to help you build this way of thinking into your professional practice."
+      "The Program Is Designed To Help You Build This Way Of Thinking Into Your Professional Practice."
   },
 
   takeaways: [
-    "A stronger foundation in neuroscience and Neuroplasticity",
-    "An understanding of adaptive & maladaptive Neuroplasticity",
-    "Practical frameworks for thinking about patient recovery",
-    "Greater understanding of motor and sensory learning",
-    "Tools for developing goal-oriented strategies",
-    "A structured approach to patient assessment and progress tracking",
-    "Understanding of advanced brain-based approaches",
-    "Case-based learning and practical application",
-    "A framework to integrate Neuroplasticity into your existing practice"
+    "A Stronger Foundation In Neuroscience And Neuroplasticity",
+    "An Understanding Of Adaptive & Maladaptive Neuroplasticity",
+    "Practical Frameworks For Thinking About Patient Recovery",
+    "Greater Understanding Of Motor And Sensory Learning",
+    "Tools For Developing Goal-Oriented Strategies",
+    "A Structured Approach To Patient Assessment And Progress Tracking",
+    "Understanding Of Advanced Brain-Based Approaches",
+    "Case-Based Learning And Practical Application",
+    "A Framework To Integrate Neuroplasticity Into Your Existing Practice"
   ],
   takeawayConclusion: "And most importantly… A new way of looking at recovery.",
 
@@ -319,18 +319,18 @@ export const neuroplasticityTrainingData = {
     {
       id: "course-offline",
       format: "OFFLINE COURSE",
-      name: "Certification in Neuromodulation Technology",
+      name: "Certification In Neuromodulation Technology",
       duration: "5 DAYS",
       location: "In-Clinic Practicum (Shree Namoh Wellness, Indore)",
       featured: true,
       description:
-        "Intensive 5-Day Hands-on Clinical Certification Covering Advanced Non-Invasive Neuromodulation Technologies, Brain Stimulation Physics, and Practical Patient Case Demonstrations.",
+        "Intensive 5-Day Hands-On Clinical Certification Covering Advanced Non-Invasive Neuromodulation Technologies, Brain Stimulation Physics, And Practical Patient Case Demonstrations.",
       highlights: [
-        "Hands-on device operation & electrode calibration (tDCS, tACS, peripheral stimulation)",
-        "Direct clinical case demonstrations supervised by Dr. Neha Arora Verma",
+        "Hands-On Device Operation & Electrode Calibration (tDCS, tACS, Peripheral Stimulation)",
+        "Direct Clinical Case Demonstrations Supervised By Dr. Neha Arora Verma",
         "Protocols for Stroke, Hemiplegia, Parkinson's & Paralysis recovery",
-        "Safety parameters, contraindication screening & current intensity dosing",
-        "Official Certificate of Competence in Neuromodulation Technology"
+        "Safety Parameters, Contraindication Screening & Current Intensity Dosing",
+        "Official Certificate Of Competence In Neuromodulation Technology"
       ],
       recommendedFor: "Physiotherapists, doctors, neuro-rehab specialists, and occupational therapists."
     },
@@ -342,12 +342,12 @@ export const neuroplasticityTrainingData = {
       location: "Interactive Online Virtual Campus",
       featured: true,
       description:
-        "Comprehensive 2-Month Professional Master Program Providing in-Depth Neuroscience Modules, Adaptive Vs. Maladaptive Frameworks, Weekly Live Mentoring, and Clinical Implementation.",
+        "Comprehensive 2-Month Professional Master Program Providing In-Depth Neuroscience Modules, Adaptive Vs. Maladaptive Frameworks, Weekly Live Mentoring, And Clinical Implementation.",
       highlights: [
-        "8 comprehensive modules covering neuroscience to clinical translation",
-        "Weekly live interactive coaching sessions with Dr. Neha Arora Verma",
-        "Adaptive vs. maladaptive motor habituation identification protocols",
-        "Goal-oriented task-specific training architectures & patient progress metrics",
+        "8 Comprehensive Modules Covering Neuroscience To Clinical Translation",
+        "Weekly Live Interactive Coaching Sessions With Dr. Neha Arora Verma",
+        "Adaptive Vs. Maladaptive Motor Habituation Identification Protocols",
+        "Goal-Oriented Task-Specific Training Architectures & Patient Progress Metrics",
         "Prestigious Master Coach Certification & Alumni Professional Network"
       ],
       recommendedFor: "Doctors, rehab specialists, coaches, healers, speech therapists, and healthcare practitioners across India and globally."
@@ -355,15 +355,15 @@ export const neuroplasticityTrainingData = {
   ],
 
   webinar: {
-    title: "Join our Upcoming Webinar",
-    subtitle: "Want to Know more about the Neuroplasticity Coach Program?",
+    title: "Join Our Upcoming Webinar",
+    subtitle: "Want To Know More About The Neuroplasticity Coach Program?",
     description:
-      "Discover the Course Structure, Learning Outcomes, Case-Study Methodologies, and Career Opportunities in Applied Neuroplasticity and Neuromodulation.",
+      "Discover The Course Structure, Learning Outcomes, Case-Study Methodologies, And Career Opportunities In Applied Neuroplasticity And Neuromodulation.",
     bulletPoints: [
-      "Live overview with Dr. Neha Arora Verma",
-      "Explanation of the 7-stage clinical framework",
-      "Interactive Q&A on practice integration and patient recovery",
-      "Preview of course curriculum and enrollment guidelines"
+      "Live Overview With Dr. Neha Arora Verma",
+      "Explanation Of The 7-Stage Clinical Framework",
+      "Interactive Q&A On Practice Integration And Patient Recovery",
+      "Preview Of Course Curriculum And Enrollment Guidelines"
     ],
     contactPhones: [
       { raw: "9827079888", display: "+91 98270-79888" },

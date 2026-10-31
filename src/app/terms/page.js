@@ -63,7 +63,7 @@ export default function TermsPage() {
               style={{ maxWidth: "44em", fontSize: "1.05rem", lineHeight: "1.65em" }}
             >
               <p>
-                By accessing <strong>www.shreenamohwellness.com</strong> or using any service of{" "}
+                By accessing <strong>Www.Shreenamohwellness.Com</strong> or using any service of{" "}
                 <strong>Shree Namoh Wellness</strong>, you agree to these Terms &amp; Conditions and
                 our Privacy Policy. Please review each section carefully.
               </p>
@@ -130,10 +130,10 @@ export default function TermsPage() {
                 </p>
                 <ul className="list-disc pl-6 space-y-2 type-15 text-gray-700 mb-4">
                   <li>
-                    <strong>Neuroplasticity Course for Medical Professionals</strong>
+                    <strong>Neuroplasticity Course For Medical Professionals</strong>
                   </li>
                   <li>
-                    <strong>Eye Care and Ophthalmic Surgery</strong>
+                    <strong>Eye Care And Ophthalmic Surgery</strong>
                   </li>
                   <li>
                     <strong>Genomic Wellness</strong>
@@ -180,27 +180,27 @@ export default function TermsPage() {
                     to doctor availability. We may reschedule for clinical or operational reasons.
                   </p>
                   <p>
-                    <strong className="text-[#1D1A55]">Accurate information:</strong> You must
+                    <strong className="text-[#1D1A55]">Accurate Information:</strong> You must
                     provide complete and accurate medical history, including allergies, medications,
                     and existing conditions.
                   </p>
                   <p>
-                    <strong className="text-[#1D1A55]">Informed consent:</strong> Surgical and
+                    <strong className="text-[#1D1A55]">Informed Consent:</strong> Surgical and
                     procedural treatment is carried out only after a doctor explains the procedure,
                     benefits, risks, and alternatives, and you give written informed consent.
                   </p>
                   <p>
-                    <strong className="text-[#1D1A55]">No guarantee of results:</strong> Outcomes
+                    <strong className="text-[#1D1A55]">No Guarantee Of Results:</strong> Outcomes
                     vary from person to person. We do not guarantee any specific result, and all
                     medical and surgical procedures carry inherent risks.
                   </p>
                   <p>
-                    <strong className="text-[#1D1A55]">Follow-up care:</strong> Following
+                    <strong className="text-[#1D1A55]">Follow-Up Care:</strong> Following
                     post-treatment instructions and attending follow-ups is your responsibility and
                     is important for recovery.
                   </p>
                   <p>
-                    <strong className="text-[#1D1A55]">Cancellation and fees:</strong> Appointment
+                    <strong className="text-[#1D1A55]">Cancellation And Fees:</strong> Appointment
                     cancellations, rescheduling requests, and consultation or procedure fees are
                     governed by clinic scheduling policies. Please contact our administrative desk in
                     advance if you need to reschedule.
@@ -221,11 +221,11 @@ export default function TermsPage() {
                     false.
                   </p>
                   <p>
-                    <strong className="text-[#1D1A55]">Registration and fees:</strong> Enrolment is
+                    <strong className="text-[#1D1A55]">Registration And Fees:</strong> Enrolment is
                     confirmed only after full payment of the course fee.
                   </p>
                   <p>
-                    <strong className="text-[#1D1A55]">Educational purpose:</strong> The course is
+                    <strong className="text-[#1D1A55]">Educational Purpose:</strong> The course is
                     for education and professional development. Applying the learning in clinical
                     practice remains your own professional responsibility, and we do not guarantee
                     any particular clinical outcome or career benefit.
@@ -235,7 +235,7 @@ export default function TermsPage() {
                     issued only on meeting attendance and assessment requirements.
                   </p>
                   <p>
-                    <strong className="text-[#1D1A55]">Course materials:</strong> All lectures,
+                    <strong className="text-[#1D1A55]">Course Materials:</strong> All lectures,
                     videos, notes, and resources are our intellectual property. You may not copy,
                     record, share, resell, or distribute them without written permission.
                   </p>
@@ -258,40 +258,40 @@ export default function TermsPage() {
                 </h2>
                 <div className="space-y-3 type-15 text-gray-700">
                   <p>
-                    <strong className="text-[#1D1A55]">Not a diagnostic service:</strong> Unless
+                    <strong className="text-[#1D1A55]">Not A Diagnostic Service:</strong> Unless
                     clearly stated otherwise, Genomic Wellness reports are for wellness and
                     lifestyle guidance and are not a diagnosis, prediction, or confirmation of any
                     disease.
                   </p>
                   <p>
-                    <strong className="text-[#1D1A55]">Understanding results:</strong> Genetic
+                    <strong className="text-[#1D1A55]">Understanding Results:</strong> Genetic
                     results indicate tendencies or risk factors, not certainty. They should be
                     interpreted with a qualified healthcare professional or genetic counsellor.
                   </p>
                   <p>
-                    <strong className="text-[#1D1A55]">Samples and consent:</strong> You must provide
+                    <strong className="text-[#1D1A55]">Samples And Consent:</strong> You must provide
                     your own sample, or valid consent if the sample is for a minor. Testing is done
                     only after you sign a specific consent form.
                   </p>
                   <p>
-                    <strong className="text-[#1D1A55]">Sample quality:</strong> Poor or contaminated
+                    <strong className="text-[#1D1A55]">Sample Quality:</strong> Poor or contaminated
                     samples may need to be recollected, and results may be delayed.
                   </p>
                   <p>
-                    <strong className="text-[#1D1A55]">Accuracy and limitations:</strong> Genomic
+                    <strong className="text-[#1D1A55]">Accuracy And Limitations:</strong> Genomic
                     science is evolving, and interpretations may change as research advances.
                   </p>
                   <p>
-                    <strong className="text-[#1D1A55]">Do not self-treat:</strong> Do not start,
+                    <strong className="text-[#1D1A55]">Do Not Self-Treat:</strong> Do not start,
                     stop, or change any medication, diet, or treatment based on your report without
                     consulting a doctor.
                   </p>
                   <p>
-                    <strong className="text-[#1D1A55]">Data privacy:</strong> Your genetic data is
+                    <strong className="text-[#1D1A55]">Data Privacy:</strong> Your genetic data is
                     handled according to our Privacy Policy.
                   </p>
                   <p>
-                    <strong className="text-[#1D1A55]">Fees and refunds:</strong> Tests that have
+                    <strong className="text-[#1D1A55]">Fees And Refunds:</strong> Tests that have
                     been processed and submitted for laboratory analysis are non-refundable. Please
                     inquire with our administrative team for specific package details.
                   </p>
@@ -303,14 +303,14 @@ export default function TermsPage() {
                 <h2 className="font-headings type-28 uppercase text-[#1D1A55] mb-4">
                   7. User Responsibilities
                 </h2>
-                <p className="type-15 text-gray-700 mb-3">You agree to:</p>
+                <p className="type-15 text-gray-700 mb-3">You Agree To:</p>
                 <ul className="list-disc pl-6 space-y-2 type-15 text-gray-700">
-                  <li>Provide accurate and complete information.</li>
-                  <li>Use our website and services lawfully.</li>
+                  <li>Provide Accurate And Complete Information.</li>
+                  <li>Use Our Website And Services Lawfully.</li>
                   <li>
                     Not misuse the website, attempt unauthorized access, or introduce harmful code.
                   </li>
-                  <li>Not impersonate another person or submit false details.</li>
+                  <li>Not Impersonate Another Person Or Submit False Details.</li>
                 </ul>
               </article>
 

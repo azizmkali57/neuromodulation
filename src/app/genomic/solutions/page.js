@@ -276,7 +276,7 @@ export default function GeneticHealthSolutionsPage() {
                   onClick={handleWhatsAppDirect}
                   className="px-6 py-3 bg-[#00AF9C] hover:bg-[#009686] text-white font-bold uppercase text-xs tracking-wider transition-all shadow flex items-center gap-2"
                 >
-                  <span>Inquire via WhatsApp</span>
+                  <span>Inquire Via WhatsApp</span>
                 </button>
               </div>
             </div>
@@ -619,7 +619,7 @@ export default function GeneticHealthSolutionsPage() {
 
                   <div className="pt-6 border-t border-neutral-200">
                     <p className="text-xs text-neutral-500 italic mb-4">
-                      <strong>Best for:</strong> {pkg.recommendedFor}
+                      <strong>Best For:</strong> {pkg.recommendedFor}
                     </p>
                     <a
                       href="#consultation-form"
@@ -709,7 +709,7 @@ export default function GeneticHealthSolutionsPage() {
                     onClick={handleWhatsAppDirect}
                     className="w-full py-3.5 px-4 bg-[#00AF9C] hover:bg-[#009686] text-white font-bold uppercase text-xs tracking-wider flex items-center justify-center gap-2 shadow rounded"
                   >
-                    <span>Instant WhatsApp Inquiry with Coach Richha</span>
+                    <span>Instant WhatsApp Inquiry With Coach Richha</span>
                   </button>
                   <button
                     type="button"

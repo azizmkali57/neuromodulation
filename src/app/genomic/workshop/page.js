@@ -125,7 +125,7 @@ export default function GenomicWorkshopPage() {
               <span>/</span>
               <span className="text-gray-400">Genomic</span>
               <span>/</span>
-              <span className="text-[#1D1A55] font-bold">Genomic Counseling &amp; DNA Testing</span>
+              <span className="text-[#1D1A55] font-bold">Genomic Counseling &Amp; DNA Testing</span>
             </nav>
 
             {/* Top Eyebrow */}
@@ -541,9 +541,9 @@ export default function GenomicWorkshopPage() {
                         onChange={(e) => setTargetEmail(e.target.value)}
                         className="px-2.5 py-1.5 text-xs bg-[#f8fafc] border border-gray-300 rounded font-semibold text-[#1D1A55] focus:outline-none focus:border-[#E9511C]"
                       >
-                        <option value="genomics@drnehaarora.com">genomics@drnehaarora.com (Genomics Desk)</option>
-                        <option value="neha_arora27@yahoo.com">neha_arora27@yahoo.com (Admissions Desk)</option>
-                        <option value="eyecare@drnehaarora.com">eyecare@drnehaarora.com (Clinical Desk)</option>
+                        <option value="genomics@drnehaarora.com">Genomics@Drnehaarora.Com (Genomics Desk)</option>
+                        <option value="neha_arora27@yahoo.com">neha_arora27@Yahoo.Com (Admissions Desk)</option>
+                        <option value="eyecare@drnehaarora.com">Eyecare@Drnehaarora.Com (Clinical Desk)</option>
                       </select>
                     </div>
                   </div>

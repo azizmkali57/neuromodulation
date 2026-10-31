@@ -46,7 +46,7 @@ export default function TestimonialSection() {
   }, [isPaused, maxIndex, items.length, cardsPerView]);
 
   const handlePrev = () => {
-    setCurrentIndex((prev) => (prev <= 0 ? maxIndex : prev - 1));
+    setCurrentIndex((prev) => (Prev <= 0 ? maxIndex : prev - 1));
   };
 
   const handleNext = () => {
@@ -286,7 +286,7 @@ export default function TestimonialSection() {
                     </div>
 
                     <div className="text-right flex-shrink-0">
-                      <span className="text-[10px] text-gray-400 uppercase block">Under Care of</span>
+                      <span className="text-[10px] text-gray-400 uppercase block">Under Care Of</span>
                       <span className="text-xs font-bold text-[#E9511C]">
                         {item.doctorName.replace("Dr. ", "").replace("Coach ", "")}
                       </span>

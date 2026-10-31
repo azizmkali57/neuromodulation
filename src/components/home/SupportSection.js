@@ -25,11 +25,6 @@ export default function SupportSection() {
               alt="Dr. Neha Arora Verma receiving Healthcare Excellence Award from Gulshan Grover"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end justify-center pb-3 sm:pb-5">
-              <span className="font-headings text-[10px] sm:text-xs md:text-sm text-white uppercase tracking-wider bg-[#1D1A55]/90 px-3 py-1 rounded shadow">
-                Healthcare Excellence Award
-              </span>
-            </div>
           </div>
 
           {/* Right Circle: Dr. Neha Arora Verma receiving Health Coach Award */}
@@ -40,11 +35,6 @@ export default function SupportSection() {
               alt="Dr. Neha Arora Verma receiving National Recognition Award on Stage"
               className="w-full h-full object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent flex items-end justify-center pb-3 sm:pb-5">
-              <span className="font-headings text-[10px] sm:text-xs md:text-sm text-white uppercase tracking-wider bg-[#1D1A55]/90 px-3 py-1 rounded shadow">
-                National Clinical Recognition
-              </span>
-            </div>
           </div>
         </div>
       </div>

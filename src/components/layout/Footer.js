@@ -101,7 +101,7 @@ export default function Footer({ socialLinks } = {}) {
 
               <div className="text-white/70 text-[11px] sm:text-xs">
                 <span className="font-semibold text-white/90">Regional Services: </span>
-                Indore • Khandwa • Mundi (MP)
+                Indore (MP)
               </div>
 
               <div className="pt-2 border-t border-white/10 space-y-1 text-xs">

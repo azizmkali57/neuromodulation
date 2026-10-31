@@ -198,7 +198,7 @@ export default function NeuroplasticityWorkshopPage() {
                     href="#admissions-booking"
                     className="button-link di relative font-headings type-24 ls lh-1 color-orange uppercase"
                   >
-                    <span className="over di color-white">Register for Workshop →</span>
+                    <span className="over di color-white">Register For Workshop →</span>
                   </a>
                   <button
                     type="button"
@@ -651,9 +651,9 @@ export default function NeuroplasticityWorkshopPage() {
                         onChange={(e) => setTargetEmail(e.target.value)}
                         className="px-2.5 py-1.5 text-xs bg-[#f8fafc] border border-gray-300 rounded font-semibold text-[#1D1A55] focus:outline-none focus:border-[#E9511C]"
                       >
-                        <option value="neha_arora27@yahoo.com">neha_arora27@yahoo.com (Dr. Neha Admissions)</option>
-                        <option value="eyecare@drnehaarora.com">eyecare@drnehaarora.com (Clinical Desk)</option>
-                        <option value="genomics@drnehaarora.com">genomics@drnehaarora.com (Genomics Desk)</option>
+                        <option value="neha_arora27@yahoo.com">neha_arora27@Yahoo.Com (Dr. Neha Admissions)</option>
+                        <option value="eyecare@drnehaarora.com">Eyecare@Drnehaarora.Com (Clinical Desk)</option>
+                        <option value="genomics@drnehaarora.com">Genomics@Drnehaarora.Com (Genomics Desk)</option>
                       </select>
                     </div>
                   </div>

@@ -6,28 +6,7 @@ export default function TransparencySection() {
 
   return (
     <section className="grid-p pt-88 pb-88 bg-light-blue a-center relative" style={{ zIndex: 20 }}>
-      {/* Eyebrow Pill */}
-      <div className="mb-4">
-        <span
-          className="font-headings type-18 uppercase px-4 py-1.5 di"
-          style={{
-            backgroundColor: "var(--c-yellow, #FEE003)",
-            color: "var(--c-darkest-blue, #1D1A55)",
-            letterSpacing: "0.05em",
-          }}
-        >
-          OUR MISSION &amp; VISION
-        </span>
-      </div>
-
-      <h2
-        className="font-headings type-48 uppercase mb-32 highlight-bolds m-auto overflow"
-        style={{ maxWidth: "14em", "--bg": "var(--c-yellow)" }}
-      >
-        <b>OUR MISSION &amp; VISION</b>
-        <br />
-        A TRUSTED CENTER OF CLINICAL EXCELLENCE
-      </h2>
+      <h2 className="font-headings text-3xl sm:text-4xl md:text-5xl lg:text-6xl uppercase mb-32 highlight-bolds m-auto overflow tracking-wide leading-tight" style={{ maxWidth: "18em", "--bg": "var(--c-yellow)" }}><span className="text-[#1D1A55] font-extrabold">OUR MISSION & VISION</span><br /><span className="text-lg sm:text-xl md:text-2xl text-[#1D1A55]/80 font-normal block mt-2">A TRUSTED CENTER OF CLINICAL EXCELLENCE</span></h2>
 
       {/* Side-by-Side Mission & Vision Cards */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-5xl mx-auto mb-48 text-left">
@@ -72,7 +51,7 @@ export default function TransparencySection() {
         </div>
       </div>
 
-      <h3 className="font-headings type-28 uppercase mb-32 m-auto overflow" style={{ maxWidth: "12em" }}>
+      <h3 className="font-headings text-2xl sm:text-3xl md:text-4xl lg:text-5xl uppercase mb-32 m-auto overflow tracking-wide text-[#1D1A55] font-extrabold leading-tight" style={{ maxWidth: "16em" }}>
         {subheading.split("\n").map((line, idx) => (
           <React.Fragment key={idx}>
             {line}
@@ -87,30 +66,27 @@ export default function TransparencySection() {
           return (
             <article
               key={i}
-              className={`circle-stat ratio-1 font-headings dg a-center g-vac relative mb-12 ${
-                isPillars ? "pillars-stat-circle" : ""
-              }`}
+              className={`circle-stat ratio-1 font-headings dg a-center g-vac relative mb-12 ${isPillars ? "pillars-stat-circle" : ""
+                }`}
               style={
                 isPillars
                   ? {
-                      "--w": "clamp(300px, 28vw, 420px)",
-                      transform: "scale(1.06)",
-                      transition: "transform 0.3s ease",
-                    }
+                    "--w": "clamp(300px, 28vw, 420px)",
+                    transform: "scale(1.06)",
+                    transition: "transform 0.3s ease",
+                  }
                   : {
-                      "--w": "clamp(260px, 24vw, 360px)",
-                    }
+                    "--w": "clamp(260px, 24vw, 360px)",
+                  }
               }
             >
               <div
-                className={`w-100 piled-item ratio-1 relative z-1 br-50 ${
-                  isPillars ? "bg-[#1D1A55] shadow-xl ring-8 ring-[#00AF9C]/30" : "bg-green"
-                }`}
+                className={`w-100 piled-item ratio-1 relative z-1 br-50 ${isPillars ? "bg-[#1D1A55] shadow-xl ring-8 ring-[#00AF9C]/30" : "bg-green"
+                  }`}
               ></div>
               <div
-                className={`w-100 piled-item over ${
-                  isPillars ? "color-white" : ""
-                }`}
+                className={`w-100 piled-item over ${isPillars ? "color-white" : ""
+                  }`}
                 style={{ padding: isPillars ? "2em 1.2em" : "1.6em" }}
               >
                 <header

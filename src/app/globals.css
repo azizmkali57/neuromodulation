@@ -252,3 +252,21 @@ footer li::before, footer li::marker,
   content: none !important;
   display: none !important;
 }
+
+
+/* Rotational Right-to-Left Continuous Marquee Track */
+@keyframes marquee-rotate {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+.marquee-track {
+  display: flex !important;
+  width: max-content !important;
+  animation: marquee-rotate 35s linear infinite !important;
+  will-change: transform;
+}
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+
+.marquee-scroll { display: flex !important; width: max-content !important; animation: marquee-rotate 35s linear infinite !important; will-change: transform; }
