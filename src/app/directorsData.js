@@ -44,18 +44,6 @@ export const directorsData = {
         lead: "Spearheaded By Dr. Neha Arora Verma",
         description:
           "Targeted Non-Invasive Neuromodulation, Motor Re-Education, And Individualized Recovery Pathways For Paralysis, Stroke, And Spinal Conditions."
-      },
-      {
-        title: "Precision Genetic Counseling",
-        lead: "Directed By Coach Richha Arrora",
-        description:
-          "DNA-Guided Nutrition And Metabolic Health Analysis That Primes Cellular Health And Amplifies Neuroplastic Recovery."
-      },
-      {
-        title: "Advanced Eye Care & Medical Safety",
-        lead: "Directed By Dr. S. S. Verma (Senior Eye Surgeon Chennai)",
-        description:
-          "Decades Of Surgical Ophthalmic Expertise, Cataract, Lasic & Glaucoma Governance, And Rigorous Clinical Safety."
       }
     ],
     specializations: [

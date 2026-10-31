@@ -479,7 +479,7 @@ export default function DirectorSinglePage({ params }) {
                 </p>
               </div>
 
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-1 max-w-2xl mx-auto gap-6">
                 {director.shreeNamohVision.map((v, vIdx) => (
                   <div
                     key={vIdx}
