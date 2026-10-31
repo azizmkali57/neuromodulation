@@ -22,7 +22,7 @@ export default function TransparencySection() {
               Compassionate, Evidence-Based &amp; Individualized Healthcare
             </h3>
             <p className="text-gray-700 text-sm sm:text-base leading-relaxed mb-4">
-              To deliver advanced, compassionate, and patient-centered healthcare through innovative treatment solutions in Specialized Paralysis Care, Genetic Counseling, and Advanced Eye Care. We combine cutting-edge science, Neuroplasticity Protocols, and Personalized Nutrition to foster measurable recoveries and empower families.
+              To Deliver Advanced, Compassionate, And Patient-Centered Healthcare Through Innovative Treatment Solutions In Specialized Paralysis Care, Genetic Counseling, And Advanced Eye Care. We Combine Cutting-Edge Science, Neuroplasticity Protocols, And Personalized Nutrition To Foster Measurable Recoveries And Empower Families.
             </p>
           </div>
           <div className="pt-3 border-t border-gray-100 text-xs font-semibold text-[#00AF9C] uppercase tracking-wider">
@@ -42,7 +42,7 @@ export default function TransparencySection() {
               Global Benchmark in Personalized Health &amp; Neurological Recovery
             </h3>
             <p className="text-gray-700 text-sm sm:text-base leading-relaxed mb-4">
-              To establish Shree Namoh Wellness as a globally trusted center of excellence in advanced and personalized healthcare—recognized for clinical innovation, scientific rigor, empathetic service, and sustainable well-being where Therapeutic Solutions, Genetic Insights, and Surgical Eye Care unite to transform lives.
+              To Establish Shree Namoh Wellness As A Globally Trusted Center Of Excellence In Advanced And Personalized Healthcare—Recognized For Clinical Innovation, Scientific Rigor, Empathetic Service, And Sustainable Well-Being Where Therapeutic Solutions, Genetic Insights, And Surgical Eye Care Unite To Transform Lives.
             </p>
           </div>
           <div className="pt-3 border-t border-gray-100 text-xs font-semibold text-[#E9511C] uppercase tracking-wider">

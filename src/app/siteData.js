@@ -131,6 +131,17 @@ export const siteData = {
   heroSlides: [
     {
       id: 1,
+      tag: "CLINICAL INFRASTRUCTURE",
+      title: "Shree Namoh Wellness Center",
+      subtitle: "Central India Premier Integrated Healthcare Destination",
+      supportingText: "A State-Of-The-Art Integrated Healthcare Center In Indore Combining Specialized Paralysis Care, Precision Genomic Medicine, And Advanced Ophthalmic Microsurgery Under One Compassionate Roof.",
+      href: "/contact",
+      ctaLabel: "Visit Our Center",
+      image: "/images/slider-building.png",
+      srcset: "/images/slider-building.png 1x, /images/slider-building.png 2x"
+    },
+    {
+      id: 2,
       tag: "GENOMIC WELLNESS",
       title: "Know Your Genes. Shape Your Health.",
       subtitle: "Personalized Genomic Insights, Nutrition & Preventive Health",
@@ -150,17 +161,6 @@ export const siteData = {
       ctaLabel: "Consult Specialist",
       image: "/images/slider-eyecare.png",
       srcset: "/images/slider-eyecare.png 1x, /images/slider-eyecare.png 2x"
-    },
-    {
-      id: 3,
-      tag: "CLINICAL INFRASTRUCTURE",
-      title: "Shree Namoh Wellness Center",
-      subtitle: "Central India Premier Integrated Healthcare Destination",
-      supportingText: "A State-Of-The-Art Integrated Healthcare Center In Indore Combining Specialized Paralysis Care, Precision Genomic Medicine, And Advanced Ophthalmic Microsurgery Under One Compassionate Roof.",
-      href: "/contact",
-      ctaLabel: "Visit Our Center",
-      image: "/images/slider-building.png",
-      srcset: "/images/slider-building.png 1x, /images/slider-building.png 2x"
     }
   ],
   introduction: {
@@ -273,7 +273,7 @@ export const siteData = {
         date: "CLINICAL PILLAR 04",
         title: "Neuroplasticity Training For Medical Professionals",
         excerpt: "A Specialised Course For Healthcare Practitioners, Built On The Latest Research In Brain Adaptability, Neural Network Re-Wiring, And Recovery Protocols.",
-        image: "/images/track-dementia-cognitive.jpg",
+        image: "/images/dr-neha-speech.jpg",
         href: "/directors/dr-neha-arora-verma"
       }
     ]

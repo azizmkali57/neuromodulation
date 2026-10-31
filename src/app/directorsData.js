@@ -245,12 +245,6 @@ export const directorsData = {
     },
     socialLinks: [
       {
-        name: "YouTube",
-        href: "https://www.youtube.com/@drnehaaroraverma9899",
-        handle: "@drnehaaroraverma9899",
-        label: "Neuroplasticity Youtube Channel"
-      },
-      {
         name: "Facebook",
         href: "https://www.facebook.com/drssvermaeyesurgeon/",
         handle: "@drssvermaeyesurgeon",

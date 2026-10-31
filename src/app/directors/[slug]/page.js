@@ -474,8 +474,8 @@ export default function DirectorSinglePage({ params }) {
                   SHREE NAMOH WELLNESS VISION
                 </h2>
                 <p className="type-16 text-gray-600 mt-2">
-                  Uniting advanced neurological rehabilitation, genetic counseling, and specialized eye care
-                  under one visionary institution in Central India.
+                  Uniting Advanced Neurological Rehabilitation, Genetic Counseling, And Specialized Eye Care
+                  Under One Visionary Institution In Central India.
                 </p>
               </div>
 
